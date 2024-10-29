@@ -3,8 +3,10 @@ namespace World_Of_Zuul;
  */
 
 class World {
+  //starting room
   Space entry;
   
+  //creating serval 'Space' objects and defining the connections between them.
   public World () {
     Space home    = new Space("Home");
     Space outside = new Space("Outside");
@@ -15,6 +17,7 @@ class World {
     Space lake       = new Space("Lake");
     Space island     = new Space("Island");
     
+    //defines how these spaces are conected
     home.AddEdge("Door", outside);
     home.AddEdge("Ladder", roof);
     outside.AddEdge("Left", park);
@@ -23,9 +26,11 @@ class World {
     park.AddEdge("Path", lake);
     lake.AddEdge("Boat", island);
     
+    //starts at this location
     this.entry = home;
   }
   
+  //allows access for the rest of the program
   public Space GetEntry () {
     return entry;
   }
