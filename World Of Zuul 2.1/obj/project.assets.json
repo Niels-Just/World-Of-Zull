@@ -8,34 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-<<<<<<< HEAD:World Of Zuul/obj/project.assets.json
     "C:\\Users\\kap\\.nuget\\packages\\": {}
-=======
-    "/Users/niels-just/.nuget/packages/": {}
->>>>>>> cefad4b13c8f5c53ca4f9c0907f20ca3e6616c29:World Of Zuul 2.1/obj/project.assets.json
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD:World Of Zuul/obj/project.assets.json
-      "projectUniqueName": "C:\\Users\\kap\\WOZ\\World-Of-Zull\\World Of Zuul\\World Of Zuul.csproj",
-      "projectName": "World Of Zuul",
-      "projectPath": "C:\\Users\\kap\\WOZ\\World-Of-Zull\\World Of Zuul\\World Of Zuul.csproj",
+      "projectUniqueName": "C:\\Users\\kap\\WOZ\\World-Of-Zull\\World Of Zuul 2.1\\World Of Zuul 2.1.csproj",
+      "projectName": "World Of Zuul 2.1",
+      "projectPath": "C:\\Users\\kap\\WOZ\\World-Of-Zull\\World Of Zuul 2.1\\World Of Zuul 2.1.csproj",
       "packagesPath": "C:\\Users\\kap\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kap\\WOZ\\World-Of-Zull\\World Of Zuul\\obj\\",
+      "outputPath": "C:\\Users\\kap\\WOZ\\World-Of-Zull\\World Of Zuul 2.1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\kap\\AppData\\Roaming\\NuGet\\NuGet.Config"
-=======
-      "projectUniqueName": "/Users/niels-just/World-Of-Zull/World Of Zuul 2.1/World Of Zuul 2.1.csproj",
-      "projectName": "World Of Zuul 2.1",
-      "projectPath": "/Users/niels-just/World-Of-Zull/World Of Zuul 2.1/World Of Zuul 2.1.csproj",
-      "packagesPath": "/Users/niels-just/.nuget/packages/",
-      "outputPath": "/Users/niels-just/World-Of-Zull/World Of Zuul 2.1/obj/",
-      "projectStyle": "PackageReference",
-      "configFilePaths": [
-        "/Users/niels-just/.nuget/NuGet/NuGet.Config"
->>>>>>> cefad4b13c8f5c53ca4f9c0907f20ca3e6616c29:World Of Zuul 2.1/obj/project.assets.json
       ],
       "originalTargetFrameworks": [
         "net8.0"
