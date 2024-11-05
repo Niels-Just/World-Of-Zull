@@ -63,15 +63,12 @@ class Game {
     
     // Opsætning af spiller og initialisering af kommandoer
     Player player = new Player();
-<<<<<<< HEAD
     Item frame = new Item("Frame", "The foundation for making a solar panel");
     Item glass = new Item("Glass", "Protects the solar cells while still letting light through");
     player.AddItem(glass);
     player.AddItem(frame);
   
     
-=======
->>>>>>> refs/remotes/origin/main
     InitRegistry(player);
     context.GetCurrent().Welcome();
     
@@ -81,12 +78,11 @@ class Game {
       string? line = Console.ReadLine();
       if (line != null) registry.Dispatch(line);
     }
-<<<<<<< HEAD
+
     //if {}
     //Console.WriteLine("Game Over 😥");
-=======
+
     Console.WriteLine("Spillet er slut 😥");
->>>>>>> refs/remotes/origin/main
   }
   
 }
