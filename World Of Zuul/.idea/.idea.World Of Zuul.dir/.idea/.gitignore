@@ -2,15 +2,9 @@
 /shelf/
 /workspace.xml
 # Rider ignored files
-<<<<<<< HEAD
-/projectSettingsUpdater.xml
-/.idea.World Of Zuul - Test.iml
 /contentModel.xml
-=======
-/contentModel.xml
-/.idea.World Of Zuul - Test.iml
+/.idea.World Of Zuul.iml
 /projectSettingsUpdater.xml
->>>>>>> cefad4b13c8f5c53ca4f9c0907f20ca3e6616c29
 /modules.xml
 # Editor-based HTTP Client requests
 /httpRequests/
