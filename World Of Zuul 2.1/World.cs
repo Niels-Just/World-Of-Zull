@@ -32,13 +32,8 @@ class World
         Sur_Nabo.AddEdge("Vest",Baghave);
         Sur_Nabo.AddEdge("Nord",VejØst);
         
-<<<<<<< HEAD
-        Solvej28.AddEdge("Øst",Baghave);
-        Solvej28.AddEdge("Nord",VejVest);
-=======
         Glad_Nabo.AddEdge("Øst",Baghave);
         Glad_Nabo.AddEdge("Nord",VejMidt);
->>>>>>> refs/remotes/origin/main
         
         VejØst.AddEdge("Nord",Kunst_Haven);
         VejØst.AddEdge("Syd",Sur_Nabo);
