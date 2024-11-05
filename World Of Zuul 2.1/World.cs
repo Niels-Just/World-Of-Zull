@@ -7,7 +7,7 @@ class World
      Space entry;
   
     //creating serval 'Space' objects and defining the connections between them.
-    public World ()
+    public World () 
     {
         Space Baghave = new Space("Baghave");
         Space Sur_Nabo = new Space("Sur_Nabo");
