@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/niels-just/World-Of-Zull/World Of Zuul 2.1/World Of Zuul 2.1.csproj": {}
+    "C:\\Users\\AndreBanke\\Desktop\\Project\\World-Of-Zull\\World Of Zuul 2.1\\World Of Zuul 2.1.csproj": {}
   },
   "projects": {
-    "/Users/niels-just/World-Of-Zull/World Of Zuul 2.1/World Of Zuul 2.1.csproj": {
+    "C:\\Users\\AndreBanke\\Desktop\\Project\\World-Of-Zull\\World Of Zuul 2.1\\World Of Zuul 2.1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/niels-just/World-Of-Zull/World Of Zuul 2.1/World Of Zuul 2.1.csproj",
+        "projectUniqueName": "C:\\Users\\AndreBanke\\Desktop\\Project\\World-Of-Zull\\World Of Zuul 2.1\\World Of Zuul 2.1.csproj",
         "projectName": "World Of Zuul 2.1",
-        "projectPath": "/Users/niels-just/World-Of-Zull/World Of Zuul 2.1/World Of Zuul 2.1.csproj",
-        "packagesPath": "/Users/niels-just/.nuget/packages/",
-        "outputPath": "/Users/niels-just/World-Of-Zull/World Of Zuul 2.1/obj/",
+        "projectPath": "C:\\Users\\AndreBanke\\Desktop\\Project\\World-Of-Zull\\World Of Zuul 2.1\\World Of Zuul 2.1.csproj",
+        "packagesPath": "C:\\Users\\AndreBanke\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\AndreBanke\\Desktop\\Project\\World-Of-Zull\\World Of Zuul 2.1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/niels-just/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\AndreBanke\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -58,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.401/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
