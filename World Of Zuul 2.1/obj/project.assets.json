@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "/Users/mads/.nuget/packages/": {}
+    "/Users/niels-just/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zuul 2.1/World Of Zuul 2.1.csproj",
+      "projectUniqueName": "/Users/niels-just/World-Of-Zull/World Of Zuul 2.1/World Of Zuul 2.1.csproj",
       "projectName": "World Of Zuul 2.1",
-      "projectPath": "/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zuul 2.1/World Of Zuul 2.1.csproj",
-      "packagesPath": "/Users/mads/.nuget/packages/",
-      "outputPath": "/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zuul 2.1/obj/",
+      "projectPath": "/Users/niels-just/World-Of-Zull/World Of Zuul 2.1/World Of Zuul 2.1.csproj",
+      "packagesPath": "/Users/niels-just/.nuget/packages/",
+      "outputPath": "/Users/niels-just/World-Of-Zull/World Of Zuul 2.1/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/mads/.nuget/NuGet/NuGet.Config"
+        "/Users/niels-just/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
