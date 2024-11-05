@@ -11,27 +11,31 @@ class CommandPickUp : BaseCommand, ICommand
 
     public void Execute(Context context, string command, string[] parameters)
     {
-        if (parameters.Length > 1)
+        // Important for stability. If the player enters nothing after the "PickUp" command the program does not crash
+        if (parameters.Length == 0)
         {
-            Console.WriteLine("Choose an item to pick up");
+            Console.WriteLine("Choose an item to pick up.");
             return;
         }
-        // Retrieves item from the current room
-        string itemName = parameters[0];
-        Space currentSpace = context.GetCurrent();
-        // TakeItem method from Space class takes the item from the room and removes it. 
-        Item roomItem = currentSpace.TakeItem(itemName);
         
-        // If there an item is present (Item != null) add item to player inventory. 
-        if (roomItem != null)
+        Space currentSpace = context.GetCurrent(); // context.GetCurrent() comes from the context class. Makes sure the item is taken from the current room the player is in
+        
+        foreach (string itemName in parameters)
         {
-            player.AddItem(roomItem);
-            Console.WriteLine($"You picked up {roomItem.getItemName()}.");
-        }
-        // Write the following to terminal if item is not present.
-        else
-        {
-            Console.WriteLine($"There is no {itemName} here.");
+            // TakeItem method from Space class takes the item from the room and removes it. 
+            Item roomItem = currentSpace.TakeItem(itemName);
+
+            // If the item is present (Item != null), add item to player inventory.
+            if (roomItem != null)
+            {
+                Console.WriteLine($"You picked up {roomItem.getItemName()}.");
+                player.AddItem(roomItem);
+            }
+            // Write the following to terminal if item is not present.
+            else
+            {
+                Console.WriteLine($"There is no {itemName} here.");
+            }
         }
     }
 

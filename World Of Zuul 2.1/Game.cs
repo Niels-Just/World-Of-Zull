@@ -22,6 +22,7 @@ class Game {
     registry.Register("inventory", new CommandInventory(player));
     registry.Register("PickUp", new CommandPickUp(player));
     registry.Register("Search", new CommandSearch());
+    registry.Register("Assemble", new CommandAssemble(player));
   }
   
 
@@ -30,8 +31,10 @@ class Game {
     
     // Opretter en player med et inventory, samt et item som man starter med
     Player player = new Player();
-    Item flashlight = new Item("Flashlight", "Lets you navigate the dark");
-    player.AddItem(flashlight);
+    Item frame = new Item("Frame", "The foundation for making a solar panel");
+    Item glass = new Item("Glass", "Protects the solar cells while still letting light through");
+    player.AddItem(glass);
+    player.AddItem(frame);
     
     InitRegistry(player);
     context.GetCurrent().Welcome();

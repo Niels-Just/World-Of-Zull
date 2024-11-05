@@ -45,13 +45,17 @@ class Space : Node {
   // TakeItem method look for the itemName and if jt finds it the item is removed from the room.
   public Item TakeItem(string itemName)
   {
-    // OrdinalIgnoreCase ignores case sensitivity
-    Item item = roomItem.Find(i => i.getItemName().Equals(itemName, StringComparison.OrdinalIgnoreCase));
-    if (item != null)
+    foreach (var item in roomItem)
     {
-      roomItem.Remove(item);
+      if (item.ItemName == itemName)
+      {
+        roomItem.Remove(item);
+        // Console.WriteLine($"You picked up {item}");
+        return item;
+      }
     }
-    return item;
+    // Console.WriteLine($"{itemName} is not in this room");
+    return null!;
   }
   
   // Method to print all items in the room to console

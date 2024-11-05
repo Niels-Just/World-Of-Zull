@@ -12,6 +12,27 @@ public class Player
         inventory = new List<Item>();
     }
     
+    public bool HasItem(params string[] itemNames)
+    {
+        bool itemfound = false;
+        foreach (var itemName in itemNames)
+        {
+            foreach (var item in inventory)
+            {
+                if (item.ItemName == itemName)
+                {
+                    itemfound = true;
+                    break; // If item is found in inventory itemfound == true and it starts looking for the next item.
+                }
+            }
+            if (itemfound == false)
+            {
+                return false; // If Item is not found the bool HasItem() returns false.
+            }
+        }
+        return true; // Only if itemfound == true for all items (ex. HasItem(item1, item2, item3) the method returns true
+    }
+    
     //adds item to iventory
     public void AddItem(Item item)
     {
@@ -22,17 +43,17 @@ public class Player
     //remove item from inventory
     public void RemoveItem(string itemName)
     {
-        var item = inventory.Find(i => i.ItemName == itemName);
-        //checks if items is in inentory
-        if (item != null)
+        foreach (var item in inventory)
         {
-            inventory.Remove(item);
-            Console.WriteLine($"{item} Removed from Inventory");
+            if (item.ItemName == itemName)
+            {
+                inventory.Remove(item);
+                Console.WriteLine($"{item} removed from inventory.");
+                return; // Return Exits the method when the item is removed
+            }
         }
-        else
-        {
-            Console.WriteLine("You don't have this item in your inventory");
-        }
+        // Message if item is not found
+        Console.WriteLine("You don't have this item in your inventory.");
     }
     
     //shows what is in inventory

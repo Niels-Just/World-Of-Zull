@@ -13,3 +13,18 @@
 /Users/niels-just/World-Of-Zull/World Of Zuul 2.1/obj/Debug/net8.0/World Of Zuul 2.1.pdb
 /Users/niels-just/World-Of-Zull/World Of Zuul 2.1/obj/Debug/net8.0/World Of Zuul 2.1.genruntimeconfig.cache
 /Users/niels-just/World-Of-Zull/World Of Zuul 2.1/obj/Debug/net8.0/ref/World Of Zuul 2.1.dll
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zuul 2.1/bin/Debug/net8.0/World Of Zuul 2.1
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zuul 2.1/bin/Debug/net8.0/World Of Zuul 2.1.deps.json
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zuul 2.1/bin/Debug/net8.0/World Of Zuul 2.1.runtimeconfig.json
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zuul 2.1/bin/Debug/net8.0/World Of Zuul 2.1.dll
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zuul 2.1/bin/Debug/net8.0/World Of Zuul 2.1.pdb
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zuul 2.1/obj/Debug/net8.0/World Of Zuul 2.1.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zuul 2.1/obj/Debug/net8.0/World Of Zuul 2.1.AssemblyInfoInputs.cache
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zuul 2.1/obj/Debug/net8.0/World Of Zuul 2.1.AssemblyInfo.cs
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zuul 2.1/obj/Debug/net8.0/World Of Zuul 2.1.csproj.CoreCompileInputs.cache
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zuul 2.1/obj/Debug/net8.0/World Of Zuul 2.1.sourcelink.json
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zuul 2.1/obj/Debug/net8.0/World Of Zuul 2.1.dll
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zuul 2.1/obj/Debug/net8.0/refint/World Of Zuul 2.1.dll
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zuul 2.1/obj/Debug/net8.0/World Of Zuul 2.1.pdb
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zuul 2.1/obj/Debug/net8.0/World Of Zuul 2.1.genruntimeconfig.cache
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zuul 2.1/obj/Debug/net8.0/ref/World Of Zuul 2.1.dll
