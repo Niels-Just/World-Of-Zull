@@ -1,3 +1,4 @@
+using System.Xml.Schema;
 using Microsoft.Win32.SafeHandles;
 
 namespace World_Of_Zuul;
@@ -51,10 +52,10 @@ class Game {
     
     // Opretter en player med et inventory, samt et item som man starter med
     Player player = new Player();
-    //Item frame = new Item("Frame", "The foundation for making a solar panel");
-    //Item glass = new Item("Glass", "Protects the solar cells while still letting light through");
-    //player.AddItem(glass);
-    //player.AddItem(frame);
+    Item frame = new Item("Frame", "The foundation for making a solar panel");
+    Item glass = new Item("Glass", "Protects the solar cells while still letting light through");
+    player.AddItem(glass);
+    player.AddItem(frame);
   
     
     InitRegistry(player);
@@ -65,7 +66,9 @@ class Game {
       string? line = Console.ReadLine();
       if (line!=null) registry.Dispatch(line);
     }
-    Console.WriteLine("Game Over 😥");
+    //if {}
+    //Console.WriteLine("Game Over 😥");
   }
+  
 }
 

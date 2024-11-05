@@ -13,9 +13,11 @@ class CommandAssemble : BaseCommand, ICommand
     {
         if (player.HasItem("Frame", "Glass"))
         {
-            Console.WriteLine("You've sucessfully assembled a solar panel!");
+            //Console.WriteLine("You've sucessfully assembled a solar panel!");
             Item solar_panel = new Item("Solar Panel", "Produces sustainable energy!");
             player.AddItem(solar_panel);
+            Console.WriteLine("Gennemført spillet!");
+            context.MakeDone();
         }
         else
         {
