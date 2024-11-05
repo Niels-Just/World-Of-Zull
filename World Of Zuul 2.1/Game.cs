@@ -35,10 +35,11 @@ class Game {
     
     // Opretter en player med et inventory, samt et item som man starter med
     Player player = new Player();
-    Item frame = new Item("Frame", "The foundation for making a solar panel");
-    Item glass = new Item("Glass", "Protects the solar cells while still letting light through");
-    player.AddItem(glass);
-    player.AddItem(frame);
+    //Item frame = new Item("Frame", "The foundation for making a solar panel");
+    //Item glass = new Item("Glass", "Protects the solar cells while still letting light through");
+    //player.AddItem(glass);
+    //player.AddItem(frame);
+  
     
     InitRegistry(player);
     context.GetCurrent().Welcome();
