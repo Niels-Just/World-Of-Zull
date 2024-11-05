@@ -21,12 +21,17 @@ class Node {
   
   //adds a connection to another node
   public void AddEdge (string name, Node node) {
-    edges.Add(name, node);
+    edges.Add(name.ToLower(), node);
   }
   
   //takes a direction as a parameter and returns the connected node.
-  public virtual Node FollowEdge (string direction) {
-    return edges[direction];
+  public virtual Node FollowEdge(string direction) {
+    // Attempt to retrieve the next node using case-insensitive lookup
+    if (edges.TryGetValue(direction.ToLower(), out Node nextNode)) {
+      return nextNode; // Return the found node
+    } else {
+      return null; // Return null if no edge matches the direction
+    }
   }
 }
 

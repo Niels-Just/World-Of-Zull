@@ -30,8 +30,24 @@ class Game {
 //Dette er main koden som kører starten af spillet. Der bliver skabt et spiller objekt og derefter giver man ham et item.
 //While loopet sørger for at spillet looper og læser dit input med readline indtil Context.isdone==true hvorefter spillet stopper
 //og du får beskeden "game over"
+
+  private static void AnimatedIntro(string message, int delay, int displayTime)
+  {
+    foreach (char c in message)
+    {
+      Console.Write(c);
+      Thread.Sleep(delay); // Delay for animation effect
+    }
+    Console.WriteLine();
+
+    // Wait for the specified display time
+    Thread.Sleep(displayTime);
+
+    // Clear the console after the display time has elapsed
+    Console.Clear();
+  }
   static void Main (string[] args) {
-    Console.WriteLine("Welcome to the World of Zuul!");
+    AnimatedIntro("Welcome to World Of Zuul! \n", 100, 2000); 
     
     // Opretter en player med et inventory, samt et item som man starter med
     Player player = new Player();
