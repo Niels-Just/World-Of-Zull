@@ -2,55 +2,56 @@ namespace World_Of_Zuul;
 /* World class for modeling the entire in-game world
  */
 
-class World {
-    
+class World
+{
+     Space entry;
   
     //creating serval 'Space' objects and defining the connections between them.
     public World ()
     {
         Space Baghave = new Space("Baghave");
-        Space Solvej32 = new Space("Solvej32");
-        Space Solvej28   = new Space("Solvej28");
+        Space Sur_Nabo = new Space("Sur_Nabo");
+        Space Glad_Nabo   = new Space("Glad_Nabo");
         Space VejMidt     = new Space("Vej midt");
         Space VejØst  = new Space("VejØst");
         Space VejVest       = new Space("VejVest");
-        Space Solvej31     = new Space("Solvej31");
-        Space Solvej29      = new Space("Solvej29");
-        Space Solvej33     = new Space("Solvej33");
+        Space Elektriker_Erik     = new Space("Elektriker_Erik");
+        Space Glas_Mager_Erik      = new Space("Glas_Mager_Erik");
+        Space Kunst_Haven     = new Space("Kunst_Haven");
     
         //defines how these spaces are conected
         Baghave.AddEdge("Nord",VejMidt);
-        Baghave.AddEdge("Øst", Solvej32);
-        Baghave.AddEdge("Vest",Solvej28);
+        Baghave.AddEdge("Øst", Sur_Nabo);
+        Baghave.AddEdge("Vest",Glad_Nabo);
         
         VejMidt.AddEdge("Syd",Baghave);
         VejMidt.AddEdge("Øst",VejØst);
         VejMidt.AddEdge("Vest",VejVest);
-        VejMidt.AddEdge("Nord",Solvej31);
+        VejMidt.AddEdge("Nord",Elektriker_Erik);
        
-        Solvej32.AddEdge("Vest",Baghave);
-        Solvej32.AddEdge("Nord",VejØst);
+        Sur_Nabo.AddEdge("Vest",Baghave);
+        Sur_Nabo.AddEdge("Nord",VejØst);
         
-        Solvej28.AddEdge("Øst",Baghave);
-        Solvej28.AddEdge("Nord",VejMidt);
+        Glad_Nabo.AddEdge("Øst",Baghave);
+        Glad_Nabo.AddEdge("Nord",VejMidt);
         
-        VejØst.AddEdge("Nord",Solvej33);
-        VejØst.AddEdge("Syd",Solvej32);
+        VejØst.AddEdge("Nord",Kunst_Haven);
+        VejØst.AddEdge("Syd",Sur_Nabo);
         VejØst.AddEdge("Vest",VejMidt);
         
-        VejVest.AddEdge("Nord",Solvej29);
-        VejVest.AddEdge("Syd",Solvej28);
+        VejVest.AddEdge("Nord",Glas_Mager_Erik);
+        VejVest.AddEdge("Syd",Glad_Nabo);
         VejVest.AddEdge("Øst",VejMidt);
         
-        Solvej29.AddEdge("Syd",VejVest);
-        Solvej29.AddEdge("Øst",Solvej31);
+        Glas_Mager_Erik.AddEdge("Syd",VejVest);
+        Glas_Mager_Erik.AddEdge("Øst",Elektriker_Erik);
         
-        Solvej31.AddEdge("Vest",Solvej29);
-        Solvej31.AddEdge("Øst",Solvej33);
-        Solvej31.AddEdge("Sud",VejMidt);
+        Elektriker_Erik.AddEdge("Vest",Glas_Mager_Erik);
+        Elektriker_Erik.AddEdge("Øst",Kunst_Haven);
+        Elektriker_Erik.AddEdge("Sud",VejMidt);
         
-        Solvej33.AddEdge("Vest",Solvej31);
-        Solvej33.AddEdge("Syd",VejØst);
+        Kunst_Haven.AddEdge("Vest",Elektriker_Erik);
+        Kunst_Haven.AddEdge("Syd",VejØst);
     
         //starts at this location
         this.entry = Baghave;
@@ -60,12 +61,12 @@ class World {
         Item battery = new Item("Battery", "Stores surplus electricity fom the solar panel for later use");
         Item frame = new Item("Frame", "The foundation for making a solar panel");
         Item glass_plane = new Item("Glass", "Protects the solar cells while still letting light through");
-<<<<<<< HEAD
+        
         Baghave.AddRoomItem(solar_cells);
         Sur_Nabo.AddRoomItem(battery);
         Glad_Nabo.AddRoomItem(frame);
         Glas_Mager_Glenn.AddRoomItem(glass_plane);
-=======
+
         island.AddRoomItem(solar_cells);
         warehouse.AddRoomItem(battery);
         park.AddRoomItem(frame);
@@ -77,6 +78,6 @@ class World {
   
     //allows access for the rest of the program
     public Space GetEntry () {
-        return Baghave;
+        return entry;
     }
 }
