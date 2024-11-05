@@ -32,7 +32,7 @@ class World {
         Solvej32.AddEdge("Nord",VejØst);
         
         Solvej28.AddEdge("Øst",Baghave);
-        Solvej28.AddEdge("Nord",VejMidt);
+        Solvej28.AddEdge("Nord",VejVest);
         
         VejØst.AddEdge("Nord",Solvej33);
         VejØst.AddEdge("Syd",Solvej32);
