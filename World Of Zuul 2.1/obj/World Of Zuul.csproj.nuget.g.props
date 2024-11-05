@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+<<<<<<< HEAD:World Of Zuul/obj/World Of Zuul.csproj.nuget.g.props
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\kap\.nuget\packages\</NuGetPackageFolders>
+=======
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/Users/niels-just/.nuget/packages/</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/Users/niels-just/.nuget/packages/</NuGetPackageFolders>
+>>>>>>> cefad4b13c8f5c53ca4f9c0907f20ca3e6616c29:World Of Zuul 2.1/obj/World Of Zuul.csproj.nuget.g.props
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.10.1</NuGetToolVersion>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+<<<<<<< HEAD:World Of Zuul/obj/World Of Zuul.csproj.nuget.g.props
+    <SourceRoot Include="C:\Users\kap\.nuget\packages\" />
+=======
+    <SourceRoot Include="/Users/niels-just/.nuget/packages/" />
+>>>>>>> cefad4b13c8f5c53ca4f9c0907f20ca3e6616c29:World Of Zuul 2.1/obj/World Of Zuul.csproj.nuget.g.props
+  </ItemGroup>
+</Project>
