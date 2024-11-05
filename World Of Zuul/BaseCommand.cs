@@ -1,6 +1,6 @@
 namespace World_Of_Zuul;
 /* Baseclass for commands
- */
+*/
 
 class BaseCommand {
   protected string description = "Undocumented";
