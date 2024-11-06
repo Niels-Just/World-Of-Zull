@@ -23,6 +23,8 @@ class Game {
     registry.Register("PickUp", new CommandPickUp(player));
     registry.Register("Search", new CommandSearch());
     registry.Register("Assemble", new CommandAssemble(player));
+    registry.Register("People", new CommandPeople());
+    registry.Register("Talk", new CommandTalk());
   }
   
 

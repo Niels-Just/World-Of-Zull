@@ -52,10 +52,11 @@ public class Player
                 return; // Return Exits the method when the item is removed
             }
         }
+
         // Message if item is not found
         Console.WriteLine("You don't have this item in your inventory.");
     }
-    
+
     //shows what is in inventory
     public void PrintInventory()
     {

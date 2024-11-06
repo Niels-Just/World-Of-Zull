@@ -5,6 +5,7 @@ namespace World_Of_Zuul;
 class Space : Node {
   
   private List<Item> roomItem = new List<Item>(); // Liste for at opbevarer items i et rum
+  private List<NPC> npcs = new List<NPC>();
   public Space (String name) : base(name)
   {
   }
@@ -73,6 +74,52 @@ class Space : Node {
         Console.WriteLine(item.ToString());
       }
     }
+  }
+  
+  public void AddNPC(NPC npc) // Method to add an NPC to the room
+  {
+    npcs.Add(npc);
+  }
+
+  public void RemoveNpc(string npcName)
+  {
+    foreach (var npc in npcs)
+    {
+      if (npc.NpcName == npcName)
+      {
+        npcs.Remove(npc);
+        return; // Return Exits the method when the item is removed
+      }
+    }
+  }
+
+  public void PrintNPCs() // Method to print all NPCs in the room
+  {
+    if (npcs.Count == 0)
+    {
+      Console.WriteLine("Der er ingen personer her.");
+    }
+    else
+    {
+      Console.WriteLine("Personer i rummet:");
+      foreach (var npc in npcs)
+      {
+        Console.WriteLine(npc.ToString());
+      }
+    }
+  }
+  
+  public NPC GetNpcByName(string npcName)
+  {
+            
+    foreach (NPC npc in npcs)
+    {
+      if (npc.getNpcName() == npcName)
+      {
+        return npc; 
+      }
+    }
+    return null; 
   }
 }
 

@@ -66,6 +66,11 @@ class World {
         cave.AddRoomItem(glass_plane);
         home.AddRoomItem(battery);
         */
+        NPC john = new NPC("John", "sød mand");
+        Item bil = new Item("Bil", "john");
+        Baghave.AddNPC(john);
+        john.NpcAddItem(bil);
+        
     }
   
     //allows access for the rest of the program
