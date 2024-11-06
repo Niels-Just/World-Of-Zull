@@ -1,0 +1,15 @@
+C:\Users\AndreBanke\Desktop\Project\World-Of-Zull\World Of Zuul 2.1\bin\MCD\Debug\net8.0\World Of Zuul 2.1.exe
+C:\Users\AndreBanke\Desktop\Project\World-Of-Zull\World Of Zuul 2.1\bin\MCD\Debug\net8.0\World Of Zuul 2.1.deps.json
+C:\Users\AndreBanke\Desktop\Project\World-Of-Zull\World Of Zuul 2.1\bin\MCD\Debug\net8.0\World Of Zuul 2.1.runtimeconfig.json
+C:\Users\AndreBanke\Desktop\Project\World-Of-Zull\World Of Zuul 2.1\bin\MCD\Debug\net8.0\World Of Zuul 2.1.dll
+C:\Users\AndreBanke\Desktop\Project\World-Of-Zull\World Of Zuul 2.1\bin\MCD\Debug\net8.0\World Of Zuul 2.1.pdb
+C:\Users\AndreBanke\Desktop\Project\World-Of-Zull\World Of Zuul 2.1\obj\MCD\Debug\net8.0\World Of Zuul 2.1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AndreBanke\Desktop\Project\World-Of-Zull\World Of Zuul 2.1\obj\MCD\Debug\net8.0\World Of Zuul 2.1.AssemblyInfoInputs.cache
+C:\Users\AndreBanke\Desktop\Project\World-Of-Zull\World Of Zuul 2.1\obj\MCD\Debug\net8.0\World Of Zuul 2.1.AssemblyInfo.cs
+C:\Users\AndreBanke\Desktop\Project\World-Of-Zull\World Of Zuul 2.1\obj\MCD\Debug\net8.0\World Of Zuul 2.1.csproj.CoreCompileInputs.cache
+C:\Users\AndreBanke\Desktop\Project\World-Of-Zull\World Of Zuul 2.1\obj\MCD\Debug\net8.0\World Of Zuul 2.1.sourcelink.json
+C:\Users\AndreBanke\Desktop\Project\World-Of-Zull\World Of Zuul 2.1\obj\MCD\Debug\net8.0\World Of Zuul 2.1.dll
+C:\Users\AndreBanke\Desktop\Project\World-Of-Zull\World Of Zuul 2.1\obj\MCD\Debug\net8.0\refint\World Of Zuul 2.1.dll
+C:\Users\AndreBanke\Desktop\Project\World-Of-Zull\World Of Zuul 2.1\obj\MCD\Debug\net8.0\World Of Zuul 2.1.pdb
+C:\Users\AndreBanke\Desktop\Project\World-Of-Zull\World Of Zuul 2.1\obj\MCD\Debug\net8.0\World Of Zuul 2.1.genruntimeconfig.cache
+C:\Users\AndreBanke\Desktop\Project\World-Of-Zull\World Of Zuul 2.1\obj\MCD\Debug\net8.0\ref\World Of Zuul 2.1.dll

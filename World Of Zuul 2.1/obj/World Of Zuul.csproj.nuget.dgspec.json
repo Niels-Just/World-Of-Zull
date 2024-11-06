@@ -1,6 +1,22 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD:World Of Zuul/obj/World Of Zuul.csproj.nuget.dgspec.json
+    "C:\\Users\\kap\\WOZ\\World-Of-Zull\\World Of Zuul\\World Of Zuul.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\kap\\WOZ\\World-Of-Zull\\World Of Zuul\\World Of Zuul.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\kap\\WOZ\\World-Of-Zull\\World Of Zuul\\World Of Zuul.csproj",
+        "projectName": "World Of Zuul",
+        "projectPath": "C:\\Users\\kap\\WOZ\\World-Of-Zull\\World Of Zuul\\World Of Zuul.csproj",
+        "packagesPath": "C:\\Users\\kap\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kap\\WOZ\\World-Of-Zull\\World Of Zuul\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\kap\\AppData\\Roaming\\NuGet\\NuGet.Config"
+=======
     "/Users/niels-just/Desktop/World Of Zuul/World Of Zuul.csproj": {}
   },
   "projects": {
@@ -15,6 +31,7 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/niels-just/.nuget/NuGet/NuGet.Config"
+>>>>>>> cefad4b13c8f5c53ca4f9c0907f20ca3e6616c29:World Of Zuul 2.1/obj/World Of Zuul.csproj.nuget.dgspec.json
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -58,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.401/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
