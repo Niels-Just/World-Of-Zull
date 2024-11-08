@@ -13,11 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("World Of Zuul 2.1")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< HEAD
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+455941e45887ab7c3cbac7e5a39cd0550410beff")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2dc02e2b93cd9009310d29236d2aa0a512094936")]
->>>>>>> refs/remotes/origin/main
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2f7bfb5bd20231f82b1896144b78216f905cfa87")]
 [assembly: System.Reflection.AssemblyProductAttribute("World Of Zuul 2.1")]
 [assembly: System.Reflection.AssemblyTitleAttribute("World Of Zuul 2.1")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
