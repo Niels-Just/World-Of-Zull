@@ -2,8 +2,21 @@ namespace World_of_Zuul___3._0;
 
 public class Room
 {
-    public string Description { get; }
-    public Dictionary<string, Room> Exits { get; set; }
+    private string description;
+
+    public string Description
+    {
+        get { return description; }
+        init { description = value; }
+    }
+
+    private Dictionary<string, Room> exits;
+    
+    public Dictionary<string, Room> Exits
+    {
+        get { return exits; }
+        set { exits = value; }
+    }
 
     public Room(string description)
     {
