@@ -10,7 +10,7 @@ class CommandHelp : BaseCommand, ICommand {
     //sets the 'description' field inherited from 'BaseCommand' to "Display a help message"
     public CommandHelp (Registry registry) {
         this.registry = registry;
-        this.description = "Display a help message";
+        this.description = "Viser alle mulige handlinger";
     }
     
     public void Execute (Context context, string command, string[] parameters) {

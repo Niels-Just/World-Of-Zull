@@ -4,7 +4,7 @@ class CommandSearch : BaseCommand, ICommand
 {
     public CommandSearch()
     {
-        description = "Search for items in a room";
+        description = "Søg efter en genstand";
     }
     
     public void Execute(Context context, string command, string[] parameters)

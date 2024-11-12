@@ -15,17 +15,15 @@ class Game {
   // Initialiserer kommandoer til spillet
   private static void InitRegistry (Player player) {
     ICommand cmdExit = new CommandExit();
-    registry.Register("exit", cmdExit);
-    registry.Register("quit", cmdExit);
-    registry.Register("bye", cmdExit);
-    registry.Register("go", new CommandGo());
-    registry.Register("help", new CommandHelp(registry));
-    registry.Register("inventory", new CommandInventory(player));
-    registry.Register("PickUp", new CommandPickUp(player));
-    registry.Register("Search", new CommandSearch());
-    registry.Register("Assemble", new CommandAssemble(player));
-    registry.Register("People", new CommandPeople());
-    registry.Register("Talk", new CommandTalk());
+    registry.Register("luk", cmdExit);
+    registry.Register("gå", new CommandGo());
+    registry.Register("hjælp", new CommandHelp(registry));
+    registry.Register("inventar", new CommandInventory(player));
+    registry.Register("opsamle", new CommandPickUp(player));
+    registry.Register("søg", new CommandSearch());
+    registry.Register("sammensæt", new CommandAssemble(player));
+    registry.Register("folk", new CommandPeople());
+    registry.Register("tal", new CommandTalk());
   }
   
   // Animerer en velkomstbesked
@@ -44,14 +42,14 @@ class Game {
 
   // Hovedfunktion for spillet
   static void Main (string[] args) {
-    AnimatedText("Velkommen til World Of Zuul! \n", 100, 2000);
+    AnimatedText("Velkommen til World Of Zuul! \n", 10, 200);
 
     // Fnorkel NPC velkomst med langsom dialog
     AnimatedText("En mærkelig alien ved navn Fnorkel står foran dig, ser bekymret og lidt desperat ud.\n" +
                  "Fnorkel: \"Hilsner, rejsende! Jeg er Fnorkel, en udforsker fra en fjern galakse.\" \n" +
                  "Fnorkel: \"Mit rumskib styrtede ned her, og jeg har brug for solpaneler for at reparere det og vende hjem.\" \n" +
                  "Fnorkel: \"Kan du hjælpe mig med at samle de dele, der skal bruges til at bygge et kraftigt solpanelsystem?\" \n" +
-                 "Fnorkel: \"Sammen udforsker vi dette land, samler delene og udnytter solens kraft!\" \n", 80,2000);
+                 "Fnorkel: \"Sammen udforsker vi dette land, samler delene og udnytter solens kraft!\" \n", 8,200);
     
     // Opsætning af spiller og initialisering af kommandoer
     Player player = new Player();

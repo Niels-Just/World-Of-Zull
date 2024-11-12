@@ -21,7 +21,7 @@ class Context {
         //determines the next room based on provided direction
         Space next = current.FollowEdge(direction);
         if (next==null) {
-            Console.WriteLine("You are confused, and walk in a circle looking for '"+direction+"'. In the end you give up 😩");
+            Console.WriteLine("Det er ikke muligt at gå i retningen '"+direction+"'");
         } else {
             //calls Goodbye on the prior room, handles exit messages.
             current.Goodbye();

@@ -24,7 +24,7 @@ class CommandTalk : BaseCommand, ICommand
             // Write the following to terminal if npc is not present.
             else
             {
-                Console.WriteLine($"Der er ingen ved navn {npcName} her.");
+                Console.WriteLine($"Der er ingen ved navn {npcName} her");
             }
         }
     }
