@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/niels-just/RiderProjects/World of Zuul - 3.0/World of Zuul - 3.0/World of Zuul - 3.0.csproj",
+      "projectUniqueName": "/Users/niels-just/World-Of-Zull/World of Zuul - 3.0/World of Zuul - 3.0.csproj",
       "projectName": "World of Zuul - 3.0",
-      "projectPath": "/Users/niels-just/RiderProjects/World of Zuul - 3.0/World of Zuul - 3.0/World of Zuul - 3.0.csproj",
+      "projectPath": "/Users/niels-just/World-Of-Zull/World of Zuul - 3.0/World of Zuul - 3.0.csproj",
       "packagesPath": "/Users/niels-just/.nuget/packages/",
-      "outputPath": "/Users/niels-just/RiderProjects/World of Zuul - 3.0/World of Zuul - 3.0/obj/",
+      "outputPath": "/Users/niels-just/World-Of-Zull/World of Zuul - 3.0/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/niels-just/.nuget/NuGet/NuGet.Config"
