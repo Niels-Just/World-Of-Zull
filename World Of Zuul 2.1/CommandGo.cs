@@ -6,7 +6,7 @@ namespace World_Of_Zuul;
 class CommandGo : BaseCommand, ICommand {
     public CommandGo () {
         //informs the player what the command does.
-        description = "Follow an exit";
+        description = "Følg en udgang";
     }
     //implements the 'ICommand' interface, so 'Execute' method can be used. 
   
