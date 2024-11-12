@@ -6,8 +6,6 @@ class Node {
   protected string name;
   //maps direction strings, allow the game to define connections between different nodes.
   protected Dictionary<string, Node> edges = new Dictionary<string, Node>();
-  //this list contains items that can be within the node.
-  private List<Item> items;
  
   //initalizes the node with a given name and initializes name. 
   public Node (string name) {

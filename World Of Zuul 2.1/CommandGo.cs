@@ -26,3 +26,4 @@ class CommandGo : BaseCommand, ICommand {
         context.Transition(direction);
     }
 }
+
