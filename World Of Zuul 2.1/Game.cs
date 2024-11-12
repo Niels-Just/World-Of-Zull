@@ -42,22 +42,14 @@ class Game {
 
   // Hovedfunktion for spillet
   static void Main (string[] args) {
-<<<<<<< HEAD
-    AnimatedText("Velkommen til World Of Zuul! \n", 1, 20);
-=======
     AnimatedText("Velkommen til World Of Zuul! \n", 10, 200);
->>>>>>> refs/remotes/origin/main
 
     // Fnorkel NPC velkomst med langsom dialog
     AnimatedText("En mærkelig alien ved navn Fnorkel står foran dig, ser bekymret og lidt desperat ud.\n" +
                  "Fnorkel: \"Hilsner, rejsende! Jeg er Fnorkel, en udforsker fra en fjern galakse.\" \n" +
                  "Fnorkel: \"Mit rumskib styrtede ned her, og jeg har brug for solpaneler for at reparere det og vende hjem.\" \n" +
                  "Fnorkel: \"Kan du hjælpe mig med at samle de dele, der skal bruges til at bygge et kraftigt solpanelsystem?\" \n" +
-<<<<<<< HEAD
                  "Fnorkel: \"Sammen udforsker vi dette land, samler delene og udnytter solens kraft!\" \n", 1,20);
-=======
-                 "Fnorkel: \"Sammen udforsker vi dette land, samler delene og udnytter solens kraft!\" \n", 8,200);
->>>>>>> refs/remotes/origin/main
     
     // Opsætning af spiller og initialisering af kommandoer
     Player player = new Player();
