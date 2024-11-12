@@ -4,7 +4,7 @@ namespace World_Of_Zuul;
 
 class BaseCommand {
   //string indicating that subclasses should provide their own descrption 
-  protected string description = "Undocumented";
+  protected string description = "Skriv hvad din kommando gør her";
   
   //parameters is an array of strings that represents the commandline arguments provided by the users
   //bound this is an integer that specifies the expected number of parameteres 

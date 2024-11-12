@@ -20,7 +20,7 @@ class CommandGo : BaseCommand, ICommand {
             return;
         }
         // if the 'parameters' is valid move on to next location.
-        // 'context.Transtion(parameters[0])' methos is ressonspible for changing  the players current location.
+        // 'context.Transtion(parameters[0])' methods is ressonspible for changing  the players current location.
         //[0] index 1 in an array. 
         string direction = parameters[0].ToLower();
         context.Transition(direction);

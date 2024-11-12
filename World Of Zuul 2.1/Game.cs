@@ -44,21 +44,21 @@ class Game {
 
   // Hovedfunktion for spillet
   static void Main (string[] args) {
-    AnimatedText("Velkommen til World Of Zuul! \n", 100, 2000);
+    AnimatedText("Velkommen til World Of Zuul! \n", 1, 20);
 
     // Fnorkel NPC velkomst med langsom dialog
     AnimatedText("En mærkelig alien ved navn Fnorkel står foran dig, ser bekymret og lidt desperat ud.\n" +
                  "Fnorkel: \"Hilsner, rejsende! Jeg er Fnorkel, en udforsker fra en fjern galakse.\" \n" +
                  "Fnorkel: \"Mit rumskib styrtede ned her, og jeg har brug for solpaneler for at reparere det og vende hjem.\" \n" +
                  "Fnorkel: \"Kan du hjælpe mig med at samle de dele, der skal bruges til at bygge et kraftigt solpanelsystem?\" \n" +
-                 "Fnorkel: \"Sammen udforsker vi dette land, samler delene og udnytter solens kraft!\" \n", 80,2000);
+                 "Fnorkel: \"Sammen udforsker vi dette land, samler delene og udnytter solens kraft!\" \n", 1,20);
     
     // Opsætning af spiller og initialisering af kommandoer
     Player player = new Player();
-    Item frame = new Item("Frame", "The foundation for making a solar panel");
-    Item glass = new Item("Glass", "Protects the solar cells while still letting light through");
-    player.AddItem(glass);
-    player.AddItem(frame);
+    //Item frame = new Item("Frame", "The foundation for making a solar panel");
+    //Item glass = new Item("Glass", "Protects the solar cells while still letting light through");
+    //player.AddItem(glass);
+    //player.AddItem(frame);
   
     
     InitRegistry(player);
