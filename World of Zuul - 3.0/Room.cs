@@ -4,11 +4,6 @@ class Room : Node
 {
     public Room(string name) : base(name)
     {
-<<<<<<< HEAD
-        get { return description; }
-        set { description = value; }
-=======
->>>>>>> refs/remotes/origin/main
     }
 
     public void EnterRoomMsg()
@@ -24,23 +19,9 @@ class Room : Node
     }
 
     //returnere den overritede metode som en Room type istedet for hvad ellers ville blive til en Node type.
-    public override Room FollowEdge (string direction) {
-        return (Room) (base.FollowEdge(direction));
-    }
-<<<<<<< HEAD
-
-    public void SetExit(string direction, Room room)
+    public override Room FollowEdge(string direction)
     {
-        //tildeler et specifikt rum
-        Exits[direction]=room;
-    }
-
-    public Room GetExit(string direction)
-    {
-        Exits.TryGetValue(direction, out Room room);
-        return room;
+        return (Room)(base.FollowEdge(direction));
     }
 }
-=======
-}
->>>>>>> refs/remotes/origin/main
+
