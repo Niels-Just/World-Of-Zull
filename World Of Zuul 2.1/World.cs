@@ -67,6 +67,7 @@ class World {
         home.AddRoomItem(battery);
         */
         
+        // Create NPC's, add them to rooms and give them items
         NPC john = new NPC("John", "sød mand");
         Item bil = new Item("Bil", "john");
         Baghave.AddNPC(john);
