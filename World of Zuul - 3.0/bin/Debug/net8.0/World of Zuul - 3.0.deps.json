@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "World of Zuul - 3.0/1.0.0": {
+        "runtime": {
+          "World of Zuul - 3.0.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "World of Zuul - 3.0/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
