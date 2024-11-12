@@ -43,3 +43,11 @@ C:/Users/kap/WOZ/World-Of-Zull/World Of Zuul 2.1/bin/Debug/net8.0/World Of Zuul 
 C:/Users/kap/WOZ/World-Of-Zull/World Of Zuul 2.1/bin/Debug/net8.0/World Of Zuul 2.1.pdb
 C:/Users/kap/WOZ/World-Of-Zull/World Of Zuul 2.1/obj/Debug/net8.0/World Of Zuul 2.1.genruntimeconfig.cache
 C:/Users/kap/WOZ/World-Of-Zull/World Of Zuul 2.1/obj/Debug/net8.0/ref/World Of Zuul 2.1.dll
+C:\Users\kap\WOZ\World-Of-Zull\World Of Zuul 2.1\obj\Debug\net8.0\World Of Zuul 2.1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kap\WOZ\World-Of-Zull\World Of Zuul 2.1\obj\Debug\net8.0\World Of Zuul 2.1.AssemblyInfoInputs.cache
+C:\Users\kap\WOZ\World-Of-Zull\World Of Zuul 2.1\obj\Debug\net8.0\World Of Zuul 2.1.AssemblyInfo.cs
+C:\Users\kap\WOZ\World-Of-Zull\World Of Zuul 2.1\obj\Debug\net8.0\World Of Zuul 2.1.csproj.CoreCompileInputs.cache
+C:\Users\kap\WOZ\World-Of-Zull\World Of Zuul 2.1\obj\Debug\net8.0\World Of Zuul 2.1.sourcelink.json
+C:\Users\kap\WOZ\World-Of-Zull\World Of Zuul 2.1\obj\Debug\net8.0\World Of Zuul 2.1.dll
+C:\Users\kap\WOZ\World-Of-Zull\World Of Zuul 2.1\obj\Debug\net8.0\refint\World Of Zuul 2.1.dll
+C:\Users\kap\WOZ\World-Of-Zull\World Of Zuul 2.1\obj\Debug\net8.0\World Of Zuul 2.1.pdb

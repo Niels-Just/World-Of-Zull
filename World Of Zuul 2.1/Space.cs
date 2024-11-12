@@ -24,10 +24,6 @@ class Space : Node {
     }
   }
   
-  //farewell message when the player leaves
-  public void Goodbye () {
-  }
-  
   //overrides the 'FollowEdge' method from the 'node' class
   /*calls the base class's 'FollowEdge' method, which returns a 'Node' object.
    The method then casts this object to a 'Space' type before running it.
