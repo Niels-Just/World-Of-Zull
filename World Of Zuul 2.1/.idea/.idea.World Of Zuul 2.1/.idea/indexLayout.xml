@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="UserContentModel">
+<<<<<<< HEAD
     <attachedFolders>
       <Path>../../World-Of-Zull</Path>
     </attachedFolders>
+=======
+    <attachedFolders />
+>>>>>>> 2e6f970b42fcb4d7e2b5e65c30fa2759b1ff44f2
     <explicitIncludes />
     <explicitExcludes />
   </component>

@@ -67,4 +67,5 @@ public class NPC
         Console.WriteLine("Talking...");
         NpcPrintInventory();
     }
+    
 }

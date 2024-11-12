@@ -1,0 +1,15 @@
+/Users/niels-just/World-Of-Zull/World of Zuul - 3.0/bin/Debug/net8.0/World of Zuul - 3.0
+/Users/niels-just/World-Of-Zull/World of Zuul - 3.0/bin/Debug/net8.0/World of Zuul - 3.0.deps.json
+/Users/niels-just/World-Of-Zull/World of Zuul - 3.0/bin/Debug/net8.0/World of Zuul - 3.0.runtimeconfig.json
+/Users/niels-just/World-Of-Zull/World of Zuul - 3.0/bin/Debug/net8.0/World of Zuul - 3.0.dll
+/Users/niels-just/World-Of-Zull/World of Zuul - 3.0/bin/Debug/net8.0/World of Zuul - 3.0.pdb
+/Users/niels-just/World-Of-Zull/World of Zuul - 3.0/obj/Debug/net8.0/World of Zuul - 3.0.GeneratedMSBuildEditorConfig.editorconfig
+/Users/niels-just/World-Of-Zull/World of Zuul - 3.0/obj/Debug/net8.0/World of Zuul - 3.0.AssemblyInfoInputs.cache
+/Users/niels-just/World-Of-Zull/World of Zuul - 3.0/obj/Debug/net8.0/World of Zuul - 3.0.AssemblyInfo.cs
+/Users/niels-just/World-Of-Zull/World of Zuul - 3.0/obj/Debug/net8.0/World of Zuul - 3.0.csproj.CoreCompileInputs.cache
+/Users/niels-just/World-Of-Zull/World of Zuul - 3.0/obj/Debug/net8.0/World of Zuul - 3.0.sourcelink.json
+/Users/niels-just/World-Of-Zull/World of Zuul - 3.0/obj/Debug/net8.0/World of Zuul - 3.0.dll
+/Users/niels-just/World-Of-Zull/World of Zuul - 3.0/obj/Debug/net8.0/refint/World of Zuul - 3.0.dll
+/Users/niels-just/World-Of-Zull/World of Zuul - 3.0/obj/Debug/net8.0/World of Zuul - 3.0.pdb
+/Users/niels-just/World-Of-Zull/World of Zuul - 3.0/obj/Debug/net8.0/World of Zuul - 3.0.genruntimeconfig.cache
+/Users/niels-just/World-Of-Zull/World of Zuul - 3.0/obj/Debug/net8.0/ref/World of Zuul - 3.0.dll

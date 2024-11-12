@@ -8,11 +8,16 @@
     "net8.0": []
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\kap\\.nuget\\packages\\": {}
+=======
+    "/Users/mads/.nuget/packages/": {}
+>>>>>>> 2e6f970b42fcb4d7e2b5e65c30fa2759b1ff44f2
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\kap\\WOZ\\World-Of-Zull\\World Of Zuul 2.1\\World Of Zuul 2.1.csproj",
       "projectName": "World Of Zuul 2.1",
       "projectPath": "C:\\Users\\kap\\WOZ\\World-Of-Zull\\World Of Zuul 2.1\\World Of Zuul 2.1.csproj",
@@ -21,6 +26,16 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\kap\\AppData\\Roaming\\NuGet\\NuGet.Config"
+=======
+      "projectUniqueName": "/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zuul 2.1/World Of Zuul 2.1.csproj",
+      "projectName": "World Of Zuul 2.1",
+      "projectPath": "/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zuul 2.1/World Of Zuul 2.1.csproj",
+      "packagesPath": "/Users/mads/.nuget/packages/",
+      "outputPath": "/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zuul 2.1/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/mads/.nuget/NuGet/NuGet.Config"
+>>>>>>> 2e6f970b42fcb4d7e2b5e65c30fa2759b1ff44f2
       ],
       "originalTargetFrameworks": [
         "net8.0"

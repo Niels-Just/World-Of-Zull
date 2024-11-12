@@ -14,7 +14,7 @@ class CommandPickUp : BaseCommand, ICommand
         // Important for stability. If the player enters nothing after the "PickUp" command the program does not crash
         if (parameters.Length == 0)
         {
-            Console.WriteLine("Choose an item to pick up.");
+            Console.WriteLine("Vælg en genstand at samle op");
             return;
         }
         
@@ -28,20 +28,20 @@ class CommandPickUp : BaseCommand, ICommand
             // If the item is present (Item != null), add item to player inventory.
             if (roomItem != null)
             {
-                Console.WriteLine($"You picked up {roomItem.getItemName()}.");
+                Console.WriteLine($"Du har opsamlet: {roomItem.getItemName()}");
                 player.AddItem(roomItem);
             }
             // Write the following to terminal if item is not present.
             else
             {
-                Console.WriteLine($"There is no {itemName} here.");
+                Console.WriteLine($"Der er ingen {itemName} her");
             }
         }
     }
 
     public string GetDescription()
     {
-        return "Pick up an item";
+        return "Samle en genstand op";
     }
     
     

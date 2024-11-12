@@ -6,7 +6,7 @@ namespace World_Of_Zuul;
 class CommandGo : BaseCommand, ICommand {
     public CommandGo () {
         //informs the player what the command does.
-        description = "Follow an exit";
+        description = "Følg en udgang";
     }
     //implements the 'ICommand' interface, so 'Execute' method can be used. 
   
@@ -16,11 +16,11 @@ class CommandGo : BaseCommand, ICommand {
     public void Execute (Context context, string command, string[] parameters) {
         //'GuardEq' checks if the 'parameter' is not equal to 1, if the command is not valid print message.
         if (GuardEq(parameters, 1)) {
-            Console.WriteLine("I don't seem to know where that is 🤔");
+            Console.WriteLine("Det ved jeg ikke hvor er 🤔");
             return;
         }
         // if the 'parameters' is valid move on to next location.
-        // 'context.Transtion(parameters[0])' methos is ressonspible for changing  the players current location.
+        // 'context.Transtion(parameters[0])' methods is ressonspible for changing  the players current location.
         //[0] index 1 in an array. 
         string direction = parameters[0].ToLower();
         context.Transition(direction);

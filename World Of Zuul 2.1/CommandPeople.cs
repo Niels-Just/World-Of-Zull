@@ -4,7 +4,7 @@ class CommandPeople : BaseCommand, ICommand
 {
     public CommandPeople()
     {
-        description = "Look for people in a room";
+        description = "Kig efter personer i området";
     }
     
     public void Execute(Context context, string command, string[] parameters)

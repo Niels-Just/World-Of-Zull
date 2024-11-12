@@ -16,9 +16,9 @@ class Space : Node {
   Displays the avaible exits by iterating over the 'exits' collection and printing each exit.
   */
   public void Welcome () {
-    Console.WriteLine("You are now at "+name);
+    Console.WriteLine("Du er nu ved "+name);
     HashSet<string> exits = edges.Keys.ToHashSet();
-    Console.WriteLine("Current exits are:");
+    Console.WriteLine("Dine mulige udgange er:");
     foreach (String exit in exits) {
       Console.WriteLine(" - "+exit);
     }
@@ -64,11 +64,11 @@ class Space : Node {
   {
     if (roomItem.Count == 0)
     {
-      Console.WriteLine("There are no items here.");
+      Console.WriteLine("Der er ingen genstande her.");
     }
     else
     {
-      Console.WriteLine("Items in this room:");
+      Console.WriteLine("Der er følgende genstande her:");
       foreach (var item in roomItem)
       {
         Console.WriteLine(item.ToString());
