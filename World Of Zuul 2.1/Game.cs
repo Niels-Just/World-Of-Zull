@@ -29,7 +29,7 @@ class Game {
   }
   
   // Animerer en velkomstbesked
-  private static void AnimatedIntro(string message, int delay, int displayTime)
+  private static void AnimatedText(string message, int delay, int displayTime)
   {
     foreach (char c in message)
     {
@@ -40,28 +40,18 @@ class Game {
     Thread.Sleep(displayTime);
     Console.Clear();
   }
-
-  // Metode til langsom visning af NPC-dialog
-  private static void AnimatedDialogue(string message, int delay)
-  {
-    foreach (char c in message)
-    {
-      Console.Write(c);
-      Thread.Sleep(delay); // Forsinkelse for hvert tegn
-    }
-    Console.WriteLine();
-  }
+  
 
   // Hovedfunktion for spillet
   static void Main (string[] args) {
-    AnimatedIntro("Velkommen til World Of Zuul! \n", 100, 2000);
+    AnimatedText("Velkommen til World Of Zuul! \n", 100, 2000);
 
     // Fnorkel NPC velkomst med langsom dialog
-    AnimatedDialogue("En mærkelig alien ved navn Fnorkel står foran dig, ser bekymret og lidt desperat ud.", 50);
-    AnimatedDialogue("Fnorkel: \"Hilsner, rejsende! Jeg er Fnorkel, en udforsker fra en fjern galakse.\"", 50);
-    AnimatedDialogue("Fnorkel: \"Mit rumskib styrtede ned her, og jeg har brug for solpaneler for at reparere det og vende hjem.\"", 50);
-    AnimatedDialogue("Fnorkel: \"Kan du hjælpe mig med at samle de dele, der skal bruges til at bygge et kraftigt solpanelsystem?\"", 50);
-    AnimatedDialogue("Fnorkel: \"Sammen udforsker vi dette land, samler delene og udnytter solens kraft!\"", 50);
+    AnimatedText("En mærkelig alien ved navn Fnorkel står foran dig, ser bekymret og lidt desperat ud.\n" +
+                 "Fnorkel: \"Hilsner, rejsende! Jeg er Fnorkel, en udforsker fra en fjern galakse.\" \n" +
+                 "Fnorkel: \"Mit rumskib styrtede ned her, og jeg har brug for solpaneler for at reparere det og vende hjem.\" \n" +
+                 "Fnorkel: \"Kan du hjælpe mig med at samle de dele, der skal bruges til at bygge et kraftigt solpanelsystem?\" \n" +
+                 "Fnorkel: \"Sammen udforsker vi dette land, samler delene og udnytter solens kraft!\" \n", 80,2000);
     
     // Opsætning af spiller og initialisering af kommandoer
     Player player = new Player();
