@@ -26,26 +26,13 @@ class Game {
     registry.Register("tal", new CommandTalk());
   }
   
-  // Animerer en velkomstbesked
-  private static void AnimatedText(string message, int delay, int displayTime)
-  {
-    foreach (char c in message)
-    {
-      Console.Write(c);
-      Thread.Sleep(delay); // Forsinkelse for animationseffekt
-    }
-    Console.WriteLine();
-    Thread.Sleep(displayTime);
-    Console.Clear();
-  }
-  
 
   // Hovedfunktion for spillet
   static void Main (string[] args) {
-    AnimatedText("Velkommen til World Of Zuul! \n", 10, 200);
+    TextAnimation.AnimatedText("Velkommen til World Of Zuul! \n", 10, 200);
 
     // Fnorkel NPC velkomst med langsom dialog
-    AnimatedText("En mærkelig alien ved navn Fnorkel står foran dig, ser bekymret og lidt desperat ud.\n" +
+    TextAnimation.AnimatedText("En mærkelig alien ved navn Fnorkel står foran dig, ser bekymret og lidt desperat ud.\n" +
                  "Fnorkel: \"Hilsner, rejsende! Jeg er Fnorkel, en udforsker fra en fjern galakse.\" \n" +
                  "Fnorkel: \"Mit rumskib styrtede ned her, og jeg har brug for solpaneler for at reparere det og vende hjem.\" \n" +
                  "Fnorkel: \"Kan du hjælpe mig med at samle de dele, der skal bruges til at bygge et kraftigt solpanelsystem?\" \n" +

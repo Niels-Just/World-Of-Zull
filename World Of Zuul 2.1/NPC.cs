@@ -64,8 +64,16 @@ public class NPC
 
     public void Talk()
     {
-        Console.WriteLine("Talking...");
-        NpcPrintInventory();
+        if (Dialogue.Count > 0)
+        {
+            foreach (var line in Dialogue)
+            {
+                TextAnimation.AnimatedText(line, 50, 1000);
+            }
+        }
+        else 
+        {
+            Console.WriteLine($"{NpcName} har ikke mere at sige.");
+        }  
     }
-    
 }

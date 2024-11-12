@@ -56,22 +56,17 @@ class World {
         this.Baghave = Baghave;
         
         // Create and add items to room
-        /* Item solar_cells = new Item("SolarCells", "Converts energy from light directly into electricity");
-        Item battery = new Item("Battery", "Stores surplus electricity fom the solar panel for later use");
-        Item frame = new Item("Frame", "The foundation for making a solar panel");
-        Item glass_plane = new Item("Glass", "Protects the solar cells while still letting light through");
-        island.AddRoomItem(solar_cells);
-        warehouse.AddRoomItem(battery);
-        park.AddRoomItem(frame);
-        cave.AddRoomItem(glass_plane);
-        home.AddRoomItem(battery);
-        */
+        // Item frame = new Item("Frame", "The foundation for making a solar panel");
+        // park.AddRoomItem(frame);
+        
         
         // Create NPC's, add them to rooms and give them items
         NPC john = new NPC("John", "sød mand");
         Item bil = new Item("Bil", "john");
         Baghave.AddNPC(john);
         john.NpcAddItem(bil);
+        john.Dialogue.Add("dlsldjfsfjdl");
+        john.Dialogue.Add("hallo mig john");
     }
   
     //allows access for the rest of the program
