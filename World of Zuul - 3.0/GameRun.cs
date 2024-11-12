@@ -1,22 +1,10 @@
 namespace World_of_Zuul___3._0;
 
-public class Game
-{
-    Room Baghave;
-
-    //creating serval 'Space' objects and defining the connections between them.
-    public Game()
-    {
-    }
-}
-
-
-
-class program
+class GameRun
 {
     static void Main(string[] args)
     {
-        Game game = new Game();
+        GameRun game = new GameRun();
 
         
         Room Baghave = new Room("Baghave");
@@ -28,8 +16,7 @@ class program
         Room Elektriker_Erik = new Room("Elektriker Erik");
         Room Glas_Mager_glenn = new Room("Glas Mager Glenn");
         Room Kunst_Haven = new Room("Kunst Haven");
-
-        //defines how these spaces are conected
+        
         Baghave.AddEdge("Nord", Vej_Midt);
         Baghave.AddEdge("Øst", Sur_Nabo);
         Baghave.AddEdge("Vest", Glad_Nabo);
@@ -63,6 +50,30 @@ class program
         Kunst_Haven.AddEdge("Vest", Elektriker_Erik);
         Kunst_Haven.AddEdge("Syd", Vej_Øst);
         
-Console.WriteLine("Welcome to the World of Zuul!");
+        Console.WriteLine("Welcome to the World of Zuul!");
+        Room currentRoom = Baghave;
+        currentRoom.EnterRoomMsg();
+
+        while (true)
+        {
+            Console.WriteLine("Vælg at gå mellem Nord, Syd, Øst, Vest eller 'exit' for at forlade spillet");
+            string command = Console.ReadLine().ToLower();
+
+            if (command == "exit")
+            {
+                break;
+            }
+
+            Room nextRoom = currentRoom.FollowEdge(command);
+            if (nextRoom != null)
+            {
+                currentRoom = nextRoom;
+                currentRoom.EnterRoomMsg();    
+            }
+            else
+            {
+                Console.WriteLine("Du kan ikke gå den vej");
+            }
+        }
     }
 }
