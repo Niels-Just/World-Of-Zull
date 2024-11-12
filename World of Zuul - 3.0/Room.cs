@@ -7,7 +7,7 @@ public class Room
     public string Description
     {
         get { return description; }
-        init { description = value; }
+        set { description = value; }
     }
 
     private Dictionary<string, Room> exits;
@@ -26,6 +26,7 @@ public class Room
 
     public void SetExit(string direction, Room room)
     {
+        //tildeler et specifikt rum
         Exits[direction]=room;
     }
 

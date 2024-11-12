@@ -20,7 +20,7 @@ class Program
 
         while (true)
         {
-            Console.WriteLine("Enter a direction (north,south,east,west) or 'exit' to quit:");
+            Console.WriteLine("Enter a direction: \nnorth \nsouth \neast \nwest \n'exit' to quit:");
             string input = Console.ReadLine();
             if (input.ToLower() == "exit")
             {
@@ -29,4 +29,4 @@ class Program
             game.Move(input.ToLower());
         }
     }
-}
+} 

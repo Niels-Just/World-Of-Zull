@@ -6,6 +6,7 @@ public class Game
 
     public Game(Room startingRoom)
     {
+        //starter her
         currentRoom = startingRoom;
     }
 

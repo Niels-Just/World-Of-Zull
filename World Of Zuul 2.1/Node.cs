@@ -20,7 +20,8 @@ class Node {
   }
   
   //adds a connection to another node
-  public void AddEdge (string name, Node node) {
+  public void AddEdge (string name, Node node) 
+  {
     edges.Add(name.ToLower(), node);
   }
   
