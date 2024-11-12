@@ -9,48 +9,48 @@ class World {
     //creating serval 'Space' objects and defining the connections between them.
     public World () {
         Space Baghave    = new Space("Baghave");
-        Space Solvej32 = new Space("Solvej32");
-        Space Solvej28   = new Space("Solvej28");
-        Space VejMidt     = new Space("Vej midt");
-        Space VejØst  = new Space("VejØst");
-        Space VejVest       = new Space("VejVest");
-        Space Solvej31     = new Space("Solvej31");
-        Space Solvej29      = new Space("Solvej29");
-        Space Solvej33     = new Space("Solvej33");
+        Space Glad_Nabo = new Space("Glad Nabo");
+        Space Sur_Nabo   = new Space("Sur Nabo");
+        Space Vej_Midt     = new Space("Vej midt");
+        Space Vej_Øst  = new Space("Vej Øst");
+        Space Vej_Vest       = new Space("Vej Vest");
+        Space Elektriker_Erik     = new Space("Elektriker Erik");
+        Space Glas_Mager_glenn      = new Space("Glas Mager Glenn");
+        Space Kunst_Haven     = new Space("Kunst Haven");
     
         //defines how these spaces are conected
-        Baghave.AddEdge("Nord",VejMidt);
-        Baghave.AddEdge("Øst", Solvej32);
-        Baghave.AddEdge("Vest",Solvej28);
+        Baghave.AddEdge("Nord",Vej_Midt);
+        Baghave.AddEdge("Øst", Sur_Nabo);
+        Baghave.AddEdge("Vest", Glad_Nabo);
         
-        VejMidt.AddEdge("Syd",Baghave);
-        VejMidt.AddEdge("Øst",VejØst);
-        VejMidt.AddEdge("Vest",VejVest);
-        VejMidt.AddEdge("Nord",Solvej31);
+        Vej_Midt.AddEdge("Syd",Baghave);
+        Vej_Midt.AddEdge("Øst",Vej_Øst);
+        Vej_Midt.AddEdge("Vest",Vej_Vest);
+        Vej_Midt.AddEdge("Nord",Elektriker_Erik);
        
-        Solvej32.AddEdge("Vest",Baghave);
-        Solvej32.AddEdge("Nord",VejØst);
+        Sur_Nabo.AddEdge("Vest",Baghave);
+        Sur_Nabo.AddEdge("Nord",Vej_Øst);
         
-        Solvej28.AddEdge("Øst",Baghave);
-        Solvej28.AddEdge("Nord",VejMidt);
+        Glad_Nabo.AddEdge("Øst",Baghave);
+        Glad_Nabo.AddEdge("Nord",Vej_Vest);
         
-        VejØst.AddEdge("Nord",Solvej33);
-        VejØst.AddEdge("Syd",Solvej32);
-        VejØst.AddEdge("Vest",VejMidt);
+        Vej_Øst.AddEdge("Nord",Kunst_Haven);
+        Vej_Øst.AddEdge("Syd",Sur_Nabo);
+        Vej_Øst.AddEdge("Vest",Vej_Midt);
         
-        VejVest.AddEdge("Nord",Solvej29);
-        VejVest.AddEdge("Syd",Solvej28);
-        VejVest.AddEdge("Øst",VejMidt);
+        Vej_Vest.AddEdge("Nord",Glas_Mager_glenn);
+        Vej_Vest.AddEdge("Syd",Glad_Nabo);
+        Vej_Vest.AddEdge("Øst",Vej_Midt);
         
-        Solvej29.AddEdge("Syd",VejVest);
-        Solvej29.AddEdge("Øst",Solvej31);
+        Glas_Mager_glenn.AddEdge("Syd",Vej_Vest);
+        Glas_Mager_glenn.AddEdge("Øst",Elektriker_Erik);
         
-        Solvej31.AddEdge("Vest",Solvej29);
-        Solvej31.AddEdge("Øst",Solvej33);
-        Solvej31.AddEdge("Sud",VejMidt);
+        Elektriker_Erik.AddEdge("Vest",Glas_Mager_glenn);
+        Elektriker_Erik.AddEdge("Øst",Kunst_Haven);
+        Elektriker_Erik.AddEdge("Syd", Vej_Midt);
         
-        Solvej33.AddEdge("Vest",Solvej31);
-        Solvej33.AddEdge("Syd",VejØst);
+        Kunst_Haven.AddEdge("Vest",Elektriker_Erik);
+        Kunst_Haven.AddEdge("Syd",Vej_Øst);
     
         //starts at this location
         this.Baghave = Baghave;
