@@ -14,7 +14,7 @@ class CommandAssemble : BaseCommand, ICommand
         if (player.HasItem("Frame", "Glass"))
         {
             //Console.WriteLine("You've sucessfully assembled a solar panel!");
-            Item solar_panel = new Item("Solar Panel", "Produces sustainable energy!");
+            Item solar_panel = new Item("Sopanel", "Producere vedvarende energi!");
             player.AddItem(solar_panel);
             Console.WriteLine("Gennemført spillet!");
             context.MakeDone();
@@ -27,6 +27,6 @@ class CommandAssemble : BaseCommand, ICommand
     
     public string GetDescription()
     {
-        return "Assembles af solar panel when you have all the parts";
+        return "Sammensæt delene til et solpanel";
     }
 }

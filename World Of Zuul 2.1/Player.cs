@@ -37,7 +37,6 @@ public class Player
     public void AddItem(Item item)
     {
         inventory.Add(item);
-        Console.WriteLine($"{item} Added to Inventory");
     }
 
     //remove item from inventory
@@ -48,13 +47,10 @@ public class Player
             if (item.ItemName == itemName)
             {
                 inventory.Remove(item);
-                Console.WriteLine($"{item} removed from inventory.");
+                Console.WriteLine($"{itemName} fjernet fra dit inventar");
                 return; // Return Exits the method when the item is removed
             }
         }
-
-        // Message if item is not found
-        Console.WriteLine("You don't have this item in your inventory.");
     }
 
     //shows what is in inventory
@@ -62,11 +58,11 @@ public class Player
     {
         if (inventory.Count == 0)
         {
-            Console.WriteLine("You don't have any items in your inventory");
+            Console.WriteLine("Du har ingen genstande i dit inventar");
         }
         else
         {
-            Console.WriteLine("Your inventory:");
+            Console.WriteLine("Dit inventar:");
             foreach (var item in inventory)
             {
                 Console.WriteLine(item.ToString());

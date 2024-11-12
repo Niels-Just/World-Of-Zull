@@ -16,7 +16,7 @@ class CommandGo : BaseCommand, ICommand {
     public void Execute (Context context, string command, string[] parameters) {
         //'GuardEq' checks if the 'parameter' is not equal to 1, if the command is not valid print message.
         if (GuardEq(parameters, 1)) {
-            Console.WriteLine("I don't seem to know where that is 🤔");
+            Console.WriteLine("Det ved jeg ikke hvor er 🤔");
             return;
         }
         // if the 'parameters' is valid move on to next location.

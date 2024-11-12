@@ -22,6 +22,6 @@ class CommandInventory : BaseCommand, ICommand
 //denne metode skrive hvad commanden gør hvilkt bruges til help commanden.
     public string GetDescription()
     {
-        return "Displays inventory";
+        return "Viser dit inventar";
     }
 }
