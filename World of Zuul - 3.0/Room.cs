@@ -1,17 +1,28 @@
 namespace World_of_Zuul___3._0;
 
-class Room : Node
+ public class Room : Node
 {
-    public Room(string name) : base(name)
+    //room beskrivelse, dette er relvant for look komandoen
+    private string description;
+    public Room(string name, string description) : base(name)
     {
+        this.description = description;
+    }
+    
+    //Denne metode bruges i look komandoen
+    public string GetDescription()
+    {
+        return description;
     }
 
     public void EnterRoomMsg()
     {
+        Console.Clear();
+        TekstEffektKlassen.TekstEffect("Du befinder dig ved: " + name ,20,1800);
+        
         //Her får hashsettet udskrevet alle keys (udgange i form af kompas direktioner) og printer dem ud til spilleren.
-        Console.WriteLine("Du er nu ved " + name);
         HashSet<string> exits = edges.Keys.ToHashSet();
-        Console.WriteLine("Dine mulige udgange er:");
+        Console.WriteLine("Dine mulige retninger du kan bevæger dig er:");
         foreach (String exit in exits)
         {
             Console.WriteLine(" - " + exit);
@@ -24,4 +35,5 @@ class Room : Node
         return (Room)(base.FollowEdge(direction));
     }
 }
+
 

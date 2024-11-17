@@ -1,5 +1,5 @@
 namespace World_of_Zuul___3._0;
-class Node
+public class Node
 {
     protected string name;
    

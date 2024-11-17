@@ -1,3 +1,5 @@
+using System.Net.Http.Headers;
+
 namespace World_of_Zuul___3._0;
 
 class GameRun
@@ -7,29 +9,29 @@ class GameRun
         GameRun game = new GameRun();
 
         
-        Room Baghave = new Room("Baghave");
-        Room Glad_Nabo = new Room("Glad Nabo");
-        Room Sur_Nabo = new Room("Sur Nabo");
-        Room Vej_Midt = new Room("Vej midt");
-        Room Vej_Øst = new Room("Vej Øst");
-        Room Vej_Vest = new Room("Vej Vest");
-        Room Elektriker_Erik = new Room("Elektriker Erik");
-        Room Glas_Mager_glenn = new Room("Glas Mager Glenn");
-        Room Kunst_Haven = new Room("Kunst Haven");
+        Room Baghaven = new Room("Baghaven","Du kikker ned mod Baghaven.");
+        Room Glad_Nabo = new Room("Glad Nabo","Du kikker ned mod den glade nabo.");
+        Room Sur_Nabo = new Room("Sur Nabo","Du kikker ned mod den sure nabo.");
+        Room Vej_Midt = new Room("Vej midt","Du kikker ned mod vej midt.");
+        Room Vej_Øst = new Room("Vej Øst","Du kikker ned mod vej øst.");
+        Room Vej_Vest = new Room("Vej Vest","Du kikker ned mod vej vest.");
+        Room Elektriker_Erik = new Room("Elektriker Erik","Du kikker ned mod Elektriker Erik");
+        Room Glas_Mager_glenn = new Room("Glas Mager Glenn","Du kikker ned mod Glasmager Glenn.");
+        Room Kunst_Haven = new Room("Kunst Haven","Du kikker ned mod Kunsthaven");
         
-        Baghave.AddEdge("Nord", Vej_Midt);
-        Baghave.AddEdge("Øst", Sur_Nabo);
-        Baghave.AddEdge("Vest", Glad_Nabo);
+        Baghaven.AddEdge("Nord", Vej_Midt);
+        Baghaven.AddEdge("Øst", Sur_Nabo);
+        Baghaven.AddEdge("Vest", Glad_Nabo);
 
-        Vej_Midt.AddEdge("Syd", Baghave);
+        Vej_Midt.AddEdge("Syd", Baghaven);
         Vej_Midt.AddEdge("Øst", Vej_Øst);
         Vej_Midt.AddEdge("Vest", Vej_Vest);
         Vej_Midt.AddEdge("Nord", Elektriker_Erik);
 
-        Sur_Nabo.AddEdge("Vest", Baghave);
+        Sur_Nabo.AddEdge("Vest", Baghaven);
         Sur_Nabo.AddEdge("Nord", Vej_Øst);
 
-        Glad_Nabo.AddEdge("Øst", Baghave);
+        Glad_Nabo.AddEdge("Øst", Baghaven);
         Glad_Nabo.AddEdge("Nord", Vej_Vest);
 
         Vej_Øst.AddEdge("Nord", Kunst_Haven);
@@ -50,29 +52,53 @@ class GameRun
         Kunst_Haven.AddEdge("Vest", Elektriker_Erik);
         Kunst_Haven.AddEdge("Syd", Vej_Øst);
         
-        Console.WriteLine("Welcome to the World of Zuul!");
-        Room currentRoom = Baghave;
+        //metode kaldt, således at vi kun skal kalde metoden på teksten for effekt.
+         TekstEffektKlassen.TekstEffect("Welcome to the World of Zuul! \n" +
+                                       "I dette spil kan du bevæge dig mellem forskellige rum! \n" +
+                                       "Du kan bevæge dig mellem rummene ved hjælp af 'move' kommandoen \n" +
+                                       "for at bruge denne kommando, skal du skrive 'move' foran 'retningen'. \n" +
+                                       "Hver gang du træder ind i et nyt rum, og når spillet starter vil du \n" +
+                                       "bliver præsenteret for 1 eller flere forskellige mulige retninger! \n" +
+                                       "Hvis du ønsker at se ind i et rummene før du bevæger dig der ind, \n" +
+                                       "skal du simpelt skrive 'look' efterfulgt af 'retning'. \n" +
+                                       "Dette er det vigtigste for nu, ønsker du mere hjælp, skriv 'Hjælp'.\n" +
+                                       "Nu må du nyde spillet!",30,3000);
+        
+        
+        Room currentRoom = Baghaven;
+        Commands commands = new Commands(currentRoom);
         currentRoom.EnterRoomMsg();
 
         while (true)
         {
-            Console.WriteLine("Vælg at gå mellem Nord, Syd, Øst, Vest eller 'exit' for at forlade spillet");
+            Console.WriteLine("Vælg nu hvad du vil gøre, er du i tvivl skriv 'Hjælp'");
             string command = Console.ReadLine().ToLower();
+            /*parts arrayet splittes således at der ved hjælp af if else statmets kan checkes for
+             specifikke ord på en specifik plads i arrayet ved hjælp at se på et specifikt index*/
+            string[] parts = command.Split(' ');
 
-            if (command == "exit")
+            if (parts[0] == "exit")
             {
                 break;
             }
-
-            Room nextRoom = currentRoom.FollowEdge(command);
-            if (nextRoom != null)
+            //look kommando
+            else if (parts[0] == "look" && parts.Length > 1)
             {
-                currentRoom = nextRoom;
-                currentRoom.EnterRoomMsg();    
+                commands.Look(parts[1]);
+            }
+            //move kommando
+            else if (parts[0] == "move" && parts.Length > 1)
+            {
+                commands.Move(parts[1]);
+            }
+            //hjælp kommandoen
+            else if (parts[0] == "hjælp")
+            {
+                commands.Hjælp();
             }
             else
             {
-                Console.WriteLine("Du kan ikke gå den vej");
+                Console.WriteLine("Dette kan ikke lade sig gøre!");
             }
         }
     }
