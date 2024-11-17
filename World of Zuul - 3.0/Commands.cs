@@ -52,7 +52,7 @@ public class Commands
         Console.WriteLine("Hjælp: Her er en beskrivelse af de tilgængelige kommandoer: \n" +
                                        "look [retning]' - Brug denne kommando for at se beskrivelsen af et rum i den angivne retning. \n" +
                                        "'move [retning]' - Brug denne kommando for at bevæge dig til et rum i den angivne retning. \n" +
-                                       "'exit' - Brug denne kommando for at afslutte spillet. \n" +
+                                       "'slut' - Brug denne kommando for at afslutte spillet. \n" +
                                        "For at bruge en retning skal du skrive retningen efter kommandoen, f.eks. 'look nord' eller 'move øst'.\n" +
                                        "\nTryk på hvilken som helst knap for at komme tilbage til rummet.");
         //venter på brugeren trykker enter eller andet.

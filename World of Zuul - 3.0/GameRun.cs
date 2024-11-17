@@ -53,7 +53,7 @@ class GameRun
         Kunst_Haven.AddEdge("Syd", Vej_Øst);
         
         //metode kaldt, således at vi kun skal kalde metoden på teksten for effekt.
-         TekstEffektKlassen.TekstEffect("Welcome to the World of Zuul! \n" +
+         /*TekstEffektKlassen.TekstEffect("Welcome to the World of Zuul! \n" +
                                        "I dette spil kan du bevæge dig mellem forskellige rum! \n" +
                                        "Du kan bevæge dig mellem rummene ved hjælp af 'move' kommandoen \n" +
                                        "for at bruge denne kommando, skal du skrive 'move' foran 'retningen'. \n" +
@@ -62,7 +62,7 @@ class GameRun
                                        "Hvis du ønsker at se ind i et rummene før du bevæger dig der ind, \n" +
                                        "skal du simpelt skrive 'look' efterfulgt af 'retning'. \n" +
                                        "Dette er det vigtigste for nu, ønsker du mere hjælp, skriv 'Hjælp'.\n" +
-                                       "Nu må du nyde spillet!",30,3000);
+                                       "Nu må du nyde spillet!",30,3000);*/
         
         
         Room currentRoom = Baghaven;
@@ -77,7 +77,7 @@ class GameRun
              specifikke ord på en specifik plads i arrayet ved hjælp at se på et specifikt index*/
             string[] parts = command.Split(' ');
 
-            if (parts[0] == "exit")
+            if (parts[0] == "slut")
             {
                 break;
             }
