@@ -110,7 +110,7 @@ class GameRun
             }
             else
             {
-                TekstEffektKlassen.TekstEffect("Dette kan ikke lade sig gøre!",20,200);
+                TekstEffektKlassen.TekstEffect("Dette kan ikke lade sig gøre!",20,2000);
                 currentRoom.EnterRoomMsg();
             }
         }

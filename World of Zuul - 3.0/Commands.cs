@@ -22,7 +22,7 @@ public class Commands
         { 
             Console.Clear();
             //metoden bliver kaldt på description når man kalder look kommandoen
-            TekstEffektKlassen.TekstEffect(nextRoom.GetDescription(),30,350);
+            TekstEffektKlassen.TekstEffect(nextRoom.GetDescription(),30,1200);
             //room enter msg bliver vist igen efter look kommandoen
             currentRoom.EnterRoomMsg();
         }
@@ -77,7 +77,7 @@ public class Commands
     {
         Console.Clear();
         Console.WriteLine("Hjælp: Her er en beskrivelse af de tilgængelige kommandoer: \n" +
-                                       "look [retning]' - Brug denne kommando for at se beskrivelsen af et rum i den angivne retning. \n" +
+                                       "'look [retning]' - Brug denne kommando for at se beskrivelsen af et rum i den angivne retning. \n" +
                                        "'move [retning]' - Brug denne kommando for at bevæge dig til et rum i den angivne retning. \n" +
                                        "'slut' - Brug denne kommando for at aflutte spillet. \n" +
                                        "'snak [NPC navn]' - Bruge denne kommando for snakke med en NPC\n"+

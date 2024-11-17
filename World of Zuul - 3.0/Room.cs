@@ -27,7 +27,7 @@ namespace World_of_Zuul___3._0;
     public void EnterRoomMsg()
     {
         Console.Clear();
-        TekstEffektKlassen.TekstEffect("Du befinder dig ved: " + name ,20,1800);
+        TekstEffektKlassen.TekstEffect("Du befinder dig ved: " + name ,20,2000);
         
         //Her får hashsettet udskrevet alle keys (udgange i form af kompas direktioner) og printer dem ud til spilleren.
         HashSet<string> exits = edges.Keys.ToHashSet();
