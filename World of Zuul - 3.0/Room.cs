@@ -4,15 +4,24 @@ namespace World_of_Zuul___3._0;
 {
     //room beskrivelse, dette er relvant for look komandoen
     private string description;
+    //Dette er relevant for NPC klassen
+    public List<NPC> npcer;
     public Room(string name, string description) : base(name)
     {
         this.description = description;
+        npcer = new List<NPC>();
     }
     
     //Denne metode bruges i look komandoen
     public string GetDescription()
     {
         return description;
+    }
+    
+    //metode til at tilføje en NPC til et rum
+    public void AddNPC(NPC npc)
+    {
+        npcer.Add(npc);
     }
 
     public void EnterRoomMsg()
@@ -27,7 +36,18 @@ namespace World_of_Zuul___3._0;
         {
             Console.WriteLine(" - " + exit);
         }
+        
+        if (npcer.Count > 0)
+        {
+            Console.WriteLine("\nHer befinder: ");
+            foreach (var npc in npcer)
+            {
+                Console.WriteLine($"- {npc.Name} sig\n");
+            }
+        }
     }
+    
+   
 
     //returnere den overritede metode som en Room type istedet for hvad ellers ville blive til en Node type.
     public override Room FollowEdge(string direction)

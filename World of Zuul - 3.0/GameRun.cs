@@ -7,7 +7,6 @@ class GameRun
     static void Main(string[] args)
     {
         GameRun game = new GameRun();
-
         
         Room Baghaven = new Room("Baghaven","Du kikker ned mod Baghaven.");
         Room Glad_Nabo = new Room("Glad Nabo","Du kikker ned mod den glade nabo.");
@@ -52,18 +51,26 @@ class GameRun
         Kunst_Haven.AddEdge("Vest", Elektriker_Erik);
         Kunst_Haven.AddEdge("Syd", Vej_Øst);
         
-        //metode kaldt, således at vi kun skal kalde metoden på teksten for effekt.
-         /*TekstEffektKlassen.TekstEffect("Welcome to the World of Zuul! \n" +
-                                       "I dette spil kan du bevæge dig mellem forskellige rum! \n" +
-                                       "Du kan bevæge dig mellem rummene ved hjælp af 'move' kommandoen \n" +
-                                       "for at bruge denne kommando, skal du skrive 'move' foran 'retningen'. \n" +
-                                       "Hver gang du træder ind i et nyt rum, og når spillet starter vil du \n" +
-                                       "bliver præsenteret for 1 eller flere forskellige mulige retninger! \n" +
-                                       "Hvis du ønsker at se ind i et rummene før du bevæger dig der ind, \n" +
-                                       "skal du simpelt skrive 'look' efterfulgt af 'retning'. \n" +
-                                       "Dette er det vigtigste for nu, ønsker du mere hjælp, skriv 'Hjælp'.\n" +
-                                       "Nu må du nyde spillet!",30,3000);*/
+        //Opret en NPC 
+        NPC npc1 = new NPC("Glad Nabo","Hej Nabo :)\n");
+        NPC npc2 = new NPC("Sur Nabo","Hej Nabo ):<\n");
         
+        //tilføj NPC til rum
+        Glad_Nabo.AddNPC(npc1);
+        Sur_Nabo.AddNPC(npc2);
+        
+        //metode kaldt, således at vi kun skal kalde metoden på teksten for effekt.
+        TekstEffektKlassen.TekstEffectNPC("Welcome to the World of Zuul",30);
+        /*TekstEffektKlassen.TekstEffectNPC("Welcome to the World of Zuul! \n" +
+                                          "I dette spil kan du bevæge dig mellem forskellige rum! \n" +
+                                          "Du kan bevæge dig mellem rummene ved hjælp af 'move' kommandoen \n" +
+                                          "for at bruge denne kommando, skal du skrive 'move' foran 'retningen'. \n" +
+                                          "Hver gang du træder ind i et nyt rum, og når spillet starter vil du \n" +
+                                          "bliver præsenteret for 1 eller flere forskellige mulige retninger! \n" +
+                                          "Hvis du ønsker at se ind i et rummene før du bevæger dig der ind, \n" +
+                                          "skal du simpelt skrive 'look' efterfulgt af 'retning'. \n" +
+                                          "Dette er det vigtigste for nu, ønsker du mere hjælp, skriv 'Hjælp'.\n" +
+                                          "Nu må du nyde spillet!", 30);*/
         
         Room currentRoom = Baghaven;
         Commands commands = new Commands(currentRoom);
@@ -91,6 +98,11 @@ class GameRun
             {
                 commands.Move(parts[1]);
             }
+            //talk kommandoen
+            else if (parts[0] == "snak" && parts.Length > 1)
+            {
+                commands.Talk(parts[1]);
+            }
             //hjælp kommandoen
             else if (parts[0] == "hjælp")
             {
@@ -98,7 +110,8 @@ class GameRun
             }
             else
             {
-                Console.WriteLine("Dette kan ikke lade sig gøre!");
+                TekstEffektKlassen.TekstEffect("Dette kan ikke lade sig gøre!",20,200);
+                currentRoom.EnterRoomMsg();
             }
         }
     }

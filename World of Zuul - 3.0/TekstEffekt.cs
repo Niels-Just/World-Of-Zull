@@ -13,5 +13,15 @@ public class TekstEffektKlassen
         Console.Clear();
     }
 
-
+    public static void TekstEffectNPC(string besked, int pauseMellemC)
+    {
+        foreach (char c in besked)
+        {
+            Console.Write(c);
+            Thread.Sleep(pauseMellemC);
+        }
+        Console.WriteLine("\n\nKlik på 'enter' for at komme videre.");
+        Console.ReadLine();
+        Console.Clear();
+    }
 }

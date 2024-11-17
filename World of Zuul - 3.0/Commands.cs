@@ -28,7 +28,9 @@ public class Commands
         }
         else
         { 
-            Console.WriteLine("Der er intet rum denne vej!");
+            Console.Clear();
+            TekstEffektKlassen.TekstEffect("Der er intet rum denne vej!",40,2000);
+            currentRoom.EnterRoomMsg();
         }
     }
 
@@ -42,7 +44,32 @@ public class Commands
         }
         else
         {
-            Console.WriteLine("Du kan ikke gå denne vej");
+            Console.Clear();
+            TekstEffektKlassen.TekstEffect("Du kan ikke gå denne vej",40,200);
+            currentRoom.EnterRoomMsg();
+        }
+    }
+
+    public void Talk(string npcName)
+    {
+        //henter listen af NPCer i det rum spilleren befinder sig i
+        var npcsInRoom = currentRoom.npcer;
+
+        if (npcsInRoom.Count == 0)
+        {
+            {
+                Console.Clear();
+                TekstEffektKlassen.TekstEffect("Du forsøger at tale med nogen, men ingen svare.",20,200);
+                currentRoom.EnterRoomMsg();
+                return;
+            }
+        }
+
+        if (npcsInRoom.Count == 1)
+        {
+            var npc = npcsInRoom.First();
+            npc.Talk();
+            currentRoom.EnterRoomMsg();
         }
     }
 
@@ -52,8 +79,8 @@ public class Commands
         Console.WriteLine("Hjælp: Her er en beskrivelse af de tilgængelige kommandoer: \n" +
                                        "look [retning]' - Brug denne kommando for at se beskrivelsen af et rum i den angivne retning. \n" +
                                        "'move [retning]' - Brug denne kommando for at bevæge dig til et rum i den angivne retning. \n" +
-                                       "'slut' - Brug denne kommando for at afslutte spillet. \n" +
-                                       "For at bruge en retning skal du skrive retningen efter kommandoen, f.eks. 'look nord' eller 'move øst'.\n" +
+                                       "'slut' - Brug denne kommando for at aflutte spillet. \n" +
+                                       "'snak [NPC navn]' - Bruge denne kommando for snakke med en NPC\n"+
                                        "\nTryk på hvilken som helst knap for at komme tilbage til rummet.");
         //venter på brugeren trykker enter eller andet.
         Console.ReadLine();
