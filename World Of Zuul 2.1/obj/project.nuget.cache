@@ -1,21 +1,15 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "qIJu4dozZgE=",
+  "dgSpecHash": "l+bGak7/Y9Y=",
   "success": true,
-  "projectFilePath": "/Users/niels-just/World-Of-Zull/World Of Zuul 2.1/World Of Zuul 2.1.csproj",
-=======
-  "dgSpecHash": "xugrp6hGUUI=",
-  "success": true,
-  "projectFilePath": "C:\\Users\\kap\\WOZ\\World-Of-Zull\\World Of Zuul 2.1\\World Of Zuul 2.1.csproj",
->>>>>>> refs/remotes/origin/main
+  "projectFilePath": "/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zuul 2.1/World Of Zuul 2.1.csproj",
   "expectedPackageFiles": [],
   "logs": [
     {
       "code": "Undefined",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\kap\\WOZ\\World-Of-Zull\\World Of Zuul 2.1\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+      "message": "Problem reading the cache file /Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zuul 2.1/obj/project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
     }
   ]
 }

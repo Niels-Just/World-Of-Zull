@@ -28,3 +28,18 @@ C:/Users/kap/WOZ/World-Of-Zull/World of Zuul - 3.0/obj/Debug/net8.0/refint/World
 C:/Users/kap/WOZ/World-Of-Zull/World of Zuul - 3.0/obj/Debug/net8.0/World of Zuul - 3.0.pdb
 C:/Users/kap/WOZ/World-Of-Zull/World of Zuul - 3.0/obj/Debug/net8.0/World of Zuul - 3.0.genruntimeconfig.cache
 C:/Users/kap/WOZ/World-Of-Zull/World of Zuul - 3.0/obj/Debug/net8.0/ref/World of Zuul - 3.0.dll
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World of Zuul - 3.0/bin/Debug/net8.0/World of Zuul - 3.0
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World of Zuul - 3.0/bin/Debug/net8.0/World of Zuul - 3.0.deps.json
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World of Zuul - 3.0/bin/Debug/net8.0/World of Zuul - 3.0.runtimeconfig.json
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World of Zuul - 3.0/bin/Debug/net8.0/World of Zuul - 3.0.dll
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World of Zuul - 3.0/bin/Debug/net8.0/World of Zuul - 3.0.pdb
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World of Zuul - 3.0/obj/Debug/net8.0/World of Zuul - 3.0.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World of Zuul - 3.0/obj/Debug/net8.0/World of Zuul - 3.0.AssemblyInfoInputs.cache
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World of Zuul - 3.0/obj/Debug/net8.0/World of Zuul - 3.0.AssemblyInfo.cs
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World of Zuul - 3.0/obj/Debug/net8.0/World of Zuul - 3.0.csproj.CoreCompileInputs.cache
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World of Zuul - 3.0/obj/Debug/net8.0/World of Zuul - 3.0.sourcelink.json
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World of Zuul - 3.0/obj/Debug/net8.0/World of Zuul - 3.0.dll
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World of Zuul - 3.0/obj/Debug/net8.0/refint/World of Zuul - 3.0.dll
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World of Zuul - 3.0/obj/Debug/net8.0/World of Zuul - 3.0.pdb
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World of Zuul - 3.0/obj/Debug/net8.0/World of Zuul - 3.0.genruntimeconfig.cache
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World of Zuul - 3.0/obj/Debug/net8.0/ref/World of Zuul - 3.0.dll
