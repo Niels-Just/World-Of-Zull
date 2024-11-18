@@ -8,34 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-<<<<<<< HEAD
-    "/Users/niels-just/.nuget/packages/": {}
-=======
-    "C:\\Users\\kap\\.nuget\\packages\\": {}
->>>>>>> refs/remotes/origin/main
+    "/Users/mads/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "/Users/niels-just/World-Of-Zull/World Of Zuul 2.1/World Of Zuul 2.1.csproj",
+      "projectUniqueName": "/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zuul 2.1/World Of Zuul 2.1.csproj",
       "projectName": "World Of Zuul 2.1",
-      "projectPath": "/Users/niels-just/World-Of-Zull/World Of Zuul 2.1/World Of Zuul 2.1.csproj",
-      "packagesPath": "/Users/niels-just/.nuget/packages/",
-      "outputPath": "/Users/niels-just/World-Of-Zull/World Of Zuul 2.1/obj/",
+      "projectPath": "/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zuul 2.1/World Of Zuul 2.1.csproj",
+      "packagesPath": "/Users/mads/.nuget/packages/",
+      "outputPath": "/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zuul 2.1/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/niels-just/.nuget/NuGet/NuGet.Config"
-=======
-      "projectUniqueName": "C:\\Users\\kap\\WOZ\\World-Of-Zull\\World Of Zuul 2.1\\World Of Zuul 2.1.csproj",
-      "projectName": "World Of Zuul 2.1",
-      "projectPath": "C:\\Users\\kap\\WOZ\\World-Of-Zull\\World Of Zuul 2.1\\World Of Zuul 2.1.csproj",
-      "packagesPath": "C:\\Users\\kap\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kap\\WOZ\\World-Of-Zull\\World Of Zuul 2.1\\obj\\",
-      "projectStyle": "PackageReference",
-      "configFilePaths": [
-        "C:\\Users\\kap\\AppData\\Roaming\\NuGet\\NuGet.Config"
->>>>>>> refs/remotes/origin/main
+        "/Users/mads/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -79,7 +64,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.401/PortableRuntimeIdentifierGraph.json"
       }
     }
   },
@@ -88,7 +73,7 @@
       "code": "Undefined",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\kap\\WOZ\\World-Of-Zull\\World Of Zuul 2.1\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+      "message": "Problem reading the cache file /Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zuul 2.1/obj/project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
     }
   ]
 }
