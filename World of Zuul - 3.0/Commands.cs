@@ -92,6 +92,11 @@ namespace World_of_Zuul___3._0
             Console.Clear();
             currentRoom.EnterRoomMsg();
         }
+        
+        public void Inventory(Player player)
+        {
+            player.PrintInventory();
+        }
 
         // Metode til at hente den opdaterede currentRoom
         public Room GetCurrentRoom()

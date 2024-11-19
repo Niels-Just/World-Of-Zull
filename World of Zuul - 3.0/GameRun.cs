@@ -54,7 +54,10 @@ namespace World_of_Zuul___3._0
 
             Kunst_Haven.AddEdge("Vest", Elektriker_Erik);
             Kunst_Haven.AddEdge("Syd", Vej_Øst);
-
+            
+            // Opretter player obejektet. Giver spilleren et inventar.
+            Player player = new Player();
+            
             // Opret NPC'er 
             //Dette er NPCen uden spøgrsmål
             NPCalien fnorkel = new NPCalien("Fnorkel", "Fnorkel rumvæsnet der er stytet ned!","Du kan vel ikke hjælpe mig med at samle matterialer ind til solpannelet?");
@@ -135,7 +138,10 @@ namespace World_of_Zuul___3._0
                     }
                     currentRoom = commands.GetCurrentRoom(); 
                 }
-
+                else if (parts[0] == "inventar")
+                {
+                    commands.Inventory(player);
+                }
 
                 else if (parts[0] == "hjælp")
                 {
