@@ -70,9 +70,20 @@ namespace World_of_Zuul___3._0
             // Opretter player obejektet. Giver spilleren et inventar.
             Player player = new Player();
             
+            //Items til npcer. Skal ændres senere
+            Item part1 = new Item("item name", "description");
+            Item part2 = new Item("part 2", "part 2");
+            Item part3 = new Item("part 3", "part 3");
+            Item part4 = new Item("part 4", "part 4");
+            Item part5 = new Item("part 5", "part 5");
+            Item part6 = new Item("part 6", "part 6");
+            Item part7 = new Item("part 7", "part 7");
+            Item part8 = new Item("part 8", "part 8");
+            
             // Opret NPC'er 
             //Dette er NPCen uden spøgrsmål
-            NPCalien fnorkel = new NPCalien("Fnorkel", "Fnorkel rumvæsnet der er stytet ned!","Du kan vel ikke hjælpe mig med at samle matterialer ind til solpannelet?", false, "solcelle");
+            Item temp = new Item("temp", "temp");
+            NPCalien fnorkel = new NPCalien("Fnorkel", "Fnorkel rumvæsnet der er stytet ned!","Du kan vel ikke hjælpe mig med at samle matterialer ind til solpannelet?", false, temp);
             
             
             //Dette er hvis npcen skal kunne stille spørgsmål
@@ -89,7 +100,7 @@ namespace World_of_Zuul___3._0
                         2)
                 },
                 true,
-                "item 1"
+                part1
                 );   
             
             NPC elektrikerErik = new NPC(
@@ -105,7 +116,7 @@ namespace World_of_Zuul___3._0
                         2)
                 },
                 true,
-                "item 2"
+                part2
                 );        
             
             NPC kunstKaren = new NPC(
@@ -121,7 +132,7 @@ namespace World_of_Zuul___3._0
                         2)
                 },
                 true,
-                "item 3"
+                part3
                 );
             
             NPC bilejerenBent = new NPC(
@@ -137,7 +148,7 @@ namespace World_of_Zuul___3._0
                         2)
                 },
                 true,
-                "item 4"
+                part4
                 );
             
              NPC naboBørn = new NPC(
@@ -153,7 +164,7 @@ namespace World_of_Zuul___3._0
                          2)
                  },
                  true,
-                 "item 5"
+                 part5
                  );           
                 
             NPC gud = new NPC(
@@ -169,7 +180,7 @@ namespace World_of_Zuul___3._0
                         2)
                 },
                 true,
-                "item 6"
+                part6
                 );
                 
             NPC gladNabo = new NPC(
@@ -185,7 +196,7 @@ namespace World_of_Zuul___3._0
                         2)
                 },
                 true,
-                "item 7"
+                part7
                 );
             
             NPC surNabo = new NPC(
@@ -202,7 +213,7 @@ namespace World_of_Zuul___3._0
                    
                 },
                 true,
-                "item 8"
+                part8
                 );
 
             // Tilføj NPC'er til rum
@@ -237,12 +248,7 @@ namespace World_of_Zuul___3._0
                 {
                     break;
                 }
-                else if (parts[0] == "look" && parts.Length > 1)
-                {
-                    commands.Look(parts[1]);
-                    currentRoom = commands.GetCurrentRoom(); // Opdater currentRoom efter Look
-                }
-                else if (parts[0] == "move" && parts.Length > 1)
+                else if (parts[0] == "gå" && parts.Length > 1)
                 {
                     commands.Move(parts[1]);
                     currentRoom = commands.GetCurrentRoom(); // Opdater currentRoom efter Move
@@ -255,7 +261,7 @@ namespace World_of_Zuul___3._0
                     }
                     else
                     {
-                        commands.Talk(parts[1]);
+                        commands.Talk(player, parts[1]);
                     }
                     currentRoom = commands.GetCurrentRoom(); 
                 }

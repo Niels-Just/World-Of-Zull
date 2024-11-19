@@ -5,8 +5,8 @@ namespace World_of_Zuul___3._0
     {
         public string Information;
 
-        public NPCalien(string name, string description, string information, bool hasPart, string partName)
-            : base(name, description, new List<Question>(), hasPart, partName)
+        public NPCalien(string name, string description, string information, bool hasPart, Item part)
+            : base(name, description, new List<Question>(), hasPart, part)
         {
             Information = information;
         }

@@ -47,7 +47,7 @@ namespace World_of_Zuul___3._0
             }
         }
 
-        public void Talk(string npcName)
+        public void Talk(Player player, string npcName)
         {
             //Skal burge NPC navn IsNullOrEmpty indbygget metode som tjekker om der står noget.
             if (string.IsNullOrEmpty(npcName))
@@ -70,7 +70,7 @@ namespace World_of_Zuul___3._0
             if (npcsInRoom.Count == 1)
             {
                 var npc = npcsInRoom[0];
-                npc.Talk();
+                npc.Talk(player);
                 currentRoom.EnterRoomMsg();
             }
         }
@@ -79,8 +79,7 @@ namespace World_of_Zuul___3._0
         {
             Console.Clear();
             Console.WriteLine("Hjælp: Her er en beskrivelse af de tilgængelige kommandoer: \n" +
-                              "'look [retning]' - Brug denne kommando for at se beskrivelsen af et rum i den angivne retning. \n" +
-                              "'move [retning]' - Brug denne kommando for at bevæge dig til et rum i den angivne retning. \n" +
+                              "'gå [retning]' - Brug denne kommando for at bevæge dig til et rum i den angivne retning. \n" +
                               "'slut' - Brug denne kommando for at afslutte spillet. \n" +
                               "'snak [NPC navn]' - Brug denne kommando for at tale med en NPC\n" +
                               "'svar [nummer]' - Brug denne kommando for at svare på spørgsmål\n" +
