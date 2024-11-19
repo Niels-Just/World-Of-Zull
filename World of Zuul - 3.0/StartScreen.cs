@@ -11,7 +11,8 @@ namespace World_of_Zuul___3._0
             
             TekstEffektKlassen.TekstEffect(title, 30, 1000);
             
-            Console.ForegroundColor = ConsoleColor.Black;
+            //Console.ForegroundColor = ConsoleColor.Black;
+            Console.ResetColor();
 
             // Vis menuen og læs brugerens input
             ShowMenu();
@@ -44,7 +45,8 @@ namespace World_of_Zuul___3._0
             TekstEffektKlassen.TekstEffect("Starter spillet.....", 30, 1000);
 
             
-            Console.ForegroundColor = ConsoleColor.Black;
+            //Console.ForegroundColor = ConsoleColor.Black;
+            Console.ResetColor();
 
             
              TekstEffektKlassen.TekstEffectNPC("I Dette spil spiller du som Solvej." +
@@ -66,7 +68,8 @@ namespace World_of_Zuul___3._0
                                                "Du må hjælpe mig siger den!", 30);
 
             // Sæt farven tilbage til sort, så den næste tekst ikke påvirkes af farverne
-            Console.ForegroundColor = ConsoleColor.Black;
+            //Console.ForegroundColor = ConsoleColor.Black;
+            Console.ResetColor();
         }
 
         private static void ExitGame()

@@ -86,7 +86,8 @@ namespace World_of_Zuul___3._0
                               "'svar [nummer]' - Brug denne kommando for at svare på spørgsmål\n"); 
             Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine("Tryk på hvilken som helst knap for at komme tilbage til rummet.");;
-            Console.ForegroundColor = ConsoleColor.Black;
+            //Console.ForegroundColor = ConsoleColor.Black;
+            Console.ResetColor();
             
             Console.ReadLine();
             Console.Clear();

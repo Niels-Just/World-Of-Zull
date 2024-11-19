@@ -41,7 +41,8 @@ public class Room : Node
         HashSet<string> exits = edges.Keys.ToHashSet();
         Console.ForegroundColor = ConsoleColor.Yellow;
         Console.WriteLine("Dine mulige retninger du kan bevæger dig er:");
-        Console.ForegroundColor = ConsoleColor.Black;
+        //Console.ForegroundColor = ConsoleColor.Black;
+        Console.ResetColor();
         
         foreach (String exit in exits)
         {
@@ -52,7 +53,8 @@ public class Room : Node
         {
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("\nHer befinder: ");
-            Console.ForegroundColor = ConsoleColor.Black;
+            //Console.ForegroundColor = ConsoleColor.Black;
+            Console.ResetColor();
             foreach (var npc in npcer)
             {
                 Console.WriteLine($"- {npc.Name} sig\n");
