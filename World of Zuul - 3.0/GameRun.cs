@@ -6,7 +6,7 @@ namespace World_of_Zuul___3._0
     {
         static void Main(string[] args)
         {
-            //StartScreen.Show();
+            StartScreen.Show();
             
             GameRun game = new GameRun();
 
@@ -103,7 +103,10 @@ namespace World_of_Zuul___3._0
                 Console.WriteLine("Vælg nu hvad du vil gøre, er du i tvivl skriv 'Hjælp'");
                 string command = Console.ReadLine().ToLower();
     
-                //Her bkliver parts som et array splitet op, så kan parts kalde ved index det vil sige man kan tjekke om det i string arrayet står noget på en specifik plads.
+                /*Her bliver parts som er et string array delt op ved hvert mellemrum
+                 Dette er smart fordi at man kan kalde if else statments og tjekke hvad der står på de forskellige steder i arrayet
+                 det vil også sige at man kan checke hvad brugeren skriver ind, for eksempel kan man tjekke om, hvis der står slut som det første
+                 lige meget hvad der står efter slutter spillet*/
                 string[] parts = command.Split(' ');
 
                 if (parts[0] == "slut")
