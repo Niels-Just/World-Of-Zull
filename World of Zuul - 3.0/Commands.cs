@@ -87,7 +87,7 @@ namespace World_of_Zuul___3._0
                               "'inventar' - Giver en liste og genstande i dit inventar\n" + 
                               "'byg' - Samle solpanelet når du har fået alle delene"); 
             Console.ForegroundColor = ConsoleColor.Blue;
-            Console.WriteLine("Tryk på hvilken som helst knap for at komme tilbage til rummet.");;
+            Console.WriteLine("Tryk på 'enter' for at komme tilbage til rummet.");;
             //Console.ForegroundColor = ConsoleColor.Black;
             Console.ResetColor();
             
