@@ -83,7 +83,9 @@ namespace World_of_Zuul___3._0
                               "'move [retning]' - Brug denne kommando for at bevæge dig til et rum i den angivne retning. \n" +
                               "'slut' - Brug denne kommando for at afslutte spillet. \n" +
                               "'snak [NPC navn]' - Brug denne kommando for at tale med en NPC\n" +
-                              "'svar [nummer]' - Brug denne kommando for at svare på spørgsmål\n"); 
+                              "'svar [nummer]' - Brug denne kommando for at svare på spørgsmål\n" +
+                              "'inventar' - Giver en liste og genstande i dit inventar\n" + 
+                              "'byg' - Samle solpanelet når du har fået alle delene"); 
             Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine("Tryk på hvilken som helst knap for at komme tilbage til rummet.");;
             Console.ForegroundColor = ConsoleColor.Black;
@@ -96,6 +98,20 @@ namespace World_of_Zuul___3._0
         public void Inventory(Player player)
         {
             player.PrintInventory();
+        }
+        
+        public void Assemble(Player player)
+        {
+            if (player.HasItem("Frame", "Glass"))
+            {
+                //Console.WriteLine("You've sucessfully assembled a solar panel!");
+                Item solar_panel = new Item("Sopanel", "Producere vedvarende energi!");
+                player.AddItem(solar_panel);
+            }
+            else
+            {
+                Console.WriteLine("Du har ikke alle delene!");
+            }
         }
 
         // Metode til at hente den opdaterede currentRoom
