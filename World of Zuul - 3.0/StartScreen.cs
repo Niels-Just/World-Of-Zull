@@ -47,22 +47,22 @@ namespace World_of_Zuul___3._0
             Console.ResetColor();
 
             
-             TextEffect.TxtEffectNpc("I Dette spil spiller du som Solvej." +
-                                               "\nSolvej er en pige, hun bor i et hus sammen med sine forældre!" +
-                                               "\nSolvej elskeeeer klimaet! Enda så meget at hun har fået installeret solceller på hele taget!" +
-                                               "\nSolvej har selv betalt det, med hendes egne lommepenge!" +
-                                               "\nHedligt for hende, for hun masser af sine penge tilbage ved at sælge den overskydende energi!" +
-                                               "\nEn dag da SolVej sidder ude i baghaven og nyder den dejlige sol, bliver der pluseligt helt mørkt." +
-                                               "\nDer er noget stort som er fløjet lige ind foran solen og det er direkte på vej mod Solvej!" +
-                                               "\nSolvej skynder sig væk, og ligesom hun når ind i huset brager en UFO Ned i baghaven!", 3);
+             TextEffect.TxtEffectNpc("I dette spil spiller du som Solvej." +
+                                               "\nSolvej er en pige, der bor i et hus sammen med sine forældre!" +
+                                               "\nSolvej elsker klimaet! Endda så meget at hun har fået overtalt sine forældre til at få installeret solceller på taget!" +
+                                               "\nSolvej har brugt sine egne lommepenge på at hjælpe sine forældre med at betale det!" +
+                                               "\nHeldigt for hende og forældrene, får de masser af penge tilbage ved at sælge den overskydende energi!" +
+                                               "\nEn dag da Solvej sidder ude i baghaven og nyder den dejlige sol, bliver der pludseligt helt mørkt." +
+                                               "\nDer er noget stort som er fløjet lige ind foran solen, og det er direkte på vej ned mod Solvej!" +
+                                               "\nSolvej skynder sig væk, og lige som hun når ind i huset, styrter en UFO ned i baghaven!", 3);
              
              
              TextEffect.TxtEffectNpc("Ufoen er gået helt i stykker!\n" +
-                                               "På trods af den voldsomme situation, kan Solvej ikke lade hver med at ligge mærke til solcelleren som sidder på UFOens tag!\n" +
-                                               "Ud af den helt smadret UFO stiger en lang og tydeligt rundtossede skikkelse ud!\n" +
-                                               "Først bliver Solvej lidt bange, men skikkelsen ser overhovdet ikke uhyggelig ud.\n" +
-                                               "Skikkelsen lyder til at bande på et eller andet sprog, pluselig for skikkelsen øje på Solvej!\n" +
-                                               "Uden at tøve skifter skikkelsen over i risdansk!\n", 3);
+                                               "På trods af den voldsomme situation, kan Solvej ikke lade hver med at ligge mærke til solcellen som sidder på UFOens tag!\n" +
+                                               "Ud af den helt smadrede UFO, stiger en lang og tydeligt rundtosset skikkelse ud!\n" +
+                                               "Først bliver Solvej lidt bange, men skikkelsen ser overhovedet ikke uhyggelig ud.\n" +
+                                               "Skikkelsen lyder til at bande på et eller andet sprog, pludselig får skikkelsen øje på Solvej!\n" +
+                                               "Uden at tøve skifter skikkelsen over i rigsdansk!\n", 3);
              
              TextEffect.TxtEffectNpc("Fnorkel: \"Hilsner, rejsende! Jeg er Fnorkel, en udforsker fra en fjern galakse.\" \n" +
                                      "Fnorkel: \"Mit rumskib styrtede ned her, og jeg har brug for solpaneler for at reparere det og vende hjem.\" \n" +
