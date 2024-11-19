@@ -102,7 +102,8 @@ namespace World_of_Zuul___3._0
             {
                 Console.WriteLine("Vælg nu hvad du vil gøre, er du i tvivl skriv 'Hjælp'");
                 string command = Console.ReadLine().ToLower();
-
+    
+                //Her bkliver parts som et array splitet op, så kan parts kalde ved index det vil sige man kan tjekke om det i string arrayet står noget på en specifik plads.
                 string[] parts = command.Split(' ');
 
                 if (parts[0] == "slut")
