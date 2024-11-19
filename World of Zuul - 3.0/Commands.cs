@@ -103,7 +103,7 @@ namespace World_of_Zuul___3._0
         
         public void Assemble(Player player)
         {
-            if (player.HasItem("Frame", "Glass"))
+            if (player.HasItem("Frame, Glass")) // Indsæt nødvendige items her
             {
                 //Console.WriteLine("You've sucessfully assembled a solar panel!");
                 Item solar_panel = new Item("Sopanel", "Producere vedvarende energi!");
@@ -111,7 +111,7 @@ namespace World_of_Zuul___3._0
             }
             else
             {
-                Console.WriteLine("Du har ikke alle delene!");
+                TekstEffektKlassen.TekstEffect("Du har ikke alle delene!", 20, 200);
             }
         }
 
