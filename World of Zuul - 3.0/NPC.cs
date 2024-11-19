@@ -7,15 +7,19 @@ namespace World_of_Zuul___3._0
     {
         public string Name;
         public string Description;
+        public bool HasPart;
+        public string PartName;
 
         // Liste over spørgsmål
         public List<Question> Questions;
 
-        public NPC(string name, string description, List<Question> questions)
+        public NPC(string name, string description, List<Question> questions, bool hasPart, string partName)
         {
             Name = name;
             Description = description;
             Questions = questions;
+            HasPart = hasPart;
+            PartName = partName;
         }
 
         public void Talk()
@@ -58,8 +62,9 @@ namespace World_of_Zuul___3._0
             if (allCorrect)
             {
                 TextEffect.TxtEffect("Du har besvaret alle spørgsmål korrekt!\n" +
-                                               "Her din beløning!", 30, 400);
+                                               $"Her din beløning! Du får {PartName}" , 30, 400);
                 //Her tænker jeg man skal have en del af solcellen 
+                
             }
         }
 
