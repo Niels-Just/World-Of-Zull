@@ -1,24 +1,24 @@
 namespace World_of_Zuul___3._0
 {
-    public class TekstEffektKlassen
+    public class TextEffect
     {
-        public static void TekstEffect(string besked, int pauseMellemC, int pauseEfter)
+        public static void TxtEffect(string message, int pauseBetweenC, int pauseAfter)
         {
-            foreach (char c in besked)
+            foreach (char c in message)
             {
                 Console.Write(c);
-                Thread.Sleep(pauseMellemC);
+                Thread.Sleep(pauseBetweenC);
             }
-            Thread.Sleep(pauseEfter);
+            Thread.Sleep(pauseAfter);
             Console.Clear();
         }
 
-        public static void TekstEffectNPC(string besked, int pauseMellemC)
+        public static void TxtEffectNpc(string message, int pauseBetweenC)
         {
-            foreach (char c in besked)
+            foreach (char c in message)
             {
                 Console.Write(c);
-                Thread.Sleep(pauseMellemC);
+                Thread.Sleep(pauseBetweenC);
             }
             Console.ForegroundColor = ConsoleColor.Red; 
             Console.WriteLine("\n\nKlik på 'enter' for at komme videre.");

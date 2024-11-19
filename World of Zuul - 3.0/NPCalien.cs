@@ -14,9 +14,9 @@ namespace World_of_Zuul___3._0
         public void TalkFnorkel(Room currentRoom)
         {
             Console.Clear();
-            TekstEffektKlassen.TekstEffectNPC($"{Name}: {Description}\n", 40);
+            TextEffect.TxtEffectNpc($"{Name}: {Description}\n", 40);
             
-            TekstEffektKlassen.TekstEffectNPC($"{Information}\n", 40);
+            TextEffect.TxtEffectNpc($"{Information}\n", 40);
             currentRoom.EnterRoomMsg();
         }
     }

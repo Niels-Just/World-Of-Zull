@@ -21,7 +21,7 @@ namespace World_of_Zuul___3._0
         public void Talk()
         {
             Console.Clear();
-            TekstEffektKlassen.TekstEffectNPC($"{Name}: {Description}\n", 40);
+            TextEffect.TxtEffectNpc($"{Name}: {Description}\n", 40);
 
             bool allCorrect = true; 
 
@@ -44,12 +44,12 @@ namespace World_of_Zuul___3._0
                     // Tjek for korrekt svar
                     if (spillerSvar == $"svar {question.CorrectAnswer}")
                     {
-                        TekstEffektKlassen.TekstEffect("Det er det rigtige svar!\n", 30, 200);
+                        TextEffect.TxtEffect("Det er det rigtige svar!\n", 30, 200);
                         correctAnswer = true;
                     }
                     else
                     {
-                        TekstEffektKlassen.TekstEffect("Det er det forkerte svar, prøv igen.\n", 30, 200);
+                        TextEffect.TxtEffect("Det er det forkerte svar, prøv igen.\n", 30, 200);
                         allCorrect = false; // Hvis spillerens svar er forkert, markeres allCorrect som false
                     }
                 }
@@ -57,7 +57,7 @@ namespace World_of_Zuul___3._0
 
             if (allCorrect)
             {
-                TekstEffektKlassen.TekstEffect("Du har besvaret alle spørgsmål korrekt!\n" +
+                TextEffect.TxtEffect("Du har besvaret alle spørgsmål korrekt!\n" +
                                                "Her din beløning!", 30, 400);
                 //Her tænker jeg man skal have en del af solcellen 
             }

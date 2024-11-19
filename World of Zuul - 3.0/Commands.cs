@@ -20,13 +20,13 @@ namespace World_of_Zuul___3._0
             if (nextRoom != null)
             { 
                 Console.Clear();
-                TekstEffektKlassen.TekstEffect(nextRoom.GetDescription(), 30, 1200);
+                TextEffect.TxtEffect(nextRoom.GetDescription(), 30, 1200);
                 currentRoom.EnterRoomMsg();
             }
             else
             { 
                 Console.Clear();
-                TekstEffektKlassen.TekstEffect("Der er intet rum denne vej!", 40, 2000);
+                TextEffect.TxtEffect("Der er intet rum denne vej!", 40, 2000);
                 currentRoom.EnterRoomMsg();
             }
         }
@@ -42,7 +42,7 @@ namespace World_of_Zuul___3._0
             else
             {
                 Console.Clear();
-                TekstEffektKlassen.TekstEffect("Du kan ikke gå denne vej", 40, 200);
+                TextEffect.TxtEffect("Du kan ikke gå denne vej", 40, 200);
                 currentRoom.EnterRoomMsg();
             }
         }
@@ -53,7 +53,7 @@ namespace World_of_Zuul___3._0
             if (string.IsNullOrEmpty(npcName))
             {
                 Console.Clear();
-                TekstEffektKlassen.TekstEffect("Hvem forsøger du at tale med?",20,200);
+                TextEffect.TxtEffect("Hvem forsøger du at tale med?",20,200);
                 currentRoom.EnterRoomMsg();
                 return;
             }
@@ -62,7 +62,7 @@ namespace World_of_Zuul___3._0
             if (npcsInRoom.Count == 0)
             {
                 Console.Clear();
-                TekstEffektKlassen.TekstEffect("Her er ingen at tale med",20,200);
+                TextEffect.TxtEffect("Her er ingen at tale med",20,200);
                 currentRoom.EnterRoomMsg();
                 return;
             }
@@ -111,7 +111,7 @@ namespace World_of_Zuul___3._0
             }
             else
             {
-                TekstEffektKlassen.TekstEffect("Du har ikke alle delene!", 20, 200);
+                TextEffect.TxtEffect("Du har ikke alle delene!", 20, 200);
             }
         }
 

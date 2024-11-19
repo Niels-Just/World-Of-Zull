@@ -9,7 +9,7 @@ namespace World_of_Zuul___3._0
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("\n\n");
             
-            TekstEffektKlassen.TekstEffect(title, 30, 1000);
+            TextEffect.TxtEffect(title, 30, 1000);
             
             //Console.ForegroundColor = ConsoleColor.Black;
             Console.ResetColor();
@@ -42,14 +42,14 @@ namespace World_of_Zuul___3._0
         private static void StartGame()
         {
             Console.Clear();
-            TekstEffektKlassen.TekstEffect("Starter spillet.....", 30, 1000);
+            TextEffect.TxtEffect("Starter spillet.....", 30, 1000);
 
             
             //Console.ForegroundColor = ConsoleColor.Black;
             Console.ResetColor();
 
             
-             TekstEffektKlassen.TekstEffectNPC("I Dette spil spiller du som Solvej." +
+             TextEffect.TxtEffectNpc("I Dette spil spiller du som Solvej." +
                                                "\nSolvej er en pige, hun bor alene i hendes forældres hus!" +
                                                "\nSolvej elskeeeer klimaet! Enda så meget at hun har fået installeret solceller på hele taget!" +
                                                "\nSolvej har selv betalt det, med hendes egne lommepenge!" +
@@ -59,7 +59,7 @@ namespace World_of_Zuul___3._0
                                                "\nSolvej skynder sig væk, og ligesom hun når ind i huset brager en UFO Ned i baghaven!", 30);
              
              
-             TekstEffektKlassen.TekstEffectNPC("Ufoen er gået helt i stykker!\n" +
+             TextEffect.TxtEffectNpc("Ufoen er gået helt i stykker!\n" +
                                                "På trods af den voldsomme situation, kan Solvej ikke lade hver med at ligge mærke til solcelleren som sidder på UFOens tag!\n" +
                                                "Ud af den helt smadret UFO stiger en lang og tydeligt rundtossede skikkelse ud!\n" +
                                                "Først bliver Solvej lidt bange, men skikkelsen ser overhovdet ikke uhyggelig ud.\n" +
@@ -75,7 +75,7 @@ namespace World_of_Zuul___3._0
         private static void ExitGame()
         {
             Console.Clear();
-            TekstEffektKlassen.TekstEffect("\n\n\nAfslutter spillet!", 20, 300);
+            TextEffect.TxtEffect("\n\n\nAfslutter spillet!", 20, 300);
             Environment.Exit(0);  // Afslut programmet
         }
     }
