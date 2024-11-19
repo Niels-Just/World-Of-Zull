@@ -6,7 +6,7 @@ namespace World_of_Zuul___3._0
     {
         static void Main(string[] args)
         {
-            StartScreen.Show();
+            //StartScreen.Show();
             
             GameRun game = new GameRun();
 
@@ -123,10 +123,14 @@ namespace World_of_Zuul___3._0
                 {
                     if (parts[1].ToLower() == "fnorkel")
                     {
-                        fnorkel.Talk(currentRoom); // Sender currentRoom med til Talk()
+                        fnorkel.TalkFnorkel(Baghaven); 
                     }
+                    else
+                    {
+                        commands.Talk(parts[1]);
+                    }
+                    currentRoom = commands.GetCurrentRoom(); 
                 }
-
 
 
                 else if (parts[0] == "hjælp")
