@@ -248,12 +248,7 @@ namespace World_of_Zuul___3._0
                 {
                     break;
                 }
-                else if (parts[0] == "look" && parts.Length > 1)
-                {
-                    commands.Look(parts[1]);
-                    currentRoom = commands.GetCurrentRoom(); // Opdater currentRoom efter Look
-                }
-                else if (parts[0] == "move" && parts.Length > 1)
+                else if (parts[0] == "gå" && parts.Length > 1)
                 {
                     commands.Move(parts[1]);
                     currentRoom = commands.GetCurrentRoom(); // Opdater currentRoom efter Move
