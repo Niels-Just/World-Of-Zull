@@ -111,7 +111,7 @@ namespace World_of_Zuul___3._0
             }
             else
             {
-                TextEffect.TxtEffect("Du har ikke alle delene!", 20, 200);
+                Console.WriteLine("Du har ikke alle delene!");
             }
         }
 
