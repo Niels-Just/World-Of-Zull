@@ -49,19 +49,27 @@ namespace World_of_Zuul___3._0
 
         public void Talk(string npcName)
         {
-            var npcsInRoom = currentRoom.npcer;
-
-            if (npcsInRoom.Count == 0)
+            //Skal burge NPC navn IsNullOrEmpty indbygget metode som tjekker om der står noget.
+            if (string.IsNullOrEmpty(npcName))
             {
                 Console.Clear();
-                TekstEffektKlassen.TekstEffect("Du forsøger at tale med nogen, men ingen svarer.", 20, 200);
+                TekstEffektKlassen.TekstEffect("Hvem forsøger du at tale med?",20,200);
                 currentRoom.EnterRoomMsg();
                 return;
             }
-
+            
+            var npcsInRoom = currentRoom.npcer;
+            if (npcsInRoom.Count == 0)
+            {
+                Console.Clear();
+                TekstEffektKlassen.TekstEffect("Her er ingen at tale med",20,200);
+                currentRoom.EnterRoomMsg();
+                return;
+            }
+            
             if (npcsInRoom.Count == 1)
             {
-                var npc = npcsInRoom.First();
+                var npc = npcsInRoom[0];
                 npc.Talk();
                 currentRoom.EnterRoomMsg();
             }
@@ -71,11 +79,15 @@ namespace World_of_Zuul___3._0
         {
             Console.Clear();
             Console.WriteLine("Hjælp: Her er en beskrivelse af de tilgængelige kommandoer: \n" +
-                               "'look [retning]' - Brug denne kommando for at se beskrivelsen af et rum i den angivne retning. \n" +
-                               "'move [retning]' - Brug denne kommando for at bevæge dig til et rum i den angivne retning. \n" +
-                               "'slut' - Brug denne kommando for at afslutte spillet. \n" +
-                               "'snak [NPC navn]' - Brug denne kommando for at tale med en NPC\n" +
-                               "\nTryk på hvilken som helst knap for at komme tilbage til rummet.");
+                              "'look [retning]' - Brug denne kommando for at se beskrivelsen af et rum i den angivne retning. \n" +
+                              "'move [retning]' - Brug denne kommando for at bevæge dig til et rum i den angivne retning. \n" +
+                              "'slut' - Brug denne kommando for at afslutte spillet. \n" +
+                              "'snak [NPC navn]' - Brug denne kommando for at tale med en NPC\n" +
+                              "'svar [nummer]' - Brug denne kommando for at svare på spørgsmål\n"); 
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine("Tryk på hvilken som helst knap for at komme tilbage til rummet.");;
+            Console.ForegroundColor = ConsoleColor.Black;
+            
             Console.ReadLine();
             Console.Clear();
             currentRoom.EnterRoomMsg();

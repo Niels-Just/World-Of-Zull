@@ -1,6 +1,6 @@
 namespace World_of_Zuul___3._0;
 
- public class Room : Node
+public class Room : Node
 {
     //room beskrivelse, dette er relvant for look komandoen
     private string description;
@@ -19,19 +19,30 @@ namespace World_of_Zuul___3._0;
     }
     
     //metode til at tilføje en NPC til et rum
-    public void AddNPC(NPC npc)
+    //det er nødvendigt at bruge object her da den skal kunne tilføje fra to forskellige npc klasser
+    public void AddNPC(object npc)
     {
-        npcer.Add(npc);
+        if (npc is NPC)
+        {
+            npcer.Add((NPC)npc);
+        }
+        else if (npc is NPCalien)
+        {
+            npcer.Add((NPCalien)npc);
+        }
     }
 
     public void EnterRoomMsg()
     {
         Console.Clear();
-        TekstEffektKlassen.TekstEffect("Du befinder dig ved: " + name ,20,2000);
+        TekstEffektKlassen.TekstEffect("Du befinder dig nu i: " + name ,20,2000);
         
         //Her får hashsettet udskrevet alle keys (udgange i form af kompas direktioner) og printer dem ud til spilleren.
         HashSet<string> exits = edges.Keys.ToHashSet();
+        Console.ForegroundColor = ConsoleColor.Yellow;
         Console.WriteLine("Dine mulige retninger du kan bevæger dig er:");
+        Console.ForegroundColor = ConsoleColor.Black;
+        
         foreach (String exit in exits)
         {
             Console.WriteLine(" - " + exit);
@@ -39,7 +50,9 @@ namespace World_of_Zuul___3._0;
         
         if (npcer.Count > 0)
         {
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("\nHer befinder: ");
+            Console.ForegroundColor = ConsoleColor.Black;
             foreach (var npc in npcer)
             {
                 Console.WriteLine($"- {npc.Name} sig\n");
@@ -55,5 +68,3 @@ namespace World_of_Zuul___3._0;
         return (Room)(base.FollowEdge(direction));
     }
 }
-
-

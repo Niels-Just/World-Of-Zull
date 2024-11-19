@@ -6,6 +6,8 @@ namespace World_of_Zuul___3._0
     {
         static void Main(string[] args)
         {
+            StartScreen.Show();
+            
             GameRun game = new GameRun();
 
             // Definer rum og NPC'er
@@ -53,13 +55,43 @@ namespace World_of_Zuul___3._0
             Kunst_Haven.AddEdge("Vest", Elektriker_Erik);
             Kunst_Haven.AddEdge("Syd", Vej_Øst);
 
-            // Opret NPC'er
-            NPC npc1 = new NPC("Glad Nabo", "Hej Nabo :)\n");
-            NPC npc2 = new NPC("Sur Nabo", "Hej Nabo ):<\n");
+            // Opret NPC'er 
+            //Dette er NPCen uden spøgrsmål
+            NPCalien fnorkel = new NPCalien("Fnorkel", "Fnorkel rumvæsnet der er stytet ned!","Du kan vel ikke hjælpe mig med at samle matterialer ind til solpannelet?");
+            
+            
+            //Dette er hvis npcen skal kunne stille spørgsmål
+            NPC gladNabo = new NPC(
+                "Glad Nabo",
+                "Hej Nabo :)",
+                new List<Question>
+                {
+                    new Question("Det her er det første spørgsmål!", 
+                        new string[] { "Svar 1 (Forkert)", "Svar 2 (Rigtigt)", "Svar 3 (Forkert)" }, 
+                        2),
+                    new Question("Hvad er det andet spørgsmål!", 
+                        new string[] { "Svar 1 (Forkert)", "Svar 2 (Rigtigt)", "Svar 3 (Forkert)" }, 
+                        2)
+                });
+            
+            NPC surNabo = new NPC(
+                "Sur Nabo",
+                "Hej Nabo ):<",
+                new List<Question>
+                {
+                    new Question("Det her er det først spørgsmål!", 
+                        new string[] { "Svar 1 (Rigtigt)", "Svar 2 (Forkert)", "Svar 3 (Forkert)" }, 
+                        1),
+                    new Question("Det her er det andet spørgsmålet!", 
+                        new string[] { "Svar 1 (Forkert)", "Svar 2 (Rigtigt)", "Svar 3 (Forkert)" }, 
+                        2)
+                   
+                });
 
             // Tilføj NPC'er til rum
-            Glad_Nabo.AddNPC(npc1);
-            Sur_Nabo.AddNPC(npc2);
+            Glad_Nabo.AddNPC(gladNabo);
+            Sur_Nabo.AddNPC(surNabo);
+            Baghaven.AddNPC(fnorkel);
 
             // Start i Baghaven
             Room currentRoom = Baghaven;
@@ -89,9 +121,14 @@ namespace World_of_Zuul___3._0
                 }
                 else if (parts[0] == "snak" && parts.Length > 1)
                 {
-                    commands.Talk(parts[1]);
-                    currentRoom = commands.GetCurrentRoom(); // Opdater currentRoom efter Talk
+                    if (parts[1].ToLower() == "fnorkel")
+                    {
+                        fnorkel.Talk(currentRoom); // Sender currentRoom med til Talk()
+                    }
                 }
+
+
+
                 else if (parts[0] == "hjælp")
                 {
                     commands.Hjælp();
