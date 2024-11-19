@@ -265,7 +265,14 @@ namespace World_of_Zuul___3._0
                 }
                 else if (parts[0] == "byg")
                 {
-                    commands.Assemble(player);
+                    if (commands.GetCurrentRoom() == Baghaven)
+                    {
+                        commands.Assemble(player);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Du skal befinde dig i baghaven før du kan bygge solpanelet.");
+                    }
                 }
 
                 else if (parts[0] == "hjælp")
