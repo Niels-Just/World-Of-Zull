@@ -142,6 +142,10 @@ namespace World_of_Zuul___3._0
                 {
                     commands.Inventory(player);
                 }
+                else if (parts[0] == "byg")
+                {
+                    commands.Assemble(player);
+                }
 
                 else if (parts[0] == "hjælp")
                 {
