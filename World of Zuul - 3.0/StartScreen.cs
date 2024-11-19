@@ -11,7 +11,6 @@ namespace World_of_Zuul___3._0
             
             TextEffect.TxtEffect(title, 30, 1000);
             
-            //Console.ForegroundColor = ConsoleColor.Black;
             Console.ResetColor();
 
             // Vis menuen og læs brugerens input
@@ -45,7 +44,6 @@ namespace World_of_Zuul___3._0
             TextEffect.TxtEffect("Starter spillet.....", 30, 1000);
 
             
-            //Console.ForegroundColor = ConsoleColor.Black;
             Console.ResetColor();
 
             
@@ -67,8 +65,7 @@ namespace World_of_Zuul___3._0
                                                "Uden at tøve skifter skikkelsen over i risdansk!\n" +
                                                "Du må hjælpe mig siger den!", 30);
 
-            // Sæt farven tilbage til sort, så den næste tekst ikke påvirkes af farverne
-            //Console.ForegroundColor = ConsoleColor.Black;
+            // Sæt farven tilbage til default, så den næste tekst ikke påvirkes af farverne
             Console.ResetColor();
         }
 
