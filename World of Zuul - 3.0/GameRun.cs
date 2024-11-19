@@ -72,7 +72,7 @@ namespace World_of_Zuul___3._0
             
             // Opret NPC'er 
             //Dette er NPCen uden spøgrsmål
-            NPCalien fnorkel = new NPCalien("Fnorkel", "Fnorkel rumvæsnet der er stytet ned!","Du kan vel ikke hjælpe mig med at samle matterialer ind til solpannelet?");
+            NPCalien fnorkel = new NPCalien("Fnorkel", "Fnorkel rumvæsnet der er stytet ned!","Du kan vel ikke hjælpe mig med at samle matterialer ind til solpannelet?", false, "solcelle");
             
             
             //Dette er hvis npcen skal kunne stille spørgsmål
@@ -87,7 +87,10 @@ namespace World_of_Zuul___3._0
                     new Question("Det her er det andet spørgsmålet!",
                         new string[] { "Svar 1 (Forkert)", "Svar 2 (Rigtigt)", "Svar 3 (Forkert)" },
                         2)
-                });   
+                },
+                true,
+                "item 1"
+                );   
             
             NPC elektrikerErik = new NPC(
                 "Elektriker Erik", 
@@ -100,7 +103,10 @@ namespace World_of_Zuul___3._0
                     new Question("Det her er det andet spørgsmålet!",
                         new string[] { "Svar 1 (Forkert)", "Svar 2 (Rigtigt)", "Svar 3 (Forkert)" },
                         2)
-                });        
+                },
+                true,
+                "item 2"
+                );        
             
             NPC kunstKaren = new NPC(
                 "Kunstneren Karen",
@@ -113,7 +119,10 @@ namespace World_of_Zuul___3._0
                     new Question("Det her er det andet spørgsmålet!",
                         new string[] { "Svar 1 (Forkert)", "Svar 2 (Rigtigt)", "Svar 3 (Forkert)" },
                         2)
-                });
+                },
+                true,
+                "item 3"
+                );
             
             NPC bilejerenBent = new NPC(
                 "Bilejeren Bent",
@@ -126,7 +135,10 @@ namespace World_of_Zuul___3._0
                     new Question("Det her er det andet spørgsmålet!",
                         new string[] { "Svar 1 (Forkert)", "Svar 2 (Rigtigt)", "Svar 3 (Forkert)" },
                         2)
-                });
+                },
+                true,
+                "item 4"
+                );
             
              NPC naboBørn = new NPC(
                  "Nabo Børnene",
@@ -139,7 +151,10 @@ namespace World_of_Zuul___3._0
                      new Question("Det her er det andet spørgsmålet!",
                          new string[] { "Svar 1 (Forkert)", "Svar 2 (Rigtigt)", "Svar 3 (Forkert)" },
                          2)
-                 });           
+                 },
+                 true,
+                 "item 5"
+                 );           
                 
             NPC gud = new NPC(
                 "Gud",
@@ -152,7 +167,10 @@ namespace World_of_Zuul___3._0
                     new Question("Det her er det andet spørgsmålet!",
                         new string[] { "Svar 1 (Forkert)", "Svar 2 (Rigtigt)", "Svar 3 (Forkert)" },
                         2)
-                });
+                },
+                true,
+                "item 6"
+                );
                 
             NPC gladNabo = new NPC(
                 "Glad Nabo",
@@ -165,7 +183,10 @@ namespace World_of_Zuul___3._0
                     new Question("Hvad er det andet spørgsmål!", 
                         new string[] { "Svar 1 (Forkert)", "Svar 2 (Rigtigt)", "Svar 3 (Forkert)" }, 
                         2)
-                });
+                },
+                true,
+                "item 7"
+                );
             
             NPC surNabo = new NPC(
                 "Sur Nabo",
@@ -179,7 +200,10 @@ namespace World_of_Zuul___3._0
                         new string[] { "Svar 1 (Forkert)", "Svar 2 (Rigtigt)", "Svar 3 (Forkert)" }, 
                         2)
                    
-                });
+                },
+                true,
+                "item 8"
+                );
 
             // Tilføj NPC'er til rum
             Glas_Mager_glenn.AddNPC(glasmagerGlenn);
@@ -241,7 +265,14 @@ namespace World_of_Zuul___3._0
                 }
                 else if (parts[0] == "byg")
                 {
-                    commands.Assemble(player);
+                    if (commands.GetCurrentRoom() == Baghaven)
+                    {
+                        commands.Assemble(player);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Du skal befinde dig i baghaven før du kan bygge solpanelet.");
+                    }
                 }
 
                 else if (parts[0] == "hjælp")

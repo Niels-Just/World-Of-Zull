@@ -11,7 +11,6 @@ namespace World_of_Zuul___3._0
             
             TextEffect.TxtEffect(title, 30, 1000);
             
-            //Console.ForegroundColor = ConsoleColor.Black;
             Console.ResetColor();
 
             // Vis menuen og læs brugerens input
@@ -45,7 +44,6 @@ namespace World_of_Zuul___3._0
             TextEffect.TxtEffect("Starter spillet.....", 30, 1000);
 
             
-            //Console.ForegroundColor = ConsoleColor.Black;
             Console.ResetColor();
 
             
@@ -56,7 +54,7 @@ namespace World_of_Zuul___3._0
                                                "\nHedligt for hende, for hun masser af sine penge tilbage ved at sælge den overskydende energi!" +
                                                "\nEn dag da SolVej sidder ude i baghaven og nyder den dejlige sol, bliver der pluseligt helt mørkt." +
                                                "\nDer er noget stort som er fløjet lige ind foran solen og det er direkte på vej mod Solvej!" +
-                                               "\nSolvej skynder sig væk, og ligesom hun når ind i huset brager en UFO Ned i baghaven!", 30);
+                                               "\nSolvej skynder sig væk, og ligesom hun når ind i huset brager en UFO Ned i baghaven!", 3);
              
              
              TextEffect.TxtEffectNpc("Ufoen er gået helt i stykker!\n" +
@@ -64,11 +62,14 @@ namespace World_of_Zuul___3._0
                                                "Ud af den helt smadret UFO stiger en lang og tydeligt rundtossede skikkelse ud!\n" +
                                                "Først bliver Solvej lidt bange, men skikkelsen ser overhovdet ikke uhyggelig ud.\n" +
                                                "Skikkelsen lyder til at bande på et eller andet sprog, pluselig for skikkelsen øje på Solvej!\n" +
-                                               "Uden at tøve skifter skikkelsen over i risdansk!\n" +
-                                               "Du må hjælpe mig siger den!", 30);
+                                               "Uden at tøve skifter skikkelsen over i risdansk!\n", 3);
+             
+             TextEffect.TxtEffectNpc("Fnorkel: \"Hilsner, rejsende! Jeg er Fnorkel, en udforsker fra en fjern galakse.\" \n" +
+                                     "Fnorkel: \"Mit rumskib styrtede ned her, og jeg har brug for solpaneler for at reparere det og vende hjem.\" \n" +
+                                     "Fnorkel: \"Kan du hjælpe mig med at samle de dele, der skal bruges til at bygge et kraftigt solpanelsystem?\" \n" +
+                                     "Fnorkel: \"Sammen udforsker vi dette land, samler delene og udnytter solens kraft!\" \n", 3);
 
-            // Sæt farven tilbage til sort, så den næste tekst ikke påvirkes af farverne
-            //Console.ForegroundColor = ConsoleColor.Black;
+            // Sæt farven tilbage til default, så den næste tekst ikke påvirkes af farverne
             Console.ResetColor();
         }
 
