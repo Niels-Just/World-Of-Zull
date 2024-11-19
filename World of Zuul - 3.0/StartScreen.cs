@@ -54,7 +54,7 @@ namespace World_of_Zuul___3._0
                                                "\nHedligt for hende, for hun masser af sine penge tilbage ved at sælge den overskydende energi!" +
                                                "\nEn dag da SolVej sidder ude i baghaven og nyder den dejlige sol, bliver der pluseligt helt mørkt." +
                                                "\nDer er noget stort som er fløjet lige ind foran solen og det er direkte på vej mod Solvej!" +
-                                               "\nSolvej skynder sig væk, og ligesom hun når ind i huset brager en UFO Ned i baghaven!", 30);
+                                               "\nSolvej skynder sig væk, og ligesom hun når ind i huset brager en UFO Ned i baghaven!", 3);
              
              
              TextEffect.TxtEffectNpc("Ufoen er gået helt i stykker!\n" +
@@ -63,7 +63,7 @@ namespace World_of_Zuul___3._0
                                                "Først bliver Solvej lidt bange, men skikkelsen ser overhovdet ikke uhyggelig ud.\n" +
                                                "Skikkelsen lyder til at bande på et eller andet sprog, pluselig for skikkelsen øje på Solvej!\n" +
                                                "Uden at tøve skifter skikkelsen over i risdansk!\n" +
-                                               "Du må hjælpe mig siger den!", 30);
+                                               "Du må hjælpe mig siger den!", 3);
 
             // Sæt farven tilbage til default, så den næste tekst ikke påvirkes af farverne
             Console.ResetColor();
