@@ -35,7 +35,7 @@ public class Room : Node
     public void EnterRoomMsg()
     {
         Console.Clear();
-        TekstEffektKlassen.TekstEffect("Du befinder dig nu i: " + name ,20,2000);
+        TextEffect.TxtEffect("Du befinder dig nu i: " + name ,20,2000);
         
         //Her får hashsettet udskrevet alle keys (udgange i form af kompas direktioner) og printer dem ud til spilleren.
         HashSet<string> exits = edges.Keys.ToHashSet();

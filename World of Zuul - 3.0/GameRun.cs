@@ -250,7 +250,7 @@ namespace World_of_Zuul___3._0
                 }
                 else
                 {
-                    TekstEffektKlassen.TekstEffect("Dette kan ikke lade sig gøre!", 20, 2000);
+                    TextEffect.TxtEffect("Dette kan ikke lade sig gøre!", 20, 2000);
                     currentRoom.EnterRoomMsg(); // Brug den opdaterede currentRoom
                 }
             }
