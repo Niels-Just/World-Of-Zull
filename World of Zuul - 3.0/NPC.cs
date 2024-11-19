@@ -59,6 +59,7 @@ namespace World_of_Zuul___3._0
             {
                 TekstEffektKlassen.TekstEffect("Du har besvaret alle spørgsmål korrekt!\n" +
                                                "Her din beløning!", 30, 400);
+                //Her tænker jeg man skal have en del af solcellen 
             }
         }
 
