@@ -37,16 +37,17 @@ public class Room : Node
         Console.Clear();
         TextEffect.TxtEffect("Du befinder dig nu i: " + name ,20,2000);
         
-        //Her får hashsettet udskrevet alle keys (udgange i form af kompas direktioner) og printer dem ud til spilleren.
-        HashSet<string> exits = edges.Keys.ToHashSet();
         Console.ForegroundColor = ConsoleColor.Yellow;
         Console.WriteLine("Dine mulige retninger du kan bevæger dig er:");
         Console.ResetColor();
         
-        foreach (String exit in exits)
+        foreach (var exit in edges)
         {
-            Console.WriteLine(" - " + exit);
+            string direction = exit.Key;
+            Room connectedRoom = (Room)exit.Value;
+            Console.WriteLine($" - {direction}: {connectedRoom.GetDescription()}");
         }
+        
         
         if (npcer.Count > 0)
         {
