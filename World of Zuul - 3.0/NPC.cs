@@ -8,21 +8,21 @@ namespace World_of_Zuul___3._0
         public string Name;
         public string Description;
         public bool HasPart;
-        public string PartName;
+        public Item Part;
 
         // Liste over spørgsmål
         public List<Question> Questions;
 
-        public NPC(string name, string description, List<Question> questions, bool hasPart, string partName)
+        public NPC(string name, string description, List<Question> questions, bool hasPart, Item part)
         {
             Name = name;
             Description = description;
             Questions = questions;
             HasPart = hasPart;
-            PartName = partName;
+            Part = part;
         }
 
-        public void Talk()
+        public void Talk(Player player)
         {
             Console.Clear();
             TextEffect.TxtEffectNpc($"{Name}: {Description}\n", 40);
@@ -64,8 +64,9 @@ namespace World_of_Zuul___3._0
                 if (allCorrect)
                 {
                     TextEffect.TxtEffect("Du har besvaret alle spørgsmål korrekt!\n" +
-                                                               $"Her din beløning! Du får {PartName}" , 30, 400);
+                                                               $"Her din beløning! Du får {Part.ItemName}" , 30, 400);
                     //Her skal part tilføjes til spillerens inventar
+                    player.AddItem(Part);
                     HasPart = false;
                 
                 }
@@ -74,8 +75,6 @@ namespace World_of_Zuul___3._0
             {
                 TextEffect.TxtEffect("Du har allerede fundet alle delene her.\n", 30, 200);
             }
-
-            
         }
 
     }

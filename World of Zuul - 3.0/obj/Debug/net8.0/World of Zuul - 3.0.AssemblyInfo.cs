@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("World of Zuul - 3.0")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+69ea1f4c5ad836a83d5ccbc7d367b06445c3fc53")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+16126171b1a21706d1c5c0fc483fa281ad69c8e6")]
 [assembly: System.Reflection.AssemblyProductAttribute("World of Zuul - 3.0")]
 [assembly: System.Reflection.AssemblyTitleAttribute("World of Zuul - 3.0")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

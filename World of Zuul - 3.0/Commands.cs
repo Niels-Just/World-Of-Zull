@@ -47,7 +47,7 @@ namespace World_of_Zuul___3._0
             }
         }
 
-        public void Talk(string npcName)
+        public void Talk(Player player, string npcName)
         {
             //Skal burge NPC navn IsNullOrEmpty indbygget metode som tjekker om der står noget.
             if (string.IsNullOrEmpty(npcName))
@@ -70,7 +70,7 @@ namespace World_of_Zuul___3._0
             if (npcsInRoom.Count == 1)
             {
                 var npc = npcsInRoom[0];
-                npc.Talk();
+                npc.Talk(player);
                 currentRoom.EnterRoomMsg();
             }
         }
