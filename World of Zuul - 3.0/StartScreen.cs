@@ -48,7 +48,7 @@ namespace World_of_Zuul___3._0
 
             
              TextEffect.TxtEffectNpc("I Dette spil spiller du som Solvej." +
-                                               "\nSolvej er en pige, hun bor alene i hendes forældres hus!" +
+                                               "\nSolvej er en pige, hun bor i et hus sammen med sine forældre!" +
                                                "\nSolvej elskeeeer klimaet! Enda så meget at hun har fået installeret solceller på hele taget!" +
                                                "\nSolvej har selv betalt det, med hendes egne lommepenge!" +
                                                "\nHedligt for hende, for hun masser af sine penge tilbage ved at sælge den overskydende energi!" +
