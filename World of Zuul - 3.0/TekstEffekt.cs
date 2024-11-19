@@ -21,7 +21,7 @@ namespace World_of_Zuul___3._0
                 Thread.Sleep(pauseMellemC);
             }
             Console.ForegroundColor = ConsoleColor.Red; 
-            Console.WriteLine("\n\nKlik på 'enter' for at komme videre.");
+            Console.WriteLine("\n\nTryk på 'enter' for at komme videre.");
             
             //Console.ForegroundColor = ConsoleColor.Black; 
             Console.ResetColor();
