@@ -56,15 +56,14 @@ namespace World_of_Zuul___3._0
                         else
                         {
                             TextEffect.TxtEffect("Det er det forkerte svar, prøv igen.\n", 30, 200);
-                            allCorrect = false; // Hvis spillerens svar er forkert, markeres allCorrect som false
                         }
                     }
                 }
                 
                 if (allCorrect)
                 {
-                    TextEffect.TxtEffect("Du har besvaret alle spørgsmål korrekt!\n" +
-                                                               $"Her din beløning! Du får {Part.ItemName}" , 30, 400);
+                    TextEffect.TxtEffectNpc("Du har besvaret alle spørgsmål korrekt!\n" +
+                                                               $"Her din beløning! Du får {Part.ItemName}" , 30);
                     //Her skal part tilføjes til spillerens inventar
                     player.AddItem(Part);
                     HasPart = false;
