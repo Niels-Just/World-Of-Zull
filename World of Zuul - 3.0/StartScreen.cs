@@ -30,6 +30,11 @@ namespace World_of_Zuul___3._0
             {
                 ExitGame();   // Kald en metode til at afslutte spillet
             }
+            //denne start kommando skipper introen for en hurtigere start.
+            else if (userInput == "devskip")
+            {
+                Console.Clear();
+            }
             else
             {
                 // Hvis brugeren skriver noget andet, vis en fejlmeddelelse og gentag menuen

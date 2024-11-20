@@ -24,7 +24,6 @@ namespace World_of_Zuul___3._0
             Console.WriteLine("\n\nTryk på 'enter' for at komme videre.");
             
             Console.ResetColor();
-            
             Console.ReadLine();
             Console.Clear();
         }

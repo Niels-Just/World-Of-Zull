@@ -11,16 +11,15 @@ namespace World_of_Zuul___3._0
             GameRun game = new GameRun();
 
             // Definer rum og NPC'er
-            Room Baghaven = new Room("baghaven", "Du kikker ned mod Baghaven.");
-            Room Glad_Nabo = new Room("den glade nabos hus", "Du kikker ned mod den glade nabo.");
-            Room Sur_Nabo = new Room("den sur nabos hus", "Du kikker ned mod den sure nabo.");
-            Room Vej_Midt = new Room("Vej midt", "Du kikker ned mod vej midt.");
-            Room Vej_Øst = new Room("Vej Øst", "Du kikker ned mod vej øst.");
-            Room Vej_Vest = new Room("Vej Vest", "Du kikker ned mod vej vest.");
-            Room Elektriker_Erik = new Room("Elektriker Eriks hus", "Du kikker ned mod Elektriker Erik");
-            Room Glas_Mager_glenn = new Room("Glas Mager Glenns hus", "Du kikker ned mod Glasmager Glenn.");
-            Room Kunst_Haven = new Room("Kunst Haven", "Du kikker ned mod Kunsthaven");
-
+            Room Baghaven = new Room("baghaven", "Du kikker mod Baghaven.");
+            Room Glad_Nabo = new Room("den glade nabos hus", "Du kikker mod den glade nabo.");
+            Room Sur_Nabo = new Room("den sur nabos hus", "Du kikker mod den sure nabo.");
+            Room Vej_Midt = new Room("Vej midt", "Du kikker mod vej midt.");
+            Room Vej_Øst = new Room("Vej Øst", "Du kikker mod vej øst.");
+            Room Vej_Vest = new Room("Vej Vest", "Du kikker mod vej vest.");
+            Room Elektriker_Erik = new Room("Elektriker Eriks hus", "Du kikker mod Elektriker Erik");
+            Room Glas_Mager_glenn = new Room("Glas Mager Glenns hus", "Du kikker mod Glasmager Glenn.");
+            Room Kunst_Haven = new Room("Kunst Haven", "Du kikker mod Kunsthaven");
             
             // Tilføj kanter mellem rum
             // Pos (1,1)
@@ -247,6 +246,35 @@ namespace World_of_Zuul___3._0
                 if (parts[0] == "slut")
                 {
                     break;
+                }
+                
+                // Dette if statement gør det nemmere for os at bevæge os hurtigere rundt.
+                else if (parts[0] == "devtp" && parts.Length > 1)
+                {
+                    Dictionary<string, Room> Roomdictionary = new Dictionary<string, Room>
+                    {
+                        { "baghaven", Baghaven },
+                        { "glad_nabo", Glad_Nabo },
+                        { "sur_nabo", Sur_Nabo },
+                        { "vej_midt", Vej_Midt },
+                        { "vej_øst", Vej_Øst },
+                        { "vej_vest", Vej_Vest },
+                        { "elektriker_erik", Elektriker_Erik },
+                        { "glas_mager_glenn", Glas_Mager_glenn },
+                        { "kunst_haven", Kunst_Haven }
+                    };
+
+                    if (Roomdictionary.TryGetValue(parts[1].ToLower(), out Room nextRoom))
+                    {
+                        commands.DevMove(nextRoom);
+                        currentRoom = commands.GetCurrentRoom();
+                    }
+                    else
+                    {
+                        Console.Clear();
+                        TextEffect.TxtEffect("Dette er ikke et rum", 40, 800);
+                        currentRoom.EnterRoomMsg();
+                    }
                 }
                 else if (parts[0] == "gå" && parts.Length > 1)
                 {

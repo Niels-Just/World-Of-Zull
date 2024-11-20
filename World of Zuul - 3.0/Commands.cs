@@ -47,6 +47,13 @@ namespace World_of_Zuul___3._0
             }
         }
 
+        //bruges til at bevæge spilleren til ethvert rum uden behov for at være ved siden af det. (dev command)
+        public void DevMove(Room NextRoom)
+        {
+                currentRoom = NextRoom;  // Opdater currentRoom
+                currentRoom.EnterRoomMsg();
+        }
+        
         public void Talk(Player player, string npcName)
         {
             //Skal burge NPC navn IsNullOrEmpty indbygget metode som tjekker om der står noget.
@@ -84,7 +91,9 @@ namespace World_of_Zuul___3._0
                               "'snak [NPC navn]' - Brug denne kommando for at tale med en NPC\n" +
                               "'svar [nummer]' - Brug denne kommando for at svare på spørgsmål\n" +
                               "'inventar' - Giver en liste og genstande i dit inventar\n" + 
-                              "'byg' - Samle solpanelet når du har fået alle delene"); 
+                              "'byg' - Samle solpanelet når du har fået alle delene\n" +
+                              "Dev Commands: 'devtp [rum]' - tp'er dig til et vilkårligt rum\n" + 
+                              "Dev Commands: 'devskip' - Skipper introen"); 
             Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine("Tryk på 'enter' for at komme tilbage til rummet.");;
             Console.ResetColor();
