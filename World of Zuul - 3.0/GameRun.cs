@@ -1,4 +1,5 @@
 using System;
+using System.Net.Sockets;
 
 namespace World_of_Zuul___3._0
 {
@@ -70,14 +71,26 @@ namespace World_of_Zuul___3._0
             Player player = new Player();
             
             //Items til npcer. Skal ændres senere
-            Item part1 = new Item("item name", "description");
-            Item part2 = new Item("part 2", "part 2");
-            Item part3 = new Item("part 3", "part 3");
-            Item part4 = new Item("part 4", "part 4");
-            Item part5 = new Item("part 5", "part 5");
-            Item part6 = new Item("part 6", "part 6");
-            Item part7 = new Item("part 7", "part 7");
-            Item part8 = new Item("part 8", "part 8");
+            Item part0 = new Item("item name", "description");
+            Item part1 = new Item("part1", "part1");
+            Item part2 = new Item("part2", "part2");
+            Item part3 = new Item("part3", "part3");
+            Item part4 = new Item("part4", "part4");
+            Item part5 = new Item("part5", "part5");
+            Item part6 = new Item("part6", "part6");
+            Item part7 = new Item("part7", "part7");
+            Item part8 = new Item("part8", "part8");
+            
+            //laver en liste til items (bruges til devcommanden som tilføjer items med det samme) og tilføjer de items vi har
+            List<Item> items = new List<Item>();
+            items.Add(part1);
+            items.Add(part2);
+            items.Add(part3);
+            items.Add(part4);
+            items.Add(part5);
+            items.Add(part6);
+            items.Add(part7);
+            items.Add(part8);
             
             // Opret NPC'er 
             //Dette er NPCen uden spøgrsmål
@@ -250,7 +263,9 @@ namespace World_of_Zuul___3._0
                  det vil også sige at man kan checke hvad brugeren skriver ind, for eksempel kan man tjekke om, hvis der står slut som det første
                  lige meget hvad der står efter slutter spillet*/
                 string[] parts = command.Split(' ');
-
+                
+                
+                
                 if (parts[0] == "slut")
                 {
                     break;
@@ -321,6 +336,17 @@ namespace World_of_Zuul___3._0
                     else
                     {
                         Console.WriteLine("Du skal befinde dig i baghaven før du kan bygge solpanelet.");
+                    }
+                }
+                
+                else if (parts[0] == "devadd" && parts.Length > 1)
+                {
+                    for (int i = 0; i < items.Count; i++)
+                    {
+                        if (parts[1] == items[i].ItemName.ToLower())
+                        {
+                            player.AddItem(items[i]);
+                        }
                     }
                 }
                 

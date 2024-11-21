@@ -89,6 +89,7 @@ namespace World_of_Zuul___3._0
             player.PrintInventory();
         }
         
+        
         public void Assemble(Player player)
         {
             if (player.HasItem("Frame, Glass")) // Indsæt nødvendige items her
