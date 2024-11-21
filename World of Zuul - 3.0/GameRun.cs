@@ -87,7 +87,7 @@ namespace World_of_Zuul___3._0
             
             //Dette er hvis npcen skal kunne stille spørgsmål
             NPC glasmagerGlenn = new NPC(
-                "Glasmager Glen",
+                "Glasmager Glenn",
                 "Hej Nabo",
                 new List<Question>
                 {
@@ -99,6 +99,7 @@ namespace World_of_Zuul___3._0
                         2)
                 },
                 true,
+                
                 part1
                 );   
             
@@ -115,6 +116,7 @@ namespace World_of_Zuul___3._0
                         2)
                 },
                 true,
+                
                 part2
                 );        
             
@@ -131,6 +133,7 @@ namespace World_of_Zuul___3._0
                         2)
                 },
                 true,
+                
                 part3
                 );
             
@@ -147,6 +150,7 @@ namespace World_of_Zuul___3._0
                         2)
                 },
                 true,
+                
                 part4
                 );
             
@@ -163,6 +167,7 @@ namespace World_of_Zuul___3._0
                          2)
                  },
                  true,
+                 
                  part5
                  );           
                 
@@ -179,6 +184,7 @@ namespace World_of_Zuul___3._0
                         2)
                 },
                 true,
+                
                 part6
                 );
                 
@@ -195,6 +201,7 @@ namespace World_of_Zuul___3._0
                         2)
                 },
                 true,
+                
                 part7
                 );
             
@@ -212,6 +219,7 @@ namespace World_of_Zuul___3._0
                    
                 },
                 true,
+                
                 part8
                 );
 
@@ -236,7 +244,7 @@ namespace World_of_Zuul___3._0
             {
                 Console.WriteLine("Vælg nu hvad du vil gøre, er du i tvivl skriv 'Hjælp'");
                 string command = Console.ReadLine().ToLower();
-    
+
                 /*Her bliver parts som er et string array delt op ved hvert mellemrum
                  Dette er smart fordi at man kan kalde if else statments og tjekke hvad der står på de forskellige steder i arrayet
                  det vil også sige at man kan checke hvad brugeren skriver ind, for eksempel kan man tjekke om, hvis der står slut som det første
@@ -247,7 +255,7 @@ namespace World_of_Zuul___3._0
                 {
                     break;
                 }
-                
+
                 // Dette if statement gør det nemmere for os at bevæge os hurtigere rundt.
                 else if (parts[0] == "devtp" && parts.Length > 1)
                 {
@@ -281,21 +289,28 @@ namespace World_of_Zuul___3._0
                     commands.Move(parts[1]);
                     currentRoom = commands.GetCurrentRoom(); // Opdater currentRoom efter Move
                 }
-                else if (parts[0] == "snak" && parts.Length > 1)
+                else if (parts[0] == "snak" && parts.Length == 1 && parts[1].ToLower() == "fnorkel")
                 {
-                    if (parts[1].ToLower() == "fnorkel")
-                    {
-                        fnorkel.TalkFnorkel(Baghaven); 
-                    }
-                    else
-                    {
-                        commands.Talk(player, parts[1]);
-                    }
+                        fnorkel.TalkFnorkel(Baghaven);
                     currentRoom = commands.GetCurrentRoom(); 
+                }
+                else if (parts[0] == "snak" && parts.Length == 2)
+                {
+                    commands.Talk(player, parts[1]);
+                    currentRoom = commands.GetCurrentRoom(); 
+                }
+                
+                //tjekker om npcen har 2 navne og sætter et mellemrum ind for at kunne sammenligne npcname og npcinroom[0] i talk commanden.
+                
+                else if (parts[0] == "snak" && parts.Length == 3)
+                {
+                        commands.Talk(player, $"{parts[1]} {parts[2]}");
+                        currentRoom = commands.GetCurrentRoom(); 
                 }
                 else if (parts[0] == "inventar")
                 {
                     commands.Inventory(player);
+                    currentRoom.EnterRoomMsg();
                 }
                 else if (parts[0] == "byg")
                 {
@@ -308,7 +323,7 @@ namespace World_of_Zuul___3._0
                         Console.WriteLine("Du skal befinde dig i baghaven før du kan bygge solpanelet.");
                     }
                 }
-
+                
                 else if (parts[0] == "hjælp")
                 {
                     commands.Hjælp();

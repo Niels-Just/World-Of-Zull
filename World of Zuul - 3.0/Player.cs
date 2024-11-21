@@ -57,7 +57,7 @@ public class Player
     {
         if (inventory.Count == 0)
         {
-            Console.WriteLine("Du har ingen genstande i dit inventar");
+            TextEffect.TxtEffectNpc("Du har ingen genstande i dit inventar", 20);
         }
         else
         {

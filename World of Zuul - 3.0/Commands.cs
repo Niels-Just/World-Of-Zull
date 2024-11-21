@@ -10,27 +10,6 @@ namespace World_of_Zuul___3._0
             currentRoom = startingRoom; // Gem reference til den oprindelige currentRoom
         }
 
-        public void Look(string direction)
-        {
-            if (currentRoom == null)
-            {
-                Console.WriteLine("Dette er ikke muligt!");
-            }
-            Room nextRoom = currentRoom.FollowEdge(direction);
-            if (nextRoom != null)
-            { 
-                Console.Clear();
-                TextEffect.TxtEffect(nextRoom.GetDescription(), 30, 1200);
-                currentRoom.EnterRoomMsg();
-            }
-            else
-            { 
-                Console.Clear();
-                TextEffect.TxtEffect("Der er intet rum denne vej!", 40, 2000);
-                currentRoom.EnterRoomMsg();
-            }
-        }
-
         public void Move(string direction)
         {
             Room nextRoom = currentRoom.FollowEdge(direction);
@@ -65,8 +44,8 @@ namespace World_of_Zuul___3._0
                 return;
             }
             
-            var npcsInRoom = currentRoom.npcer;
-            if (npcsInRoom.Count == 0)
+            var npcInRoom = currentRoom.npcer;
+            if (npcInRoom.Count == 0)
             {
                 Console.Clear();
                 TextEffect.TxtEffect("Her er ingen at tale med",20,200);
@@ -74,10 +53,16 @@ namespace World_of_Zuul___3._0
                 return;
             }
             
-            if (npcsInRoom.Count == 1)
+            if (npcInRoom.Count == 1 && npcName == npcInRoom[0].Name.ToLower())
             {
-                var npc = npcsInRoom[0];
+                var npc = npcInRoom[0];
                 npc.Talk(player);
+                currentRoom.EnterRoomMsg();
+            }
+            else
+            {
+                Console.Clear();
+                TextEffect.TxtEffect("Personen du leder efter er her ikke. prøv at snakke med " + npcInRoom[0].Name,20,1000);
                 currentRoom.EnterRoomMsg();
             }
         }
@@ -85,6 +70,7 @@ namespace World_of_Zuul___3._0
         public void Hjælp()
         {
             Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine("Hjælp: Her er en beskrivelse af de tilgængelige kommandoer: \n" +
                               "'gå [retning]' - Brug denne kommando for at bevæge dig til et rum i den angivne retning. \n" +
                               "'slut' - Brug denne kommando for at afslutte spillet. \n" +
@@ -94,12 +80,7 @@ namespace World_of_Zuul___3._0
                               "'byg' - Samle solpanelet når du har fået alle delene\n" +
                               "Dev Commands: 'devtp [rum]' - tp'er dig til et vilkårligt rum\n" + 
                               "Dev Commands: 'devskip' - Skipper introen"); 
-            Console.ForegroundColor = ConsoleColor.Blue;
-            Console.WriteLine("Tryk på 'enter' for at komme tilbage til rummet.");;
-            Console.ResetColor();
-            
-            Console.ReadLine();
-            Console.Clear();
+            TextEffect.TxtEffectNpc("", 20);;
             currentRoom.EnterRoomMsg();
         }
         
