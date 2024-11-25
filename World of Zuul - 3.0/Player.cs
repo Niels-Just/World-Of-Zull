@@ -57,15 +57,38 @@ public class Player
     {
         if (inventory.Count == 0)
         {
-            Console.WriteLine("Du har ingen genstande i dit inventar");
+            TextEffect.TxtEffectNpc("Du har ingen genstande i dit inventar", 20);
         }
         else
         {
-            Console.WriteLine("Dit inventar:");
-            foreach (var item in inventory)
+            /*her bliver der tjekket for hver item i ens inventory og hvis man har skaffet det vil der blive udskrevet i konsollen hvilke items man har og
+            hvor mange man mangler dette er en modificere kopi af texteffect metoden så den passer til det den skal gøre :) */
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("Dit inventar:\n");
+            Console.ResetColor();
+            foreach (Item item in inventory)
             {
-                Console.WriteLine(item.ToString());
+                foreach (char c in item.ItemName)
+                {
+                    Console.Write(c);
+                    Thread.Sleep(100);
+                }
+                Console.WriteLine();
             }
+            Console.WriteLine();
+            //viser hvor mange items man mangler før man er færdig med spillet og skriver det ud til spilleren
+            int intitemsleft = 8 - inventory.Count;
+            string stringitemsleft = "Du mangler at finde " + intitemsleft + " items indtil du kan lave en solcelle";
+            
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            foreach (char c in stringitemsleft)
+            {
+                Console.Write(c);
+                Thread.Sleep(30);
+            }
+            Console.WriteLine();
+            Console.ResetColor();
+            TextEffect.TxtEffectNpc("", 0);
         }
     }
 }

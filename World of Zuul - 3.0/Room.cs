@@ -38,7 +38,7 @@ public class Room : Node
         TextEffect.TxtEffect("Du befinder dig nu i: " + name ,20,2000);
         
         Console.ForegroundColor = ConsoleColor.Yellow;
-        Console.WriteLine("Dine mulige retninger du kan bevæger dig er:");
+        Console.WriteLine("Dine mulige retninger du kan bevæge dig er:");
         Console.ResetColor();
         
         foreach (var exit in edges)
@@ -61,11 +61,12 @@ public class Room : Node
         }
     }
     
-   
-
+    
     //returnere den overritede metode som en Room type istedet for hvad ellers ville blive til en Node type.
     public override Room FollowEdge(string direction)
     {
         return (Room)(base.FollowEdge(direction));
     }
+    
+    
 }

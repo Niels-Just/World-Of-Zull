@@ -9,6 +9,7 @@ namespace World_of_Zuul___3._0
                 Console.Write(c);
                 Thread.Sleep(pauseBetweenC);
             }
+
             Thread.Sleep(pauseAfter);
             Console.Clear();
         }
@@ -20,13 +21,23 @@ namespace World_of_Zuul___3._0
                 Console.Write(c);
                 Thread.Sleep(pauseBetweenC);
             }
-            Console.ForegroundColor = ConsoleColor.Red; 
-            Console.WriteLine("\n\nTryk på 'enter' for at komme videre.");
-            
+
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("\nTryk på 'enter' for at komme videre.");
+
+            while (true)
+            {
+                if (Console.KeyAvailable)
+                {
+                    ConsoleKeyInfo key = Console.ReadKey(true);
+                    if (key.Key == ConsoleKey.Enter)
+                    {
+                        Console.Clear();
+                        break;
+                    }
+                }
+            }
             Console.ResetColor();
-            
-            Console.ReadLine();
-            Console.Clear();
         }
     }
 }

@@ -27,7 +27,7 @@ namespace World_of_Zuul___3._0
             Console.Clear();
             TextEffect.TxtEffectNpc($"{Name}: {Description}\n", 40);
 
-            bool allCorrect = true;
+            int CorrectQuestions = 0;
 
             if (HasPart)
             {
@@ -52,6 +52,7 @@ namespace World_of_Zuul___3._0
                         {
                             TextEffect.TxtEffect("Det er det rigtige svar!\n", 30, 200);
                             correctAnswer = true;
+                            CorrectQuestions++;
                         }
                         else
                         {
@@ -60,14 +61,13 @@ namespace World_of_Zuul___3._0
                     }
                 }
                 
-                if (allCorrect)
+                if (CorrectQuestions == 2)
                 {
                     TextEffect.TxtEffectNpc("Du har besvaret alle spørgsmål korrekt!\n" +
                                                                $"Her din beløning! Du får {Part.ItemName}" , 30);
                     //Her skal part tilføjes til spillerens inventar
                     player.AddItem(Part);
                     HasPart = false;
-                
                 }
             }
             else
@@ -75,7 +75,6 @@ namespace World_of_Zuul___3._0
                 TextEffect.TxtEffect("Du har allerede fundet alle delene her.\n", 30, 200);
             }
         }
-
     }
 
     public class Question

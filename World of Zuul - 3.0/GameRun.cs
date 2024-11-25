@@ -1,4 +1,5 @@
 using System;
+using System.Net.Sockets;
 
 namespace World_of_Zuul___3._0
 {
@@ -11,16 +12,15 @@ namespace World_of_Zuul___3._0
             GameRun game = new GameRun();
 
             // Definer rum og NPC'er
-            Room Baghaven = new Room("baghaven", "Du kikker ned mod Baghaven.");
-            Room Glad_Nabo = new Room("den glade nabos hus", "Du kikker ned mod den glade nabo.");
-            Room Sur_Nabo = new Room("den sur nabos hus", "Du kikker ned mod den sure nabo.");
-            Room Vej_Midt = new Room("Vej midt", "Du kikker ned mod vej midt.");
-            Room Vej_Øst = new Room("Vej Øst", "Du kikker ned mod vej øst.");
-            Room Vej_Vest = new Room("Vej Vest", "Du kikker ned mod vej vest.");
-            Room Elektriker_Erik = new Room("Elektriker Eriks hus", "Du kikker ned mod Elektriker Erik");
-            Room Glas_Mager_glenn = new Room("Glas Mager Glenns hus", "Du kikker ned mod Glasmager Glenn.");
-            Room Kunst_Haven = new Room("Kunst Haven", "Du kikker ned mod Kunsthaven");
-
+            Room Baghaven = new Room("baghaven", "Du kikker mod Baghaven.");
+            Room Glad_Nabo = new Room("den glade nabos hus", "Du kikker mod den glade nabo.");
+            Room Sur_Nabo = new Room("den sur nabos hus", "Du kikker mod den sure nabo.");
+            Room Vej_Midt = new Room("Vej midt", "Du kikker mod vej midt.");
+            Room Vej_Øst = new Room("Vej Øst", "Du kikker mod vej øst.");
+            Room Vej_Vest = new Room("Vej Vest", "Du kikker mod vej vest.");
+            Room Elektriker_Erik = new Room("Elektriker Eriks hus", "Du kikker mod Elektriker Erik");
+            Room Glas_Mager_glenn = new Room("Glas Mager Glenns hus", "Du kikker mod Glasmager Glenn.");
+            Room Kunst_Haven = new Room("Kunst Haven", "Du kikker mod Kunsthaven");
             
             // Tilføj kanter mellem rum
             // Pos (1,1)
@@ -71,14 +71,26 @@ namespace World_of_Zuul___3._0
             Player player = new Player();
             
             //Items til npcer. Skal ændres senere
-            Item part1 = new Item("item name", "description");
-            Item part2 = new Item("part 2", "part 2");
-            Item part3 = new Item("part 3", "part 3");
-            Item part4 = new Item("part 4", "part 4");
-            Item part5 = new Item("part 5", "part 5");
-            Item part6 = new Item("part 6", "part 6");
-            Item part7 = new Item("part 7", "part 7");
-            Item part8 = new Item("part 8", "part 8");
+            Item part0 = new Item("item name", "description");
+            Item part1 = new Item("part1", "part1");
+            Item part2 = new Item("part2", "part2");
+            Item part3 = new Item("part3", "part3");
+            Item part4 = new Item("part4", "part4");
+            Item part5 = new Item("part5", "part5");
+            Item part6 = new Item("part6", "part6");
+            Item part7 = new Item("part7", "part7");
+            Item part8 = new Item("part8", "part8");
+            
+            //laver en liste til items (bruges til devcommanden som tilføjer items med det samme) og tilføjer de items vi har
+            List<Item> items = new List<Item>();
+            items.Add(part1);
+            items.Add(part2);
+            items.Add(part3);
+            items.Add(part4);
+            items.Add(part5);
+            items.Add(part6);
+            items.Add(part7);
+            items.Add(part8);
             
             // Opret NPC'er 
             //Dette er NPCen uden spøgrsmål
@@ -88,7 +100,7 @@ namespace World_of_Zuul___3._0
             
             //Dette er hvis npcen skal kunne stille spørgsmål
             NPC glasmagerGlenn = new NPC(
-                "Glasmager Glen",
+                "Glasmager Glenn",
                 "Hej Nabo",
                 new List<Question>
                 {
@@ -100,6 +112,7 @@ namespace World_of_Zuul___3._0
                         2)
                 },
                 true,
+                
                 part1
                 );   
             
@@ -116,6 +129,7 @@ namespace World_of_Zuul___3._0
                         2)
                 },
                 true,
+                
                 part2
                 );        
             
@@ -132,6 +146,7 @@ namespace World_of_Zuul___3._0
                         2)
                 },
                 true,
+                
                 part3
                 );
             
@@ -148,6 +163,7 @@ namespace World_of_Zuul___3._0
                         2)
                 },
                 true,
+                
                 part4
                 );
             
@@ -164,6 +180,7 @@ namespace World_of_Zuul___3._0
                          2)
                  },
                  true,
+                 
                  part5
                  );           
                 
@@ -180,6 +197,7 @@ namespace World_of_Zuul___3._0
                         2)
                 },
                 true,
+                
                 part6
                 );
                 
@@ -196,6 +214,7 @@ namespace World_of_Zuul___3._0
                         2)
                 },
                 true,
+                
                 part7
                 );
             
@@ -213,6 +232,7 @@ namespace World_of_Zuul___3._0
                    
                 },
                 true,
+                
                 part8
                 );
 
@@ -237,37 +257,75 @@ namespace World_of_Zuul___3._0
             {
                 Console.WriteLine("Vælg nu hvad du vil gøre, er du i tvivl skriv 'Hjælp'");
                 string command = Console.ReadLine().ToLower();
-    
+
                 /*Her bliver parts som er et string array delt op ved hvert mellemrum
                  Dette er smart fordi at man kan kalde if else statments og tjekke hvad der står på de forskellige steder i arrayet
                  det vil også sige at man kan checke hvad brugeren skriver ind, for eksempel kan man tjekke om, hvis der står slut som det første
                  lige meget hvad der står efter slutter spillet*/
                 string[] parts = command.Split(' ');
-
+                
+                
+                
                 if (parts[0] == "slut")
                 {
                     break;
+                }
+
+                // Dette if statement gør det nemmere for os at bevæge os hurtigere rundt.
+                else if (parts[0] == "devtp" && parts.Length > 1)
+                {
+                    Dictionary<string, Room> Roomdictionary = new Dictionary<string, Room>
+                    {
+                        { "baghaven", Baghaven },
+                        { "glad_nabo", Glad_Nabo },
+                        { "sur_nabo", Sur_Nabo },
+                        { "vej_midt", Vej_Midt },
+                        { "vej_øst", Vej_Øst },
+                        { "vej_vest", Vej_Vest },
+                        { "elektriker_erik", Elektriker_Erik },
+                        { "glas_mager_glenn", Glas_Mager_glenn },
+                        { "kunst_haven", Kunst_Haven }
+                    };
+
+                    if (Roomdictionary.TryGetValue(parts[1].ToLower(), out Room nextRoom))
+                    {
+                        commands.DevMove(nextRoom);
+                        currentRoom = commands.GetCurrentRoom();
+                    }
+                    else
+                    {
+                        Console.Clear();
+                        TextEffect.TxtEffect("Dette er ikke et rum", 40, 800);
+                        currentRoom.EnterRoomMsg();
+                    }
                 }
                 else if (parts[0] == "gå" && parts.Length > 1)
                 {
                     commands.Move(parts[1]);
                     currentRoom = commands.GetCurrentRoom(); // Opdater currentRoom efter Move
                 }
-                else if (parts[0] == "snak" && parts.Length > 1)
+                else if (parts[0] == "snak" && parts.Length == 1 && parts[1].ToLower() == "fnorkel")
                 {
-                    if (parts[1].ToLower() == "fnorkel")
-                    {
-                        fnorkel.TalkFnorkel(Baghaven); 
-                    }
-                    else
-                    {
-                        commands.Talk(player, parts[1]);
-                    }
+                        fnorkel.TalkFnorkel(Baghaven);
                     currentRoom = commands.GetCurrentRoom(); 
+                }
+                else if (parts[0] == "snak" && parts.Length == 2)
+                {
+                    commands.Talk(player, parts[1]);
+                    currentRoom = commands.GetCurrentRoom(); 
+                }
+                
+                //tjekker om npcen har 2 navne og sætter et mellemrum ind for at kunne sammenligne npcname og npcinroom[0] i talk commanden.
+                
+                else if (parts[0] == "snak" && parts.Length == 3)
+                {
+                        commands.Talk(player, $"{parts[1]} {parts[2]}");
+                        currentRoom = commands.GetCurrentRoom(); 
                 }
                 else if (parts[0] == "inventar")
                 {
                     commands.Inventory(player);
+                    currentRoom.EnterRoomMsg();
                 }
                 else if (parts[0] == "byg")
                 {
@@ -280,7 +338,18 @@ namespace World_of_Zuul___3._0
                         Console.WriteLine("Du skal befinde dig i baghaven før du kan bygge solpanelet.");
                     }
                 }
-
+                
+                else if (parts[0] == "devadd" && parts.Length > 1)
+                {
+                    for (int i = 0; i < items.Count; i++)
+                    {
+                        if (parts[1] == items[i].ItemName.ToLower())
+                        {
+                            player.AddItem(items[i]);
+                        }
+                    }
+                }
+                
                 else if (parts[0] == "hjælp")
                 {
                     commands.Hjælp();
