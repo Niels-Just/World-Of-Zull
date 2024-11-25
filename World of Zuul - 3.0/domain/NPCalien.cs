@@ -1,4 +1,6 @@
-namespace World_of_Zuul___3._0
+using World_of_Zuul___3._0.presentation;
+
+namespace World_of_Zuul___3._0.domain
 {
     //NPCalien arver fra NPC så også NPCalien kan bruge add metoden
     public class NPCalien : NPC
@@ -17,7 +19,6 @@ namespace World_of_Zuul___3._0
             TextEffect.TxtEffectNpc($"{Name}: {Description}\n", 40);
             
             TextEffect.TxtEffectNpc($"{Information}\n", 40);
-            currentRoom.EnterRoomMsg();
         }
     }
 }

@@ -1,4 +1,6 @@
-namespace World_of_Zuul___3._0;
+using World_of_Zuul___3._0.presentation;
+
+namespace World_of_Zuul___3._0.domain;
 
 public class Player
 {

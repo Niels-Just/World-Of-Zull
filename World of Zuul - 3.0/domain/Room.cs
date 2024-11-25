@@ -1,4 +1,6 @@
-namespace World_of_Zuul___3._0;
+using World_of_Zuul___3._0.presentation;
+
+namespace World_of_Zuul___3._0.domain;
 
 public class Room : Node
 {
@@ -56,7 +58,7 @@ public class Room : Node
             Console.ResetColor();
             foreach (var npc in npcer)
             {
-                Console.WriteLine($"- {npc.Name} sig\n");
+                Console.WriteLine($"- {npc.Name} sig");
             }
         }
     }

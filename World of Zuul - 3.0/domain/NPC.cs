@@ -1,7 +1,6 @@
-using System;
-using System.Collections.Generic;
+using World_of_Zuul___3._0.presentation;
 
-namespace World_of_Zuul___3._0
+namespace World_of_Zuul___3._0.domain
 {
     public class NPC
     {
@@ -64,7 +63,7 @@ namespace World_of_Zuul___3._0
                 if (CorrectQuestions == 2)
                 {
                     TextEffect.TxtEffectNpc("Du har besvaret alle spørgsmål korrekt!\n" +
-                                                               $"Her din beløning! Du får {Part.ItemName}" , 30);
+                                                               $"Her din beløning! Du får {Part.ItemName}\n" , 30);
                     //Her skal part tilføjes til spillerens inventar
                     player.AddItem(Part);
                     HasPart = false;

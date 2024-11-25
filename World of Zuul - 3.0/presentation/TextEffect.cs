@@ -1,4 +1,4 @@
-namespace World_of_Zuul___3._0
+namespace World_of_Zuul___3._0.presentation
 {
     public class TextEffect
     {

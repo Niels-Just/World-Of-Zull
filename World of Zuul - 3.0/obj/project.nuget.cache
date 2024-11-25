@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "eJTF7f3gs9E=",
+  "dgSpecHash": "K/y2ordwxbQ=",
   "success": true,
   "projectFilePath": "/Users/niels-just/World-Of-Zull/World of Zuul - 3.0/World of Zuul - 3.0.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/niels-just/.nuget/packages/microsoft.netcore.app.ref/8.0.11/microsoft.netcore.app.ref.8.0.11.nupkg.sha512",
+    "/Users/niels-just/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.11/microsoft.aspnetcore.app.ref.8.0.11.nupkg.sha512",
+    "/Users/niels-just/.nuget/packages/microsoft.netcore.app.host.osx-arm64/8.0.11/microsoft.netcore.app.host.osx-arm64.8.0.11.nupkg.sha512"
+  ],
   "logs": []
 }

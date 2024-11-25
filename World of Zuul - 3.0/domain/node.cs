@@ -1,4 +1,4 @@
-namespace World_of_Zuul___3._0;
+namespace World_of_Zuul___3._0.domain;
 public class Node
 {
     protected string name;

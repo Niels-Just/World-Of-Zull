@@ -1,4 +1,4 @@
-namespace World_of_Zuul___3._0
+namespace World_of_Zuul___3._0.presentation
 {
     public class StartScreen
     {
@@ -38,7 +38,8 @@ namespace World_of_Zuul___3._0
             else
             {
                 // Hvis brugeren skriver noget andet, vis en fejlmeddelelse og gentag menuen
-                Console.WriteLine("\nUgyldigt valg, prøv igen.");
+                TextEffect.TxtEffect("\nUgyldigt valg, prøv igen.",20,200);
+                Console.Clear();
                 ShowMenu();
             }
         }
