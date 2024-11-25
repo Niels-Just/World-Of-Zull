@@ -63,8 +63,7 @@ namespace World_of_Zuul___3._0.domain
                 if (CorrectQuestions == 2)
                 {
                     TextEffect.TxtEffectNpc("Du har besvaret alle spørgsmål korrekt!\n" +
-                                                               $"Her din beløning! Du får {Part.ItemName}\n" , 30);
-                    //Her skal part tilføjes til spillerens inventar
+                                            $"Her er din belønning! Du får {Part.ItemName}" , 30);
                     player.AddItem(Part);
                     HasPart = false;
                 }
