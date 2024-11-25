@@ -12,32 +12,32 @@ namespace World_of_Zuul___3._0
             GameRun game = new GameRun();
 
             // Definer rum og NPC'er
-            Room Baghaven = new Room("baghaven", "Du kikker mod Baghaven.");
+            Room Baghaven = new Room("baghaven", "Du kikker mod baghaven.");
             Room Glad_Nabo = new Room("den glade nabos hus", "Du kikker mod den glade nabo.");
-            Room Sur_Nabo = new Room("den sur nabos hus", "Du kikker mod den sure nabo.");
+            Room Sur_Nabo = new Room("den sure nabos hus", "Du kikker mod den sure nabo.");
             Room Vej_Midt = new Room("Vej midt", "Du kikker mod vej midt.");
             Room Vej_Øst = new Room("Vej Øst", "Du kikker mod vej øst.");
             Room Vej_Vest = new Room("Vej Vest", "Du kikker mod vej vest.");
             Room Elektriker_Erik = new Room("Elektriker Eriks hus", "Du kikker mod Elektriker Erik");
-            Room Glas_Mager_glenn = new Room("Glas Mager Glenns hus", "Du kikker mod Glasmager Glenn.");
-            Room Kunst_Haven = new Room("Kunst Haven", "Du kikker mod Kunsthaven");
+            Room Glasmager_Glenn = new Room("Glasmager Glenns hus", "Du kikker mod Glasmager Glenn.");
+            Room Kunsthaven = new Room("Kunsthaven", "Du kikker mod Kunsthaven");
             
             // Tilføj kanter mellem rum
             // Pos (1,1)
-            Glas_Mager_glenn.AddEdge("Syd", Vej_Vest);
-            Glas_Mager_glenn.AddEdge("Øst", Elektriker_Erik);
+            Glasmager_Glenn.AddEdge("Syd", Vej_Vest);
+            Glasmager_Glenn.AddEdge("Øst", Elektriker_Erik);
             
             // Pos (1,2)
-            Elektriker_Erik.AddEdge("Vest", Glas_Mager_glenn);
-            Elektriker_Erik.AddEdge("Øst", Kunst_Haven);
+            Elektriker_Erik.AddEdge("Vest", Glasmager_Glenn);
+            Elektriker_Erik.AddEdge("Øst", Kunsthaven);
             Elektriker_Erik.AddEdge("Syd", Vej_Midt);
             
             // Pos (1,3)
-            Kunst_Haven.AddEdge("Vest", Elektriker_Erik);
-            Kunst_Haven.AddEdge("Syd", Vej_Øst);
+            Kunsthaven.AddEdge("Vest", Elektriker_Erik);
+            Kunsthaven.AddEdge("Syd", Vej_Øst);
             
             // Pos (2,1)
-            Vej_Vest.AddEdge("Nord", Glas_Mager_glenn);
+            Vej_Vest.AddEdge("Nord", Glasmager_Glenn);
             Vej_Vest.AddEdge("Syd", Glad_Nabo);
             Vej_Vest.AddEdge("Øst", Vej_Midt);
             
@@ -48,7 +48,7 @@ namespace World_of_Zuul___3._0
             Vej_Midt.AddEdge("Nord", Elektriker_Erik);
             
             // Pos (2,3)
-            Vej_Øst.AddEdge("Nord", Kunst_Haven);
+            Vej_Øst.AddEdge("Nord", Kunsthaven);
             Vej_Øst.AddEdge("Syd", Sur_Nabo);
             Vej_Øst.AddEdge("Vest", Vej_Midt);
             
@@ -95,7 +95,7 @@ namespace World_of_Zuul___3._0
             // Opret NPC'er 
             //Dette er NPCen uden spøgrsmål
             Item temp = new Item("temp", "temp");
-            NPCalien fnorkel = new NPCalien("Fnorkel", "Fnorkel rumvæsnet der er stytet ned!","Du kan vel ikke hjælpe mig med at samle matterialer ind til solpannelet?", false, temp);
+            NPCalien fnorkel = new NPCalien("Fnorkel", "Fnorkel rumvæsnet der er styrtet ned!","Du kan vel ikke hjælpe mig med at samle materialer ind til solpanelet?", false, temp);
             
             
             //Dette er hvis npcen skal kunne stille spørgsmål
@@ -104,10 +104,10 @@ namespace World_of_Zuul___3._0
                 "Hej Nabo",
                 new List<Question>
                 {
-                    new Question("Det her er det først spørgsmål!",
+                    new Question("Det her er det første spørgsmål!",
                         new string[] { "Svar 1 (Rigtigt)", "Svar 2 (Forkert)", "Svar 3 (Forkert)" },
                         1),
-                    new Question("Det her er det andet spørgsmålet!",
+                    new Question("Det her er det andet spørgsmål!",
                         new string[] { "Svar 1 (Forkert)", "Svar 2 (Rigtigt)", "Svar 3 (Forkert)" },
                         2)
                 },
@@ -121,10 +121,10 @@ namespace World_of_Zuul___3._0
                 "Hej Nabo",
                 new List<Question>
                 {
-                    new Question("Det her er det først spørgsmål!",
+                    new Question("Det her er det første spørgsmål!",
                         new string[] { "Svar 1 (Rigtigt)", "Svar 2 (Forkert)", "Svar 3 (Forkert)" },
                         1),
-                    new Question("Det her er det andet spørgsmålet!",
+                    new Question("Det her er det andet spørgsmål!",
                         new string[] { "Svar 1 (Forkert)", "Svar 2 (Rigtigt)", "Svar 3 (Forkert)" },
                         2)
                 },
@@ -138,10 +138,10 @@ namespace World_of_Zuul___3._0
                 "Hej Nabo",
                 new List<Question>
                 {
-                    new Question("Det her er det først spørgsmål!",
+                    new Question("Det her er det første spørgsmål!",
                         new string[] { "Svar 1 (Rigtigt)", "Svar 2 (Forkert)", "Svar 3 (Forkert)" },
                         1),
-                    new Question("Det her er det andet spørgsmålet!",
+                    new Question("Det her er det andet spørgsmål!",
                         new string[] { "Svar 1 (Forkert)", "Svar 2 (Rigtigt)", "Svar 3 (Forkert)" },
                         2)
                 },
@@ -155,10 +155,10 @@ namespace World_of_Zuul___3._0
                 "Hej Nabo",
                 new List<Question>
                 {
-                    new Question("Det her er det først spørgsmål!",
+                    new Question("Det her er det første spørgsmål!",
                         new string[] { "Svar 1 (Rigtigt)", "Svar 2 (Forkert)", "Svar 3 (Forkert)" },
                         1),
-                    new Question("Det her er det andet spørgsmålet!",
+                    new Question("Det her er det andet spørgsmål!",
                         new string[] { "Svar 1 (Forkert)", "Svar 2 (Rigtigt)", "Svar 3 (Forkert)" },
                         2)
                 },
@@ -172,10 +172,10 @@ namespace World_of_Zuul___3._0
                  "Hej Nabo",
                  new List<Question>
                  {
-                     new Question("Det her er det først spørgsmål!",
+                     new Question("Det her er det første spørgsmål!",
                          new string[] { "Svar 1 (Rigtigt)", "Svar 2 (Forkert)", "Svar 3 (Forkert)" },
                          1),
-                     new Question("Det her er det andet spørgsmålet!",
+                     new Question("Det her er det andet spørgsmål!",
                          new string[] { "Svar 1 (Forkert)", "Svar 2 (Rigtigt)", "Svar 3 (Forkert)" },
                          2)
                  },
@@ -189,10 +189,10 @@ namespace World_of_Zuul___3._0
                 "Hej Nabo",
                 new List<Question>
                 {
-                    new Question("Det her er det først spørgsmål!",
+                    new Question("Det her er det første spørgsmål!",
                         new string[] { "Svar 1 (Rigtigt)", "Svar 2 (Forkert)", "Svar 3 (Forkert)" },
                         1),
-                    new Question("Det her er det andet spørgsmålet!",
+                    new Question("Det her er det andet spørgsmål!",
                         new string[] { "Svar 1 (Forkert)", "Svar 2 (Rigtigt)", "Svar 3 (Forkert)" },
                         2)
                 },
@@ -209,7 +209,7 @@ namespace World_of_Zuul___3._0
                     new Question("Det her er det første spørgsmål!", 
                         new string[] { "Svar 1 (Forkert)", "Svar 2 (Rigtigt)", "Svar 3 (Forkert)" }, 
                         2),
-                    new Question("Hvad er det andet spørgsmål!", 
+                    new Question("Det her er det andet spørgsmål!", 
                         new string[] { "Svar 1 (Forkert)", "Svar 2 (Rigtigt)", "Svar 3 (Forkert)" }, 
                         2)
                 },
@@ -223,10 +223,10 @@ namespace World_of_Zuul___3._0
                 "Hej Nabo ):<",
                 new List<Question>
                 {
-                    new Question("Det her er det først spørgsmål!", 
+                    new Question("Det her er det første spørgsmål!", 
                         new string[] { "Svar 1 (Rigtigt)", "Svar 2 (Forkert)", "Svar 3 (Forkert)" }, 
                         1),
-                    new Question("Det her er det andet spørgsmålet!", 
+                    new Question("Det her er det andet spørgsmål!", 
                         new string[] { "Svar 1 (Forkert)", "Svar 2 (Rigtigt)", "Svar 3 (Forkert)" }, 
                         2)
                    
@@ -237,9 +237,9 @@ namespace World_of_Zuul___3._0
                 );
 
             // Tilføj NPC'er til rum
-            Glas_Mager_glenn.AddNPC(glasmagerGlenn);
+            Glasmager_Glenn.AddNPC(glasmagerGlenn);
             Elektriker_Erik.AddNPC(elektrikerErik);
-            Kunst_Haven.AddNPC(kunstKaren);
+            Kunsthaven.AddNPC(kunstKaren);
             Vej_Vest.AddNPC(bilejerenBent);
             Vej_Midt.AddNPC(naboBørn);
             Vej_Øst.AddNPC(gud);
@@ -283,8 +283,8 @@ namespace World_of_Zuul___3._0
                         { "vej_øst", Vej_Øst },
                         { "vej_vest", Vej_Vest },
                         { "elektriker_erik", Elektriker_Erik },
-                        { "glas_mager_glenn", Glas_Mager_glenn },
-                        { "kunst_haven", Kunst_Haven }
+                        { "glas_mager_glenn", Glasmager_Glenn },
+                        { "kunst_haven", Kunsthaven }
                     };
 
                     if (Roomdictionary.TryGetValue(parts[1].ToLower(), out Room nextRoom))

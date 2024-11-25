@@ -62,7 +62,7 @@ namespace World_of_Zuul___3._0
             else
             {
                 Console.Clear();
-                TextEffect.TxtEffect("Personen du leder efter er her ikke. prøv at snakke med " + npcInRoom[0].Name,20,1000);
+                TextEffect.TxtEffect("Personen du leder efter er her ikke. Prøv at snakke med " + npcInRoom[0].Name,20,1000);
                 currentRoom.EnterRoomMsg();
             }
         }
@@ -76,8 +76,8 @@ namespace World_of_Zuul___3._0
                               "'slut' - Brug denne kommando for at afslutte spillet. \n" +
                               "'snak [NPC navn]' - Brug denne kommando for at tale med en NPC\n" +
                               "'svar [nummer]' - Brug denne kommando for at svare på spørgsmål\n" +
-                              "'inventar' - Giver en liste og genstande i dit inventar\n" + 
-                              "'byg' - Samle solpanelet når du har fået alle delene\n" +
+                              "'inventar' - Giver en liste over genstande i dit inventar\n" + 
+                              "'byg' - Samler solpanelet når du har fået alle delene\n" +
                               "Dev Commands: 'devtp [rum]' - tp'er dig til et vilkårligt rum\n" + 
                               "Dev Commands: 'devskip' - Skipper introen"); 
             TextEffect.TxtEffectNpc("", 20);;
@@ -92,10 +92,10 @@ namespace World_of_Zuul___3._0
         
         public void Assemble(Player player)
         {
-            if (player.HasItem("part1,part2,part3,part4,part5,part6,part,7,par8")) // Indsæt nødvendige items her
+            if (player.HasItem("part1,part2,part3,part4,part5,part6,part7,part8")) // Indsæt nødvendige items her
             {
                 //Console.WriteLine("You've sucessfully assembled a solar panel!");
-                Item solar_panel = new Item("Sopanel", "Producere vedvarende energi!");
+                Item solar_panel = new Item("Solpanel", "Producerer vedvarende energi!");
                 player.AddItem(solar_panel);
             }
             else
