@@ -71,9 +71,8 @@ namespace World_of_Zuul___3._0.domain
             {
                 Console.Clear();
                 Console.ForegroundColor = ConsoleColor.Blue;
-
-                string filePath = Path.Combine(@"Sample\Sample.txt");
-
+                string currentdirectory = Directory.GetCurrentDirectory();
+                string filePath = Path.Combine(currentdirectory, "Sample","Sample.txt");
                 string fileContent = File.ReadAllText(filePath);
 
                 Console.WriteLine(fileContent);
