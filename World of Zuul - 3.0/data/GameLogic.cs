@@ -17,7 +17,6 @@ public class GameLogic
         currentRoom = rooms["baghaven"]; //start i baghaven
         commands = new Commands(currentRoom, rooms);
         items = ItemSetUp.GetAllItems(); //Initialiser items
-        
     }
     
     public void RunGame()

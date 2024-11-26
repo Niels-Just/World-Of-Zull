@@ -1,19 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "K/y2ordwxbQ=",
+  "dgSpecHash": "Lo+lulNK6V0=",
   "success": true,
-  "projectFilePath": "/Users/niels-just/World-Of-Zull/World of Zuul - 3.0/World of Zuul - 3.0.csproj",
-  "expectedPackageFiles": [
-    "/Users/niels-just/.nuget/packages/microsoft.netcore.app.ref/8.0.11/microsoft.netcore.app.ref.8.0.11.nupkg.sha512",
-    "/Users/niels-just/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.11/microsoft.aspnetcore.app.ref.8.0.11.nupkg.sha512",
-    "/Users/niels-just/.nuget/packages/microsoft.netcore.app.host.osx-arm64/8.0.11/microsoft.netcore.app.host.osx-arm64.8.0.11.nupkg.sha512"
-  ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file /Users/niels-just/World-Of-Zull/World of Zuul - 3.0/obj/project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "projectFilePath": "C:\\Users\\kap\\World-Of-Zull\\World of Zuul - 3.0\\World of Zuul - 3.0.csproj",
+  "expectedPackageFiles": [],
+  "logs": []
 }

@@ -67,14 +67,28 @@ namespace World_of_Zuul___3._0.domain
 
         public void Hjælp()
         {
-            Console.Clear();
-            Console.ForegroundColor = ConsoleColor.Blue;
-            String line;
+            try
+            {
+                Console.Clear();
+                Console.ForegroundColor = ConsoleColor.Blue;
+
+                string filePath = @"Sample\Sample.txt";
+
+                string fileContent = File.ReadAllText(filePath);
+
+                Console.WriteLine(fileContent);
+            }
+            catch
+            {
+                Console.WriteLine("der er sket en fejl");
+            }
+
+            /*String line;
             try
             {
                 //Pass the file path and file name to the StreamReader constructor
                 StreamReader sr = new StreamReader("C:\\Sample.txt");
-                
+
                 //Read the first line of text
                 line = sr.ReadLine();
                 //Continue to read until you reach end of file

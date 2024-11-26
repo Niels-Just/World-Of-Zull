@@ -12,4 +12,10 @@
       <Compile Remove="Space.cs" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Update="Sample\Sample.txt">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
 </Project>

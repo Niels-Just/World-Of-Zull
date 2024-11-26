@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "/Users/niels-just/.nuget/packages/": {}
+    "C:\\Users\\kap\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/niels-just/World-Of-Zull/World of Zuul - 3.0/World of Zuul - 3.0.csproj",
+      "projectUniqueName": "C:\\Users\\kap\\World-Of-Zull\\World of Zuul - 3.0\\World of Zuul - 3.0.csproj",
       "projectName": "World of Zuul - 3.0",
-      "projectPath": "/Users/niels-just/World-Of-Zull/World of Zuul - 3.0/World of Zuul - 3.0.csproj",
-      "packagesPath": "/Users/niels-just/.nuget/packages/",
-      "outputPath": "/Users/niels-just/World-Of-Zull/World of Zuul - 3.0/obj/",
+      "projectPath": "C:\\Users\\kap\\World-Of-Zull\\World of Zuul - 3.0\\World of Zuul - 3.0.csproj",
+      "packagesPath": "C:\\Users\\kap\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\kap\\World-Of-Zull\\World of Zuul - 3.0\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/niels-just/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\kap\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -42,7 +42,7 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "all"
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -59,35 +59,13 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[8.0.11, 8.0.11]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.osx-arm64",
-            "version": "[8.0.11, 8.0.11]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[8.0.11, 8.0.11]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file /Users/niels-just/World-Of-Zull/World of Zuul - 3.0/obj/project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }

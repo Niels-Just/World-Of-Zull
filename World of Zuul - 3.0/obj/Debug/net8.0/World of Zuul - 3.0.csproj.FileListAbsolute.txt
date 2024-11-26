@@ -91,3 +91,19 @@ C:/Users/jesse/Uni/Semesterprojekt/World-Of-Zull/World of Zuul - 3.0/obj/Debug/n
 C:/Users/jesse/Uni/Semesterprojekt/World-Of-Zull/World of Zuul - 3.0/obj/Debug/net8.0/World of Zuul - 3.0.genruntimeconfig.cache
 C:/Users/jesse/Uni/Semesterprojekt/World-Of-Zull/World of Zuul - 3.0/obj/Debug/net8.0/ref/World of Zuul - 3.0.dll
 >>>>>>> refs/remotes/origin/main
+C:\Users\kap\World-Of-Zull\World of Zuul - 3.0\bin\Debug\net8.0\World of Zuul - 3.0.exe
+C:\Users\kap\World-Of-Zull\World of Zuul - 3.0\bin\Debug\net8.0\World of Zuul - 3.0.deps.json
+C:\Users\kap\World-Of-Zull\World of Zuul - 3.0\bin\Debug\net8.0\World of Zuul - 3.0.runtimeconfig.json
+C:\Users\kap\World-Of-Zull\World of Zuul - 3.0\bin\Debug\net8.0\World of Zuul - 3.0.dll
+C:\Users\kap\World-Of-Zull\World of Zuul - 3.0\bin\Debug\net8.0\World of Zuul - 3.0.pdb
+C:\Users\kap\World-Of-Zull\World of Zuul - 3.0\obj\Debug\net8.0\World of Zuul - 3.0.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kap\World-Of-Zull\World of Zuul - 3.0\obj\Debug\net8.0\World of Zuul - 3.0.AssemblyInfoInputs.cache
+C:\Users\kap\World-Of-Zull\World of Zuul - 3.0\obj\Debug\net8.0\World of Zuul - 3.0.AssemblyInfo.cs
+C:\Users\kap\World-Of-Zull\World of Zuul - 3.0\obj\Debug\net8.0\World of Zuul - 3.0.csproj.CoreCompileInputs.cache
+C:\Users\kap\World-Of-Zull\World of Zuul - 3.0\obj\Debug\net8.0\World of Zuul - 3.0.sourcelink.json
+C:\Users\kap\World-Of-Zull\World of Zuul - 3.0\obj\Debug\net8.0\World of Zuul - 3.0.dll
+C:\Users\kap\World-Of-Zull\World of Zuul - 3.0\obj\Debug\net8.0\refint\World of Zuul - 3.0.dll
+C:\Users\kap\World-Of-Zull\World of Zuul - 3.0\obj\Debug\net8.0\World of Zuul - 3.0.pdb
+C:\Users\kap\World-Of-Zull\World of Zuul - 3.0\obj\Debug\net8.0\World of Zuul - 3.0.genruntimeconfig.cache
+C:\Users\kap\World-Of-Zull\World of Zuul - 3.0\obj\Debug\net8.0\ref\World of Zuul - 3.0.dll
+C:\Users\kap\World-Of-Zull\World of Zuul - 3.0\bin\Debug\net8.0\Sample\Sample.txt
