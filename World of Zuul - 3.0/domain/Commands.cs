@@ -72,55 +72,15 @@ namespace World_of_Zuul___3._0.domain
                 Console.Clear();
                 Console.ForegroundColor = ConsoleColor.Blue;
                 string currentdirectory = Directory.GetCurrentDirectory();
-                string filePath = Path.Combine(currentdirectory, "Sample","Sample.txt");
+                string filePath = Path.Combine(currentdirectory, "Sample","Help.txt");
                 string fileContent = File.ReadAllText(filePath);
-
                 Console.WriteLine(fileContent);
             }
             catch
             {
                 Console.WriteLine("der er sket en fejl");
             }
-
-            /*String line;
-            try
-            {
-                //Pass the file path and file name to the StreamReader constructor
-                StreamReader sr = new StreamReader("C:\\Sample.txt");
-
-                //Read the first line of text
-                line = sr.ReadLine();
-                //Continue to read until you reach end of file
-                while (line != null)
-                {
-                    //write the line to console window
-                    Console.WriteLine(line);
-                    //Read the next line
-                    line = sr.ReadLine();
-                }
-                //close the file
-                sr.Close();
-                Console.ReadLine();
-            }
-            catch(Exception e)
-            {
-                Console.WriteLine("Exception: " + e.Message);
-            }
-            finally
-            {
-                Console.WriteLine("Executing finally block.");
-            }
-            /*Console.WriteLine("Hjælp: Her er en beskrivelse af de tilgængelige kommandoer: \n" +
-                              "'gå [retning]' - Brug denne kommando for at bevæge dig til et rum i den angivne retning. \n" +
-                              "'slut' - Brug denne kommando for at afslutte spillet. \n" +
-                              "'snak [NPC navn]' - Brug denne kommando for at tale med en NPC\n" +
-                              "'svar [nummer]' - Brug denne kommando for at svare på spørgsmål\n" +
-                              "'inventar' - Giver en liste og genstande i dit inventar\n" +
-                              "'byg' - Samle solpanelet når du har fået alle delene\n" +
-                              "Dev Commands: 'devtp [rum]' - tp'er dig til et vilkårligt rum\n" +
-                              "Dev Commands: 'devskip' - Skipper introen");*/
             TextEffect.TxtEffectNpc("", 20);
-            ;
             _currentRoom.EnterRoomMsg();
         }
 

@@ -24,7 +24,7 @@ namespace World_of_Zuul___3._0.domain
         public void Talk(Player player)
         {
             Console.Clear();
-            TextEffect.TxtEffectNpc($"{Name}: {Description}\n", 40);
+            TextEffect.TxtEffectNpc($"{Description}\n", 2);
 
             int CorrectQuestions = 0;
 

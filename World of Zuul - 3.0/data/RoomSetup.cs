@@ -27,7 +27,7 @@ public class RoomSetup
          =>: Lambda-operatoren, adskiller parametrene fra udtrykket men skal bare ses som syntax.
          npc er i dette tilfælde paramter for lambda udtrykket men det kan hedde lige hvad det vil.
         */
-        Glas_Mager_glenn.AddNPC(NPClist.Find(element => element.Name == "Glas Mager Glenn" ));
+        Glas_Mager_glenn.AddNPC(NPClist.Find(npc => npc.Name == "Glasmager Glenn" ));
         Sur_Nabo.AddNPC(NPClist.Find(npc => npc.Name == "Sur Nabo" ));
         Elektriker_Erik.AddNPC(NPClist.Find(npc => npc.Name == "Elektriker Erik" ));
         Glad_Nabo.AddNPC(NPClist.Find(npc => npc.Name == "Glad Nabo" ));
