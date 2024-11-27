@@ -1,0 +1,28 @@
+/Users/niels-just/RiderProjects/World-Of-Zull-4.0/World-Of-Zull-4.0/bin/Debug/net8.0/World-Of-Zull-4.0
+/Users/niels-just/RiderProjects/World-Of-Zull-4.0/World-Of-Zull-4.0/bin/Debug/net8.0/World-Of-Zull-4.0.deps.json
+/Users/niels-just/RiderProjects/World-Of-Zull-4.0/World-Of-Zull-4.0/bin/Debug/net8.0/World-Of-Zull-4.0.runtimeconfig.json
+/Users/niels-just/RiderProjects/World-Of-Zull-4.0/World-Of-Zull-4.0/bin/Debug/net8.0/World-Of-Zull-4.0.dll
+/Users/niels-just/RiderProjects/World-Of-Zull-4.0/World-Of-Zull-4.0/bin/Debug/net8.0/World-Of-Zull-4.0.pdb
+/Users/niels-just/RiderProjects/World-Of-Zull-4.0/World-Of-Zull-4.0/obj/Debug/net8.0/World-Of-Zull-4.0.GeneratedMSBuildEditorConfig.editorconfig
+/Users/niels-just/RiderProjects/World-Of-Zull-4.0/World-Of-Zull-4.0/obj/Debug/net8.0/World-Of-Zull-4.0.AssemblyInfoInputs.cache
+/Users/niels-just/RiderProjects/World-Of-Zull-4.0/World-Of-Zull-4.0/obj/Debug/net8.0/World-Of-Zull-4.0.AssemblyInfo.cs
+/Users/niels-just/RiderProjects/World-Of-Zull-4.0/World-Of-Zull-4.0/obj/Debug/net8.0/World-Of-Zull-4.0.csproj.CoreCompileInputs.cache
+/Users/niels-just/RiderProjects/World-Of-Zull-4.0/World-Of-Zull-4.0/obj/Debug/net8.0/World-Of-Zull-4.0.dll
+/Users/niels-just/RiderProjects/World-Of-Zull-4.0/World-Of-Zull-4.0/obj/Debug/net8.0/refint/World-Of-Zull-4.0.dll
+/Users/niels-just/RiderProjects/World-Of-Zull-4.0/World-Of-Zull-4.0/obj/Debug/net8.0/World-Of-Zull-4.0.pdb
+/Users/niels-just/RiderProjects/World-Of-Zull-4.0/World-Of-Zull-4.0/obj/Debug/net8.0/World-Of-Zull-4.0.genruntimeconfig.cache
+/Users/niels-just/RiderProjects/World-Of-Zull-4.0/World-Of-Zull-4.0/obj/Debug/net8.0/ref/World-Of-Zull-4.0.dll
+/Users/niels-just/Desktop/World Of Zull 4.0/World-Of-Zull-4.0/bin/Debug/net8.0/World-Of-Zull-4.0
+/Users/niels-just/Desktop/World Of Zull 4.0/World-Of-Zull-4.0/bin/Debug/net8.0/World-Of-Zull-4.0.deps.json
+/Users/niels-just/Desktop/World Of Zull 4.0/World-Of-Zull-4.0/bin/Debug/net8.0/World-Of-Zull-4.0.runtimeconfig.json
+/Users/niels-just/Desktop/World Of Zull 4.0/World-Of-Zull-4.0/bin/Debug/net8.0/World-Of-Zull-4.0.dll
+/Users/niels-just/Desktop/World Of Zull 4.0/World-Of-Zull-4.0/bin/Debug/net8.0/World-Of-Zull-4.0.pdb
+/Users/niels-just/Desktop/World Of Zull 4.0/World-Of-Zull-4.0/obj/Debug/net8.0/World-Of-Zull-4.0.GeneratedMSBuildEditorConfig.editorconfig
+/Users/niels-just/Desktop/World Of Zull 4.0/World-Of-Zull-4.0/obj/Debug/net8.0/World-Of-Zull-4.0.AssemblyInfoInputs.cache
+/Users/niels-just/Desktop/World Of Zull 4.0/World-Of-Zull-4.0/obj/Debug/net8.0/World-Of-Zull-4.0.AssemblyInfo.cs
+/Users/niels-just/Desktop/World Of Zull 4.0/World-Of-Zull-4.0/obj/Debug/net8.0/World-Of-Zull-4.0.csproj.CoreCompileInputs.cache
+/Users/niels-just/Desktop/World Of Zull 4.0/World-Of-Zull-4.0/obj/Debug/net8.0/World-Of-Zull-4.0.dll
+/Users/niels-just/Desktop/World Of Zull 4.0/World-Of-Zull-4.0/obj/Debug/net8.0/refint/World-Of-Zull-4.0.dll
+/Users/niels-just/Desktop/World Of Zull 4.0/World-Of-Zull-4.0/obj/Debug/net8.0/World-Of-Zull-4.0.pdb
+/Users/niels-just/Desktop/World Of Zull 4.0/World-Of-Zull-4.0/obj/Debug/net8.0/World-Of-Zull-4.0.genruntimeconfig.cache
+/Users/niels-just/Desktop/World Of Zull 4.0/World-Of-Zull-4.0/obj/Debug/net8.0/ref/World-Of-Zull-4.0.dll
