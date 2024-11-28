@@ -26,3 +26,44 @@
 /Users/niels-just/Desktop/World Of Zull 4.0/World-Of-Zull-4.0/obj/Debug/net8.0/World-Of-Zull-4.0.pdb
 /Users/niels-just/Desktop/World Of Zull 4.0/World-Of-Zull-4.0/obj/Debug/net8.0/World-Of-Zull-4.0.genruntimeconfig.cache
 /Users/niels-just/Desktop/World Of Zull 4.0/World-Of-Zull-4.0/obj/Debug/net8.0/ref/World-Of-Zull-4.0.dll
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zull 4.0/World-Of-Zull-4.0/bin/Debug/net8.0/World-Of-Zull-4.0
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zull 4.0/World-Of-Zull-4.0/bin/Debug/net8.0/World-Of-Zull-4.0.deps.json
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zull 4.0/World-Of-Zull-4.0/bin/Debug/net8.0/World-Of-Zull-4.0.runtimeconfig.json
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zull 4.0/World-Of-Zull-4.0/bin/Debug/net8.0/World-Of-Zull-4.0.dll
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zull 4.0/World-Of-Zull-4.0/bin/Debug/net8.0/World-Of-Zull-4.0.pdb
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zull 4.0/World-Of-Zull-4.0/obj/Debug/net8.0/World-Of-Zull-4.0.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zull 4.0/World-Of-Zull-4.0/obj/Debug/net8.0/World-Of-Zull-4.0.AssemblyInfoInputs.cache
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zull 4.0/World-Of-Zull-4.0/obj/Debug/net8.0/World-Of-Zull-4.0.AssemblyInfo.cs
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zull 4.0/World-Of-Zull-4.0/obj/Debug/net8.0/World-Of-Zull-4.0.csproj.CoreCompileInputs.cache
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zull 4.0/World-Of-Zull-4.0/obj/Debug/net8.0/World-Of-Zull-4.0.sourcelink.json
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zull 4.0/World-Of-Zull-4.0/obj/Debug/net8.0/World-Of-Zull-4.0.dll
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zull 4.0/World-Of-Zull-4.0/obj/Debug/net8.0/refint/World-Of-Zull-4.0.dll
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zull 4.0/World-Of-Zull-4.0/obj/Debug/net8.0/World-Of-Zull-4.0.pdb
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zull 4.0/World-Of-Zull-4.0/obj/Debug/net8.0/World-Of-Zull-4.0.genruntimeconfig.cache
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zull 4.0/World-Of-Zull-4.0/obj/Debug/net8.0/ref/World-Of-Zull-4.0.dll
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zull 4.0/World-Of-Zull-4.0/bin/Debug/net8.0/Sample/bent.txt
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zull 4.0/World-Of-Zull-4.0/bin/Debug/net8.0/Sample/bilBentQ1.txt
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zull 4.0/World-Of-Zull-4.0/bin/Debug/net8.0/Sample/bilBentQ2.txt
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zull 4.0/World-Of-Zull-4.0/bin/Debug/net8.0/Sample/elektrikerErikQ1.txt
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zull 4.0/World-Of-Zull-4.0/bin/Debug/net8.0/Sample/elektrikerErikQ2.txt
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zull 4.0/World-Of-Zull-4.0/bin/Debug/net8.0/Sample/erik.txt
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zull 4.0/World-Of-Zull-4.0/bin/Debug/net8.0/Sample/fnorkel.txt
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zull 4.0/World-Of-Zull-4.0/bin/Debug/net8.0/Sample/gladNabo.txt
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zull 4.0/World-Of-Zull-4.0/bin/Debug/net8.0/Sample/gladNaboQ1.txt
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zull 4.0/World-Of-Zull-4.0/bin/Debug/net8.0/Sample/gladNaboQ2.txt
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zull 4.0/World-Of-Zull-4.0/bin/Debug/net8.0/Sample/glasmagerGlennQ1.txt
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zull 4.0/World-Of-Zull-4.0/bin/Debug/net8.0/Sample/glasmagerGlennQ2.txt
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zull 4.0/World-Of-Zull-4.0/bin/Debug/net8.0/Sample/gleen.txt
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zull 4.0/World-Of-Zull-4.0/bin/Debug/net8.0/Sample/gud.txt
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zull 4.0/World-Of-Zull-4.0/bin/Debug/net8.0/Sample/gudQ1.txt
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zull 4.0/World-Of-Zull-4.0/bin/Debug/net8.0/Sample/gudQ2.txt
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zull 4.0/World-Of-Zull-4.0/bin/Debug/net8.0/Sample/Help.txt
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zull 4.0/World-Of-Zull-4.0/bin/Debug/net8.0/Sample/karen.txt
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zull 4.0/World-Of-Zull-4.0/bin/Debug/net8.0/Sample/kunstKarenQ1.txt
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zull 4.0/World-Of-Zull-4.0/bin/Debug/net8.0/Sample/kunstKarenQ2.txt
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zull 4.0/World-Of-Zull-4.0/bin/Debug/net8.0/Sample/nabobørn.txt
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zull 4.0/World-Of-Zull-4.0/bin/Debug/net8.0/Sample/naboBørnQ1.txt
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zull 4.0/World-Of-Zull-4.0/bin/Debug/net8.0/Sample/naboBørnQ2.txt
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zull 4.0/World-Of-Zull-4.0/bin/Debug/net8.0/Sample/surNabo.txt
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zull 4.0/World-Of-Zull-4.0/bin/Debug/net8.0/Sample/surNaboQ1.txt
+/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zull 4.0/World-Of-Zull-4.0/bin/Debug/net8.0/Sample/surNaboQ2.txt
