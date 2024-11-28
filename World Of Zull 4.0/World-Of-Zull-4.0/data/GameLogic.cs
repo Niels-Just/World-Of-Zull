@@ -38,10 +38,7 @@ public class GameLogic
             switch (parts[0])
             {
                 case "byg":
-                    if (currentRoom == rooms["baghaven"])
-                    {
                         commands.Assemble(player);
-                    }
                     break;
 
                 case "inventar":

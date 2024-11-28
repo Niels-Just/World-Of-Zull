@@ -4,4 +4,4 @@ slut - Brug denne kommando for at afslutte spillet.
 snak [NPC navn] - Brug denne kommando for at tale med en NPC.
 svar [nummer] - Brug denne kommando for at svare på spørgsmål.
 inventar - Giver en liste og genstande i dit inventar.
-byg - Samle solpanelet når du har fået alle delenedev.
+byg - Samle solpanelet når du har fået alle delene.
