@@ -69,7 +69,7 @@ namespace World_Of_Zull_4._0.domain
             else
             {
                 Console.Clear();
-                TextEffect.TxtEffect("Personen du leder efter er her ikke. prøv at snakke med " + npcInRoom[0].Name, 20,
+                TextEffect.TxtEffect("Personen du leder efter er her ikke. Prøv at snakke med " + npcInRoom[0].Name, 20,
                     1000);
                 _currentRoom.EnterRoomMsg();
             }
@@ -107,7 +107,7 @@ namespace World_Of_Zull_4._0.domain
                 if (player.HasItem("part1", "part2", "part3", "part4", "part5", "part6", "part7", "part8"))
                 {
                     Console.Clear();
-                    TextEffect.TxtEffectNpc("Tillyke du hjalp fnorkel tilbage ud i rummet!", 20);
+                    TextEffect.TxtEffectNpc("Tillykke du hjalp fnorkel tilbage ud i rummet!", 20);
                     Console.WriteLine("Spillet er nu slut!");
                     System.Environment.Exit(0);
                     

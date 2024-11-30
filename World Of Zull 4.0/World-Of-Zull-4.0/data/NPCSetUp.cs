@@ -59,7 +59,7 @@ namespace World_Of_Zull_4._0.data
             Item temp = new Item("temp", "temp");
             NPCalien fnorkel = new NPCalien("Fnorkel", 
                 fnorkelDesc,
-                "Du kan vel ikke hjælpe mig med at samle matterialer ind til solpannelet?", false, temp);
+                "Du kan vel ikke hjælpe mig med at samle materialer ind til solpanelet?", false, temp);
             
             //Dette er NPCer med spørgsmål
             NPC glasmagerGlenn = new NPC(
@@ -68,10 +68,16 @@ namespace World_Of_Zull_4._0.data
                 new List<Question>
                 {
                     new Question(glasmagerGlennQ1,
-                        new string[] { "Svar 1 (Rigtigt)", "Svar 2 (Forkert)", "Svar 3 (Forkert)" },
+                        new string[] { 
+                            "»Det beskytter de skrøbelige solceller mod vejr og vind, mens det lader solens lys passere uhindret.««",
+                            "»Det forstærker solens stråler for at øge panelernes energikraft.«", 
+                            "»Det holder solcellerne kølige ved at reflektere overskydende varme væk.«" },
                         1),
                     new Question(glasmagerGlennQ2,
-                        new string[] { "Svar 1 (Forkert)", "Svar 2 (Rigtigt)", "Svar 3 (Forkert)" },
+                        new string[] { 
+                            "»For at gøre solcellepanelet smukt og lade det falde harmonisk ind i omgivelserne.«", 
+                            "»For at lade solens magiske stråler passere frit og fylde solcellerne med kraft til at skabe energi.«", 
+                            "»For at lade skadelige UV-stråler rense solcellerne og holde dem klare.«" },
                         2)
                 },
                 true, allItems["part1"]);

@@ -8,12 +8,12 @@ public class RoomSetup
         //Laver rooms
         Room Baghaven = new Room("baghaven", "Du kikker mod Baghaven.");
         Room Glad_Nabo = new Room("den glade nabos hus", "Du kikker mod den glade nabo.");
-        Room Sur_Nabo = new Room("den sur nabos hus", "Du kikker mod den sure nabo.");
+        Room Sur_Nabo = new Room("den sure nabos hus", "Du kikker mod den sure nabo.");
         Room Vej_Midt = new Room("Vej midt", "Du kikker mod vej midt.");
         Room Vej_Øst = new Room("Vej Øst", "Du kikker mod vej øst.");
         Room Vej_Vest = new Room("Vej Vest", "Du kikker mod vej vest.");
         Room Elektriker_Erik = new Room("Elektriker Eriks hus", "Du kikker mod Elektriker Erik");
-        Room Glas_Mager_glenn = new Room("Glas Mager Glenns hus", "Du kikker mod Glasmager Glenn.");
+        Room Glas_Mager_glenn = new Room("Glasmager Glenns hus", "Du kikker mod Glasmager Glenn.");
         Room Kunst_Haven = new Room("Kunst Haven", "Du kikker mod Kunsthaven");
         
         
