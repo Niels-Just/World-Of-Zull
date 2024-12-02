@@ -114,7 +114,7 @@ public class GameLogic
                     }
                     else
                     {
-                        TextEffect.TxtEffect("Dette rum fundes ikke", 20, 200);
+                        TextEffect.TxtEffect("Dette rum findes ikke", 20, 200);
                     }
 
                     break;
