@@ -80,7 +80,7 @@ namespace World_Of_Zull_4._0.data
                             "»For at lade skadelige UV-stråler rense solcellerne og holde dem klare.«" },
                         2)
                 },
-                true, allItems["part1"]);
+                true, allItems["glasmagerGlenn"]);
             
             NPC elektrikerErik = new NPC(
                 "Elektriker Erik", 
@@ -100,7 +100,7 @@ namespace World_Of_Zull_4._0.data
                             "»De leverer uendelige mængder gratis energi uden nogensinde at skulle kobles til elnettet.«" },
                         1)
                 },
-                true, allItems["part2"]);
+                true, allItems["elektrikerErik"]);
 
             
             NPC kunstKaren = new NPC(
@@ -122,7 +122,7 @@ namespace World_Of_Zull_4._0.data
                             "»Solkrystal-lamper, der lagrer solens stråler og projicerer skarpe geometriske mønstre i mørket.«" },
                         1)
                 },
-                true, allItems["part3"]);
+                true, allItems["kunstKaren"]);
             
             NPC bilejerenBent = new NPC(
                 "Bilejeren Bent", 
@@ -144,7 +144,7 @@ namespace World_Of_Zull_4._0.data
                         },
                         2)
                 },
-                true, allItems["part4"]);
+                true, allItems["bilejerenBent"]);
             
             NPC naboBørn = new NPC(
                 "Nabo Børnene", 
@@ -168,7 +168,7 @@ namespace World_Of_Zull_4._0.data
                         },
                         3)
                 },
-                true, allItems["part5"]);
+                true, allItems["naboBørn"]);
             
             NPC gud = new NPC(
                 "Gud", 
@@ -192,7 +192,7 @@ namespace World_Of_Zull_4._0.data
                         },
                         1)
                 },
-                true, allItems["part6"]);
+                true, allItems["gud"]);
 
             
             NPC gladNabo = new NPC(
@@ -217,7 +217,7 @@ namespace World_Of_Zull_4._0.data
                         },
                         2)
                 },
-                true, allItems["part7"]);
+                true, allItems["gladNabo"]);
 
             
             NPC surNabo = new NPC(
@@ -245,7 +245,7 @@ namespace World_Of_Zull_4._0.data
                         1)
 
                 },
-                true, allItems["part8"]);
+                true, allItems["surNabo"]);
             
             return new List<NPC>
             {
