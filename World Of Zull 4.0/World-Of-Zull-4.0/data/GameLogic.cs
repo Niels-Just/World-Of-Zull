@@ -113,14 +113,23 @@ public class GameLogic
                 case "devtp":
                     if (parts.Length > 1)
                     {
-                        currentRoom = rooms[parts[1]];
-                        commands.DevMove(currentRoom);
+                        string room = parts[1];
+                        if (rooms.TryGetValue(room, out var tpRoom))
+                        {
+                            currentRoom = tpRoom;
+                            commands.DevMove(currentRoom);
+                        }
+                        else
+                        {
+                            TextEffect.TxtEffect("Dette rum findes ikke", 20, 200);
+                            currentRoom.EnterRoomMsg();
+                        }
                     }
                     else
                     {
-                        TextEffect.TxtEffect("Dette rum findes ikke", 20, 200);
+                        TextEffect.TxtEffect("Mangler input for rum", 20, 200);
+                        currentRoom.EnterRoomMsg();
                     }
-
                     break;
                 
                         default:
