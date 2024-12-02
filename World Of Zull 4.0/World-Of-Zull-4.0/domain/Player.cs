@@ -91,4 +91,11 @@ public class Player
         TextEffect.TxtEffectNpc("", 0);
         
     }
+    public void GiveAllItems(Dictionary<string, Item> items)
+    {
+        foreach (var item in items.Values)
+        {
+            inventory.Add(item);
+        }
+    }
 }

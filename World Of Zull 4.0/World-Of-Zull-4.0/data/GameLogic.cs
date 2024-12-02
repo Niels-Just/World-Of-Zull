@@ -10,6 +10,7 @@ public class GameLogic
     private Player player;
     private Dictionary<string, Room> rooms;
     private NPCalien fnorkel; //Tilføj fnorkel npc
+    private bool isDev = true;
     
     public GameLogic()
     {
@@ -94,24 +95,20 @@ public class GameLogic
                     break;
                 
                 case "devadd":
-                    if (parts.Length > 1)
+                    if (isDev)
                     {
-                        var itemName = parts[1].ToLower();
-                        if (items.ContainsKey(itemName))
-                        {
-                            player.AddItem(items[itemName]);
-                           Console.WriteLine($"{itemName}' er tilføjet til dit inventory.");
-                        }
-                        else
-                        {
-                            TextEffect.TxtEffect($"Denne genstand findes ikke",20,200);
-                            currentRoom.EnterRoomMsg();
-                        }
+                        var items = ItemSetUp.GetAllItems();
+                        player.GiveAllItems(items);
                     }
+                    else                                                                                         
+                    {                                                                                            
+                        TextEffect.TxtEffect("Dette kan ikke lade sig gøre!", 20, 200);                                  
+                        currentRoom.EnterRoomMsg();                                                              
+                    }                                                                                            
                     break;
 
                 case "devtp":
-                    if (parts.Length > 1)
+                    if (parts.Length > 1 && isDev)
                     {
                         string room = parts[1];
                         if (rooms.TryGetValue(room, out var tpRoom))
@@ -125,14 +122,20 @@ public class GameLogic
                             currentRoom.EnterRoomMsg();
                         }
                     }
-                    else
+                    else if (isDev)
                     {
                         TextEffect.TxtEffect("Mangler input for rum", 20, 200);
                         currentRoom.EnterRoomMsg();
                     }
+                    else    
+                    {
+                        TextEffect.TxtEffect("Dette kan ikke lade sig gøre!", 20, 2000);
+                        currentRoom.EnterRoomMsg(); 
+                    }
                     break;
-                
-                        default:
+
+
+                default:
                         TextEffect.TxtEffect("Dette kan ikke lade sig gøre!", 20, 2000);
                         currentRoom.EnterRoomMsg();
                         break;
