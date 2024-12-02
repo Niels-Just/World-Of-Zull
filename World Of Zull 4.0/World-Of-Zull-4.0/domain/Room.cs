@@ -7,11 +7,11 @@ public class Room : Node
     //room beskrivelse, dette er relvant for look komandoen
     private string description;
     //Dette er relevant for NPC klassen
-    public List<NPC> npcer;
+    public List<Npc> Npcer;
     public Room(string name, string description) : base(name)
     {
         this.description = description;
-        npcer = new List<NPC>();
+        Npcer = new List<Npc>();
     }
     
     //Denne metode bruges i look komandoen
@@ -22,28 +22,28 @@ public class Room : Node
     
     //metode til at tilføje en NPC til et rum
     //det er nødvendigt at bruge object her da den skal kunne tilføje fra to forskellige npc klasser
-    public void AddNPC(object npc)
+    public void AddNpc(object? npc)
     {
-        if (npc is NPC)
+        if (npc is Npc)
         {
-            npcer.Add((NPC)npc);
+            Npcer.Add((Npc)npc);
         }
-        else if (npc is NPCalien)
+        else if (npc is NpCalien)
         {
-            npcer.Add((NPCalien)npc);
+            Npcer.Add((NpCalien)npc);
         }
     }
 
     public void EnterRoomMsg()
     {
         Console.Clear();
-        TextEffect.TxtEffect("Du befinder dig nu i: " + name ,20,2000);
+        TextEffect.TxtEffect("Du befinder dig nu i: " + Name ,20,2000);
         
         Console.ForegroundColor = ConsoleColor.Yellow;
         Console.WriteLine("Dine mulige retninger du kan bevæge dig er:");
         Console.ResetColor();
         
-        foreach (var exit in edges)
+        foreach (var exit in Edges)
         {
             string direction = exit.Key;
             Room connectedRoom = (Room)exit.Value;
@@ -51,12 +51,12 @@ public class Room : Node
         }
         
         
-        if (npcer.Count > 0)
+        if (Npcer.Count > 0)
         {
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("\nHer befinder: ");
             Console.ResetColor();
-            foreach (var npc in npcer)
+            foreach (var npc in Npcer)
             {
                 Console.WriteLine($"- {npc.Name} sig");
             }

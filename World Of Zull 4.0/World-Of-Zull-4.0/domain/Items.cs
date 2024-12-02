@@ -11,7 +11,7 @@ public class Item
         ItemDescription = itemDescription;
     }
 
-    public string getItemName()
+    public string GetItemName()
     {
         return ItemName;
     }

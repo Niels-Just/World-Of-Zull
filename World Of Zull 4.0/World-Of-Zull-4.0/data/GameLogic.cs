@@ -9,7 +9,7 @@ public class GameLogic
     private Commands commands;
     private Player player;
     private Dictionary<string, Room> rooms;
-    private NPCalien fnorkel; //Tilføj fnorkel npc
+    private NpCalien fnorkel; //Tilføj fnorkel npc
     private bool isDev = true;
     
     public GameLogic()
@@ -99,6 +99,7 @@ public class GameLogic
                     {
                         var items = ItemSetUp.GetAllItems();
                         player.GiveAllItems(items);
+                        currentRoom.EnterRoomMsg();
                     }
                     else                                                                                         
                     {                                                                                            

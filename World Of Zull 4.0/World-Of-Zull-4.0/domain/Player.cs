@@ -53,7 +53,7 @@ public class Player
         }
     }
 
-    public int itemCount()
+    public int ItemCount()
     {
         return inventory.Count;
     }

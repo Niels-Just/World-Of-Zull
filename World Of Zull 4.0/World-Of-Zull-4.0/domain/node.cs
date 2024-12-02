@@ -1,27 +1,27 @@
 namespace World_Of_Zull_4._0.domain;
 public class Node
 {
-    protected string name;
+    protected string Name;
    
-    protected Dictionary<string,Node> edges = new Dictionary<string,Node>();
+    protected Dictionary<string,Node> Edges = new Dictionary<string,Node>();
 
     public Node(string name)
     {
-        this.name = name;
+        this.Name = name;
     }
 
     public string GetName()
     {
-        return name;
+        return Name;
     }
     
     public void AddEdge(string name, Node node)
     {
-        edges.Add(name.ToLower(), node);
+        Edges.Add(name.ToLower(), node);
     }
     
     public virtual Node FollowEdge(string direction) {
-        if (edges.TryGetValue(direction.ToLower(), out Node nextNode)) {
+        if (Edges.TryGetValue(direction.ToLower(), out Node nextNode)) {
             return nextNode;
         } else {
             return null;

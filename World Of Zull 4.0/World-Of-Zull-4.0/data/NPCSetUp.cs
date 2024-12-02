@@ -4,14 +4,14 @@ using System.Collections.Generic;
 using System.IO;
 namespace World_Of_Zull_4._0.data
 {
-    public class NPCSetUp
+    public class NpcSetUp
     {
-        public static List<NPC> InitalizeNPCs()
+        public static List<Npc?> InitalizeNpCs()
         {   
             var allItems = ItemSetUp.GetAllItems();
             
             //hjælp metode til at indlæse tekst
-            string GetInfomrationNPC(string filename)
+            string GetInfomrationNpc(string filename)
             {
                 try
                 {
@@ -27,42 +27,42 @@ namespace World_Of_Zull_4._0.data
             }
             
             //Indlæs beskrivelser fra filer
-            string fnorkelDesc = GetInfomrationNPC("fnorkel.txt");
-            string gleenDesc = GetInfomrationNPC("gleen.txt");
-            string erikDesc = GetInfomrationNPC("erik.txt");
-            string karenDesc = GetInfomrationNPC("karen.txt");
-            string bentDesc = GetInfomrationNPC("bent.txt");
-            string naboBørnDesc = GetInfomrationNPC("naboBørn.txt");
-            string gudDesc = GetInfomrationNPC("gud.txt");
-            string gladNaboDesc = GetInfomrationNPC("gladNabo.txt");
-            string surNaboDesc = GetInfomrationNPC("surNabo.txt");
+            string fnorkelDesc = GetInfomrationNpc("fnorkel.txt");
+            string gleenDesc = GetInfomrationNpc("gleen.txt");
+            string erikDesc = GetInfomrationNpc("erik.txt");
+            string karenDesc = GetInfomrationNpc("karen.txt");
+            string bentDesc = GetInfomrationNpc("bent.txt");
+            string naboBørnDesc = GetInfomrationNpc("naboBørn.txt");
+            string gudDesc = GetInfomrationNpc("gud.txt");
+            string gladNaboDesc = GetInfomrationNpc("gladNabo.txt");
+            string surNaboDesc = GetInfomrationNpc("surNabo.txt");
             
             //Indlæs spørgsmål fra filer
-            string glasmagerGlennQ1 = GetInfomrationNPC("glasmagerGlennQ1.txt"); 
-            string glasmagerGlennQ2 = GetInfomrationNPC("glasmagerGlennQ2.txt"); 
-            string elektrikerErikQ1 = GetInfomrationNPC("elektrikerErikQ1.txt");
-            string elektrikerErikQ2 = GetInfomrationNPC("elektrikerErikQ2.txt");
-            string kunstKarenQ1 = GetInfomrationNPC("kunstKarenQ1.txt");
-            string kunstKarenQ2 = GetInfomrationNPC("kunstKarenQ2.txt");
-            string bilBentQ1 = GetInfomrationNPC("bilBentQ1.txt");
-            string bilBentQ2 = GetInfomrationNPC("bilbentQ2.txt");
-            string naboBørnQ1 = GetInfomrationNPC("naboBørnQ1.txt");
-            string naboBørnQ2 = GetInfomrationNPC("naboBørnQ2.txt");
-            string gudQ1 = GetInfomrationNPC("gudQ1.txt");
-            string gudQ2 = GetInfomrationNPC("gudQ2.txt");
-            string gladNaboQ1 = GetInfomrationNPC("gladNaboQ1.txt");
-            string gladNaboQ2 = GetInfomrationNPC("gladNaboQ2.txt");
-            string surNaboQ1 = GetInfomrationNPC("surNaboQ1.txt");
-            string surNaboQ2 = GetInfomrationNPC("surNaboQ2.txt");
+            string glasmagerGlennQ1 = GetInfomrationNpc("glasmagerGlennQ1.txt"); 
+            string glasmagerGlennQ2 = GetInfomrationNpc("glasmagerGlennQ2.txt"); 
+            string elektrikerErikQ1 = GetInfomrationNpc("elektrikerErikQ1.txt");
+            string elektrikerErikQ2 = GetInfomrationNpc("elektrikerErikQ2.txt");
+            string kunstKarenQ1 = GetInfomrationNpc("kunstKarenQ1.txt");
+            string kunstKarenQ2 = GetInfomrationNpc("kunstKarenQ2.txt");
+            string bilBentQ1 = GetInfomrationNpc("bilBentQ1.txt");
+            string bilBentQ2 = GetInfomrationNpc("bilbentQ2.txt");
+            string naboBørnQ1 = GetInfomrationNpc("naboBørnQ1.txt");
+            string naboBørnQ2 = GetInfomrationNpc("naboBørnQ2.txt");
+            string gudQ1 = GetInfomrationNpc("gudQ1.txt");
+            string gudQ2 = GetInfomrationNpc("gudQ2.txt");
+            string gladNaboQ1 = GetInfomrationNpc("gladNaboQ1.txt");
+            string gladNaboQ2 = GetInfomrationNpc("gladNaboQ2.txt");
+            string surNaboQ1 = GetInfomrationNpc("surNaboQ1.txt");
+            string surNaboQ2 = GetInfomrationNpc("surNaboQ2.txt");
             
             //Dette er en npc uden spørgsmål
             Item temp = new Item("temp", "temp");
-            NPCalien fnorkel = new NPCalien("Fnorkel", 
+            NpCalien? fnorkel = new NpCalien("Fnorkel", 
                 fnorkelDesc,
                 "Du kan vel ikke hjælpe mig med at samle materialer ind til solpanelet?", false, temp);
             
             //Dette er NPCer med spørgsmål
-            NPC glasmagerGlenn = new NPC(
+            Npc glasmagerGlenn = new Npc(
                 "Glasmager Glenn", 
                 gleenDesc, 
                 new List<Question>
@@ -82,7 +82,7 @@ namespace World_Of_Zull_4._0.data
                 },
                 true, allItems["glasmagerGlenn"]);
             
-            NPC elektrikerErik = new NPC(
+            Npc? elektrikerErik = new Npc(
                 "Elektriker Erik", 
                 erikDesc, 
                 new List<Question>
@@ -103,7 +103,7 @@ namespace World_Of_Zull_4._0.data
                 true, allItems["elektrikerErik"]);
 
             
-            NPC kunstKaren = new NPC(
+            Npc? kunstKaren = new Npc(
                 "Kunstneren Karen", 
                 karenDesc, 
                 new List<Question>
@@ -124,7 +124,7 @@ namespace World_Of_Zull_4._0.data
                 },
                 true, allItems["kunstKaren"]);
             
-            NPC bilejerenBent = new NPC(
+            Npc? bilejerenBent = new Npc(
                 "Bilejeren Bent", 
                 bentDesc, 
                 new List<Question>
@@ -146,7 +146,7 @@ namespace World_Of_Zull_4._0.data
                 },
                 true, allItems["bilejerenBent"]);
             
-            NPC naboBørn = new NPC(
+            Npc? naboBørn = new Npc(
                 "Nabo Børnene", 
                 naboBørnDesc, 
                 new List<Question>
@@ -170,7 +170,7 @@ namespace World_Of_Zull_4._0.data
                 },
                 true, allItems["naboBørn"]);
             
-            NPC gud = new NPC(
+            Npc? gud = new Npc(
                 "Gud", 
                 gudDesc, 
                 new List<Question>
@@ -195,7 +195,7 @@ namespace World_Of_Zull_4._0.data
                 true, allItems["gud"]);
 
             
-            NPC gladNabo = new NPC(
+            Npc? gladNabo = new Npc(
                 "Glad Nabo", 
                 gladNaboDesc, 
                 new List<Question>
@@ -220,7 +220,7 @@ namespace World_Of_Zull_4._0.data
                 true, allItems["gladNabo"]);
 
             
-            NPC surNabo = new NPC(
+            Npc? surNabo = new Npc(
                 "Sur Nabo",
                 surNaboDesc,
                 new List<Question>
@@ -247,7 +247,7 @@ namespace World_Of_Zull_4._0.data
                 },
                 true, allItems["surNabo"]);
             
-            return new List<NPC>
+            return new List<Npc?>
             {
                 glasmagerGlenn,
                 elektrikerErik,
