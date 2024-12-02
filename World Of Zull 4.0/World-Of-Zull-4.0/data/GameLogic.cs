@@ -10,6 +10,7 @@ public class GameLogic
     private Player player;
     private Dictionary<string, Room> rooms;
     private NPCalien fnorkel; //Tilføj fnorkel npc
+    
     public GameLogic()
     {
         rooms = RoomSetup.InitalizeRooms();
@@ -88,11 +89,14 @@ public class GameLogic
                     commands.Hjælp();
                     break;
                 
+                case "hjem":
+                    commands.Home();
+                    break;
+                
                 case "devadd":
                     if (parts.Length > 1)
                     {
                         var itemName = parts[1].ToLower();
-
                         if (items.ContainsKey(itemName))
                         {
                             player.AddItem(items[itemName]);
@@ -119,10 +123,10 @@ public class GameLogic
 
                     break;
                 
-                default:
-                    TextEffect.TxtEffect("Dette kan ikke lade sig gøre!", 20, 2000);
-                    currentRoom.EnterRoomMsg();
-                    break;
+                        default:
+                        TextEffect.TxtEffect("Dette kan ikke lade sig gøre!", 20, 2000);
+                        currentRoom.EnterRoomMsg();
+                        break;
 
                 
             }

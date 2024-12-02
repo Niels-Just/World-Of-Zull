@@ -128,6 +128,13 @@ namespace World_Of_Zull_4._0.domain
             }
         }
 
+        public void Home()
+        {
+            Console.Clear();
+            _currentRoom= _rooms["baghaven"];
+            _currentRoom.EnterRoomMsg();
+        }
+
         // Metode til at hente den opdaterede currentRoom
         public Room GetCurrentRoom()
         {
