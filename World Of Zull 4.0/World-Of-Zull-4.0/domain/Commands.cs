@@ -102,25 +102,28 @@ namespace World_Of_Zull_4._0.domain
 
         public void Assemble(Player player)
         {
+            int intitemsleft = 8 - player.itemCount();
             if (_currentRoom == _rooms["baghaven"])
             {
-                if (player.HasItem("part1", "part2", "part3", "part4", "part5", "part6", "part7", "part8"))
+                if (player.HasItem("Glasplade", "Inverter", "Æstetisk solfilm", "Energiomformer", "Energikrystal", "Sollys", "Energioptimeringschip", "Energiregulator"))
                 {
                     Console.Clear();
-                    TextEffect.TxtEffectNpc("Tillykke du hjalp fnorkel tilbage ud i rummet!", 20);
+                    TextEffect.TxtEffectNpc("Tillykke du hjalp fnorkel tilbage ud i rummet!", 40);
                     Console.WriteLine("Spillet er nu slut!");
                     System.Environment.Exit(0);
                     
                 }
                 else
                 {
-                    TextEffect.TxtEffect("Du har ikke alle delene!",20,200);
+                    Console.Clear();
+                    TextEffect.TxtEffect("Du har ikke alle delene!" + "\n\nDu mangler at finde " + intitemsleft + " dele før du kan lave et solpanel", 40, 4000);
                     _currentRoom.EnterRoomMsg();
                 }
             }
             else
             {
-                TextEffect.TxtEffect("Du skal befinde dig i baghaven for at kunne bygge solcellen og have alle delene!", 20, 200);
+                Console.Clear();
+                TextEffect.TxtEffect("Du skal befinde dig i baghaven og have alle delene for at kunne bygge solcellen!" + "\n\nDu mangler at finde " + intitemsleft + " dele før du kan lave et solpanel", 40, 4000);
                 _currentRoom.EnterRoomMsg();
             }
         }
