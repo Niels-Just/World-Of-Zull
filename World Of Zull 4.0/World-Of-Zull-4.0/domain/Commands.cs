@@ -103,7 +103,7 @@ namespace World_Of_Zull_4._0.domain
         public void Assemble(Player player)
         {
             if (_currentRoom == _rooms["baghaven"])
-             {
+            {
                 if (player.HasItem("part1", "part2", "part3", "part4", "part5", "part6", "part7", "part8"))
                 {
                     Console.Clear();
@@ -117,7 +117,7 @@ namespace World_Of_Zull_4._0.domain
                     TextEffect.TxtEffect("Du har ikke alle delene!",20,200);
                     _currentRoom.EnterRoomMsg();
                 }
-             }
+            }
             else
             {
                 TextEffect.TxtEffect("Du skal befinde dig i baghaven for at kunne bygge solcellen og have alle delene!", 20, 200);

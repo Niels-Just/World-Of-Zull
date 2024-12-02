@@ -23,12 +23,12 @@ namespace World_Of_Zull_4._0.domain
         public void Talk(Player player)
         {
             Console.Clear();
-            TextEffect.TxtEffectNpc($"{Description}\n", 2);
 
             int CorrectQuestions = 0;
 
             if (HasPart)
             {
+                TextEffect.TxtEffectNpc($"{Description}\n", 2);
                 foreach (var question in Questions)
                 {
                     bool correctAnswer = false;
@@ -69,7 +69,7 @@ namespace World_Of_Zull_4._0.domain
             }
             else
             {
-                TextEffect.TxtEffect("Du har allerede fundet alle delene her.\n", 30, 200);
+                TextEffect.TxtEffect("Du har allerede fundet alle delene her.\n", 30, 1000);
             }
         }
     }

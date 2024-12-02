@@ -126,7 +126,7 @@ namespace World_Of_Zull_4._0.data
                     new Question(bilBentQ1,
                         new string[] { 
                             "»Ved at installere solpaneler på taget af bilen, som samler energien fra solens stråler til direkte opladning.«", 
-                            "»Ved at oprette en magisk forbindelse mellem bilen og en solcelledrevet ladestation, der udstråler ren energi fra solen.«", 
+                            "»Ved at oprette en forbindelse mellem bilen og en solcelledrevet ladestation, der udstråler ren energi fra solen.«", 
                             "»Ved at placere solpaneler rundt om hjulene, så de genererer energi, mens bilen kører på solbestrålede veje.«" },
                         2),
                     new Question(bilBentQ2,
@@ -160,7 +160,7 @@ namespace World_Of_Zull_4._0.data
                             "»De bruger solens kraft til at skabe regnbuer, som gør alting smukkere og sjovere at lege med.«", 
                             "»De lærer os, hvordan solens stråler kan skabe energi uden at forurene, som en gave fra naturens magi.«"
                         },
-                        2)
+                        3)
                 },
                 true, allItems["part5"]);
             
@@ -236,7 +236,7 @@ namespace World_Of_Zull_4._0.data
                             "Solpanelerne skaber et magnetisk felt, som stabiliserer strømforsyningen, selv når der er problemer på elnettet.«", 
                             "»Panelernes energi bliver automatisk ledt ind i naboens vægge, som opbygger en naturlig reserve af elektricitet i strukturen.«"
                         },
-                        2)
+                        1)
 
                 },
                 true, allItems["part8"]);
