@@ -12,10 +12,12 @@ public class EndScreen
         TextEffect.TxtEffectNpc("Jeg er en taknemmelig rejsende fra en fjern galakse. \n" +
                                 "Det solpanel, du har skabt, er intet mindre end perfekt – en strålende bedrift!\n" +
                                 "Jeg håber, at du nu er blevet oplyst om, hvor fantastiske solpaneler virkelig er. \n" +
-                                "Tiden er inde til at forlade denne planet. Hvis vi skulle krydse veje igen i fremtiden, håber jeg at se dit tag fyldt med solpaneler!\n", 25);
+                                "Tiden er inde til at forlade denne planet. \n" +
+                                "Hvis vi skulle krydse veje igen i fremtiden, håber jeg at se solpaneler dække alle tage!\n" +
+                                "Spred budskabet Solvej så dennde drøm kan blive sandhed.\n", 25);
     }
     
-    public static void SlutAnimation()
+    public static void EndAnimation()
     {
         // Mere detaljeret rumskib, der vender mod højre
         string[] spaceship =

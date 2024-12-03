@@ -110,7 +110,7 @@ namespace World_Of_Zull_4._0.domain
                     Console.Clear();
                     //animations metode.
                     EndScreen.EndText();
-                    EndScreen.SlutAnimation();
+                    EndScreen.EndAnimation();
                     Console.Clear();
                     TextEffect.TxtEffectNoClear("Tillykke du hjalp fnorkel tilbage ud i rummet!\n\n", 40, 500);
                     TextEffect.TxtEffectNoClear("Spillet er nu slut, tak for at spille!", 40, 3000);
