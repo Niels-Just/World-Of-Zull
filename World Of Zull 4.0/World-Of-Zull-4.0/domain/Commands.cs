@@ -1,4 +1,5 @@
 using World_Of_Zull_4._0._presentation;
+using World_Of_Zull_4._0.presentation;
 
 namespace World_Of_Zull_4._0.domain
 {
@@ -101,14 +102,6 @@ namespace World_Of_Zull_4._0.domain
 
         public void Assemble(Player player)
         {
-<<<<<<< HEAD
-            if (_currentRoom == _rooms["baghaven"])
-            {
-                if (player.HasItem("part1", "part2", "part3", "part4", "part5", "part6", "part7", "part8"))
-                {
-                    Console.Clear();
-                    TextEffect.TxtEffectNpc("Tillykke du hjalp Fnorkel tilbage ud i rummet!", 20);
-=======
             int intitemsleft = 8 - player.ItemCount();
             if (currentRoom == rooms["baghaven"])
             {
@@ -116,10 +109,11 @@ namespace World_Of_Zull_4._0.domain
                 {
                     Console.Clear();
                     TextEffect.TxtEffectNpc("Tillykke du hjalp fnorkel tilbage ud i rummet!", 40);
->>>>>>> refs/remotes/origin/main
-                    Console.WriteLine("Spillet er nu slut!");
+                    //animations metode.
+                    FnorkelAnimation.SlutAnimation();
+                    Console.Clear();
+                    Console.WriteLine("Spillet er nu slut, tak for at spille!");
                     Environment.Exit(0);
-                    
                 }
                 else
                 {
