@@ -37,15 +37,19 @@ public class EndScreen
             "        |_|   |_|     ",
         };
 
-        int screenWidth = 50; // Dynamisk konsolbredde
-        int delay = 40; // Millisekunder mellem frames
-        for (int i = 0; i < screenWidth; i++)
+        int screenHeight = Console.WindowHeight;
+        int delay = 100; // Delay mellem hvornår "rumskibet" bevæger sig.
+        for (int i = screenHeight; i >= 0; i--)
         {
-            Console.Clear(); // Ryd skærmen
-            // Tegn rumskibet
-            foreach (string line in spaceship)
+            Console.Clear(); 
+            for (int j = 0; j < spaceship.Length; j++)
             {
-                Console.WriteLine(new string(' ', i) + line);
+                int position = i + j; 
+                if (position >= 0 && position < screenHeight) 
+                {
+                    Console.SetCursorPosition(0, position); 
+                    Console.WriteLine(spaceship[j]);
+                }
             }
             Thread.Sleep(delay);
         }
