@@ -1,4 +1,3 @@
-using System.IO;
 using World_Of_Zull_4._0._presentation;
 
 namespace World_Of_Zull_4._0.domain
@@ -32,7 +31,7 @@ namespace World_Of_Zull_4._0.domain
         
         }
 
-        //bruges til at bevæge spilleren til ethvert rum uden behov for at være ved siden af det. (dev command)
+        //Bruges til at bevæge spilleren til ethvert rum uden behov for at være ved siden af det. (dev command)
         public void DevMove(Room nextRoom)
         {
             _currentRoom = nextRoom; // Opdater currentRoom
@@ -103,13 +102,13 @@ namespace World_Of_Zull_4._0.domain
         public void Assemble(Player player)
         {
             if (_currentRoom == _rooms["baghaven"])
-             {
+            {
                 if (player.HasItem("part1", "part2", "part3", "part4", "part5", "part6", "part7", "part8"))
                 {
                     Console.Clear();
-                    TextEffect.TxtEffectNpc("Tillykke du hjalp fnorkel tilbage ud i rummet!", 20);
+                    TextEffect.TxtEffectNpc("Tillykke du hjalp Fnorkel tilbage ud i rummet!", 20);
                     Console.WriteLine("Spillet er nu slut!");
-                    System.Environment.Exit(0);
+                    Environment.Exit(0);
                     
                 }
                 else
@@ -117,7 +116,7 @@ namespace World_Of_Zull_4._0.domain
                     TextEffect.TxtEffect("Du har ikke alle delene!",20,200);
                     _currentRoom.EnterRoomMsg();
                 }
-             }
+            }
             else
             {
                 TextEffect.TxtEffect("Du skal befinde dig i baghaven for at kunne bygge solcellen og have alle delene!", 20, 200);
