@@ -6,19 +6,19 @@ public class RoomSetup
     public static Dictionary<string, Room> InitalizeRooms()
     {
         //Laver rooms
-        Room Baghaven = new Room("baghaven", "Du kikker mod Baghaven.");
-        Room Glad_Nabo = new Room("den glade nabos hus", "Du kikker mod den glade nabo.");
-        Room Sur_Nabo = new Room("den sure nabos hus", "Du kikker mod den sure nabo.");
-        Room Vej_Midt = new Room("Vej midt", "Du kikker mod vej midt.");
-        Room Vej_Øst = new Room("Vej Øst", "Du kikker mod vej øst.");
-        Room Vej_Vest = new Room("Vej Vest", "Du kikker mod vej vest.");
-        Room Elektriker_Erik = new Room("Elektriker Eriks hus", "Du kikker mod Elektriker Erik");
-        Room Glas_Mager_glenn = new Room("Glasmager Glenns hus", "Du kikker mod Glasmager Glenn.");
-        Room Kunst_Haven = new Room("Kunst Haven", "Du kikker mod Kunsthaven");
+        Room baghaven = new Room("baghaven", "Du kikker mod Baghaven.");
+        Room gladNabo = new Room("den glade nabos hus", "Du kikker mod den glade nabo.");
+        Room surNabo = new Room("den sure nabos hus", "Du kikker mod den sure nabo.");
+        Room vejMidt = new Room("Vej midt", "Du kikker mod vej midt.");
+        Room vejØst = new Room("Vej Øst", "Du kikker mod vej øst.");
+        Room vejVest = new Room("Vej Vest", "Du kikker mod vej vest.");
+        Room elektrikerErik = new Room("Elektriker Eriks hus", "Du kikker mod Elektriker Erik");
+        Room glasMagerGlenn = new Room("Glasmager Glenns hus", "Du kikker mod Glasmager Glenn.");
+        Room kunstHaven = new Room("Kunst Haven", "Du kikker mod Kunsthaven");
         
         
         //Initaliser NPC'er
-        var NPClist = NPCSetUp.InitalizeNPCs();
+        var npClist = NpcSetUp.InitalizeNpCs();
        
         //Tilføj npcer til rum
         /*NPClist.find søger i NPClist og finder det første element der matcher betignelsen
@@ -26,77 +26,77 @@ public class RoomSetup
          =>: Lambda-operatoren, adskiller parametrene fra udtrykket men skal bare ses som syntax.
          npc er i dette tilfælde paramter for lambda udtrykket men det kan hedde lige hvad det vil.
         */
-        Glas_Mager_glenn.AddNPC(NPClist.Find(npc => npc.Name == "Glasmager Glenn" ));
-        Sur_Nabo.AddNPC(NPClist.Find(npc => npc.Name == "Sur Nabo" ));
-        Elektriker_Erik.AddNPC(NPClist.Find(npc => npc.Name == "Elektriker Erik" ));
-        Glad_Nabo.AddNPC(NPClist.Find(npc => npc.Name == "Glad Nabo" ));
-        Kunst_Haven.AddNPC(NPClist.Find(npc => npc.Name == "Kunstneren Karen" ));
-        Vej_Vest.AddNPC(NPClist.Find(npc => npc.Name == "Bilejeren Bent" ));
-        Vej_Midt.AddNPC(NPClist.Find(npc => npc.Name == "Nabo Børnene" ));
-        Vej_Øst.AddNPC(NPClist.Find(npc => npc.Name == "Gud" ));
-        Baghaven.AddNPC(NPClist.Find(npc => npc.Name == "Fnorkel" ));
+        glasMagerGlenn.AddNpc(npClist.Find(npc => npc.Name == "Glasmager Glenn" ));
+        surNabo.AddNpc(npClist.Find(npc => npc.Name == "Sur Nabo" ));
+        elektrikerErik.AddNpc(npClist.Find(npc => npc.Name == "Elektriker Erik" ));
+        gladNabo.AddNpc(npClist.Find(npc => npc.Name == "Glad Nabo" ));
+        kunstHaven.AddNpc(npClist.Find(npc => npc.Name == "Kunstneren Karen" ));
+        vejVest.AddNpc(npClist.Find(npc => npc.Name == "Bilejeren Bent" ));
+        vejMidt.AddNpc(npClist.Find(npc => npc.Name == "Nabo Børnene" ));
+        vejØst.AddNpc(npClist.Find(npc => npc.Name == "Gud" ));
+        baghaven.AddNpc(npClist.Find(npc => npc.Name == "Fnorkel" ));
         
         
         
         // Tilføj kanter mellem rum
         // Pos (1,1)
-        Glas_Mager_glenn.AddEdge("Syd", Vej_Vest);
-        Glas_Mager_glenn.AddEdge("Øst", Elektriker_Erik);
+        glasMagerGlenn.AddEdge("Syd", vejVest);
+        glasMagerGlenn.AddEdge("Øst", elektrikerErik);
         
         // Pos (1,2)
-        Elektriker_Erik.AddEdge("Vest", Glas_Mager_glenn);
-        Elektriker_Erik.AddEdge("Øst", Kunst_Haven);
-        Elektriker_Erik.AddEdge("Syd", Vej_Midt);
+        elektrikerErik.AddEdge("Vest", glasMagerGlenn);
+        elektrikerErik.AddEdge("Øst", kunstHaven);
+        elektrikerErik.AddEdge("Syd", vejMidt);
         
         // Pos (1,3)
-        Kunst_Haven.AddEdge("Vest", Elektriker_Erik);
-        Kunst_Haven.AddEdge("Syd", Vej_Øst);
+        kunstHaven.AddEdge("Vest", elektrikerErik);
+        kunstHaven.AddEdge("Syd", vejØst);
         
         // Pos (2,1)
-        Vej_Vest.AddEdge("Nord", Glas_Mager_glenn);
-        Vej_Vest.AddEdge("Syd", Glad_Nabo);
-        Vej_Vest.AddEdge("Øst", Vej_Midt);
+        vejVest.AddEdge("Nord", glasMagerGlenn);
+        vejVest.AddEdge("Syd", gladNabo);
+        vejVest.AddEdge("Øst", vejMidt);
         
         // Pos (2,2)
-        Vej_Midt.AddEdge("Syd", Baghaven);
-        Vej_Midt.AddEdge("Øst", Vej_Øst);
-        Vej_Midt.AddEdge("Vest", Vej_Vest);
-        Vej_Midt.AddEdge("Nord", Elektriker_Erik);
+        vejMidt.AddEdge("Syd", baghaven);
+        vejMidt.AddEdge("Øst", vejØst);
+        vejMidt.AddEdge("Vest", vejVest);
+        vejMidt.AddEdge("Nord", elektrikerErik);
         
         // Pos (2,3)
-        Vej_Øst.AddEdge("Nord", Kunst_Haven);
-        Vej_Øst.AddEdge("Syd", Sur_Nabo);
-        Vej_Øst.AddEdge("Vest", Vej_Midt);
+        vejØst.AddEdge("Nord", kunstHaven);
+        vejØst.AddEdge("Syd", surNabo);
+        vejØst.AddEdge("Vest", vejMidt);
         
         // Pos (3,1)
-        Glad_Nabo.AddEdge("Øst", Baghaven);
-        Glad_Nabo.AddEdge("Nord", Vej_Vest);
+        gladNabo.AddEdge("Øst", baghaven);
+        gladNabo.AddEdge("Nord", vejVest);
         
         // Pos (3,2)
-        Baghaven.AddEdge("Nord", Vej_Midt);
-        Baghaven.AddEdge("Øst", Sur_Nabo);
-        Baghaven.AddEdge("Vest", Glad_Nabo);
+        baghaven.AddEdge("Nord", vejMidt);
+        baghaven.AddEdge("Øst", surNabo);
+        baghaven.AddEdge("Vest", gladNabo);
         
         // Pos (3,3)
-        Sur_Nabo.AddEdge("Vest", Baghaven);
-        Sur_Nabo.AddEdge("Nord", Vej_Øst);
+        surNabo.AddEdge("Vest", baghaven);
+        surNabo.AddEdge("Nord", vejØst);
 
         //Initialiser NPC'er
-        var npcs = NPCSetUp.InitalizeNPCs();
+        var npcs = NpcSetUp.InitalizeNpCs();
         
         
         //Matcher string med den respektive room objekt, sådan at det kan refferes til senere i koden
         return new Dictionary<string, Room>
         {
-            {"baghaven", Baghaven},
-            {"glad_nabo", Glad_Nabo},
-            {"sur_nabo", Sur_Nabo},
-            {"vej_midt",Vej_Midt},
-            {"vej_øst",Vej_Øst},
-            {"vej_vest",Vej_Vest},
-            {"elektriker_erik ",Elektriker_Erik},
-            {"glas_mager_glenn",Glas_Mager_glenn},
-            {"kunst_haven",Kunst_Haven},
+            {"baghaven", baghaven},
+            {"glad_nabo", gladNabo},
+            {"sur_nabo", surNabo},
+            {"vej_midt",vejMidt},
+            {"vej_øst",vejØst},
+            {"vej_vest",vejVest},
+            {"elektriker_erik ",elektrikerErik},
+            {"glas_mager_glenn",glasMagerGlenn},
+            {"kunst_haven",kunstHaven},
         };
     }
 }

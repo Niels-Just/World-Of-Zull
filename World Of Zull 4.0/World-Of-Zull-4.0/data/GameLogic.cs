@@ -9,7 +9,9 @@ public class GameLogic
     private Commands commands;
     private Player player;
     private Dictionary<string, Room> rooms;
-    private NPCalien fnorkel; //Tilføj fnorkel npc
+    private NpCalien fnorkel; //Tilføj fnorkel npc
+    private bool isDev = true;
+    
     public GameLogic()
     {
         rooms = RoomSetup.InitalizeRooms();
@@ -88,41 +90,56 @@ public class GameLogic
                     commands.Hjælp();
                     break;
                 
+                case "hjem":
+                    commands.Home();
+                    break;
+                
                 case "devadd":
-                    if (parts.Length > 1)
+                    if (isDev)
                     {
-                        var itemName = parts[1].ToLower();
-
-                        if (items.ContainsKey(itemName))
-                        {
-                            player.AddItem(items[itemName]);
-                           Console.WriteLine($"{itemName}' er tilføjet til dit inventory.");
-                        }
-                        else
-                        {
-                            TextEffect.TxtEffect($"Denne genstand findes ikke",20,200);
-                            currentRoom.EnterRoomMsg();
-                        }
+                        var items = ItemSetUp.GetAllItems();
+                        player.GiveAllItems(items);
+                        currentRoom.EnterRoomMsg();
                     }
+                    else                                                                                         
+                    {                                                                                            
+                        TextEffect.TxtEffect("Dette kan ikke lade sig gøre!", 20, 200);                                  
+                        currentRoom.EnterRoomMsg();                                                              
+                    }                                                                                            
                     break;
 
                 case "devtp":
-                    if (parts.Length > 1)
+                    if (parts.Length > 1 && isDev)
                     {
-                        currentRoom = rooms[parts[1]];
-                        commands.DevMove(currentRoom);
+                        string room = parts[1];
+                        if (rooms.TryGetValue(room, out var tpRoom))
+                        {
+                            currentRoom = tpRoom;
+                            commands.DevMove(currentRoom);
+                        }
+                        else
+                        {
+                            TextEffect.TxtEffect("Dette rum findes ikke", 20, 200);
+                            currentRoom.EnterRoomMsg();
+                        }
                     }
-                    else
+                    else if (isDev)
                     {
-                        TextEffect.TxtEffect("Dette rum findes ikke", 20, 200);
+                        TextEffect.TxtEffect("Mangler input for rum", 20, 200);
+                        currentRoom.EnterRoomMsg();
                     }
+                    else    
+                    {
+                        TextEffect.TxtEffect("Dette kan ikke lade sig gøre!", 20, 2000);
+                        currentRoom.EnterRoomMsg(); 
+                    }
+                    break;
 
-                    break;
-                
+
                 default:
-                    TextEffect.TxtEffect("Dette kan ikke lade sig gøre!", 20, 2000);
-                    currentRoom.EnterRoomMsg();
-                    break;
+                        TextEffect.TxtEffect("Dette kan ikke lade sig gøre!", 20, 2000);
+                        currentRoom.EnterRoomMsg();
+                        break;
 
                 
             }

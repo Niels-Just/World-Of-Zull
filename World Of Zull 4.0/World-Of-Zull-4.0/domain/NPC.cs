@@ -1,7 +1,7 @@
 using World_Of_Zull_4._0._presentation;
 namespace World_Of_Zull_4._0.domain
 {
-    public class NPC
+    public class Npc
     {
         public string Name;
         public string Description;
@@ -11,7 +11,7 @@ namespace World_Of_Zull_4._0.domain
         // Liste over spørgsmål
         public List<Question> Questions;
 
-        public NPC(string name, string description, List<Question> questions, bool hasPart, Item part)
+        public Npc(string name, string description, List<Question> questions, bool hasPart, Item part)
         {
             Name = name;
             Description = description;
@@ -23,12 +23,12 @@ namespace World_Of_Zull_4._0.domain
         public void Talk(Player player)
         {
             Console.Clear();
-            TextEffect.TxtEffectNpc($"{Description}\n", 2);
 
-            int CorrectQuestions = 0;
+            int correctQuestions = 0;
 
             if (HasPart)
             {
+                TextEffect.TxtEffectNpc($"{Description}\n", 2);
                 foreach (var question in Questions)
                 {
                     bool correctAnswer = false;
@@ -50,7 +50,7 @@ namespace World_Of_Zull_4._0.domain
                         {
                             TextEffect.TxtEffect("Det er det rigtige svar!\n", 30, 200);
                             correctAnswer = true;
-                            CorrectQuestions++;
+                            correctQuestions++;
                         }
                         else
                         {
@@ -59,7 +59,7 @@ namespace World_Of_Zull_4._0.domain
                     }
                 }
                 
-                if (CorrectQuestions == 2)
+                if (correctQuestions == 2)
                 {
                     TextEffect.TxtEffectNpc("Du har besvaret alle spørgsmål korrekt!\n" +
                                             $"Her er din belønning! Du får {Part.ItemName}" , 30);
@@ -69,7 +69,7 @@ namespace World_Of_Zull_4._0.domain
             }
             else
             {
-                TextEffect.TxtEffect("Du har allerede fundet alle delene her.\n", 30, 200);
+                TextEffect.TxtEffect("Du har allerede fundet alle delene her.\n", 30, 1000);
             }
         }
     }

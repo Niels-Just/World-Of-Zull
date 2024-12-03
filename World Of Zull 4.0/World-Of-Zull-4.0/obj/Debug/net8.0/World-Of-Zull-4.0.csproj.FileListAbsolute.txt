@@ -108,6 +108,7 @@ C:/Users/jesse/uni/semesterprojekt/World-Of-Zull/World Of Zull 4.0/World-Of-Zull
 C:/Users/jesse/uni/semesterprojekt/World-Of-Zull/World Of Zull 4.0/World-Of-Zull-4.0/obj/Debug/net8.0/World-Of-Zull-4.0.pdb
 C:/Users/jesse/uni/semesterprojekt/World-Of-Zull/World Of Zull 4.0/World-Of-Zull-4.0/obj/Debug/net8.0/World-Of-Zull-4.0.genruntimeconfig.cache
 C:/Users/jesse/uni/semesterprojekt/World-Of-Zull/World Of Zull 4.0/World-Of-Zull-4.0/obj/Debug/net8.0/ref/World-Of-Zull-4.0.dll
+<<<<<<< HEAD
 /Users/niels-just/World-Of-Zull/World Of Zull 4.0/World-Of-Zull-4.0/bin/Debug/net8.0/Sample/bent.txt
 /Users/niels-just/World-Of-Zull/World Of Zull 4.0/World-Of-Zull-4.0/bin/Debug/net8.0/Sample/bilBentQ1.txt
 /Users/niels-just/World-Of-Zull/World Of Zull 4.0/World-Of-Zull-4.0/bin/Debug/net8.0/Sample/bilBentQ2.txt
@@ -149,3 +150,5 @@ C:/Users/jesse/uni/semesterprojekt/World-Of-Zull/World Of Zull 4.0/World-Of-Zull
 /Users/niels-just/World-Of-Zull/World Of Zull 4.0/World-Of-Zull-4.0/obj/Debug/net8.0/World-Of-Zull-4.0.pdb
 /Users/niels-just/World-Of-Zull/World Of Zull 4.0/World-Of-Zull-4.0/obj/Debug/net8.0/World-Of-Zull-4.0.genruntimeconfig.cache
 /Users/niels-just/World-Of-Zull/World Of Zull 4.0/World-Of-Zull-4.0/obj/Debug/net8.0/ref/World-Of-Zull-4.0.dll
+=======
+>>>>>>> refs/remotes/origin/main

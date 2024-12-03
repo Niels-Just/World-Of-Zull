@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "f9X398BgQ+8=",
   "success": true,
   "projectFilePath": "/Users/niels-just/World-Of-Zull/World Of Zull 4.0/World-Of-Zull-4.0/World-Of-Zull-4.0.csproj",
+=======
+  "dgSpecHash": "SE1mMT4rwco=",
+  "success": true,
+  "projectFilePath": "/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zull 4.0/World-Of-Zull-4.0/World-Of-Zull-4.0.csproj",
+>>>>>>> refs/remotes/origin/main
   "expectedPackageFiles": [],
   "logs": []
 }

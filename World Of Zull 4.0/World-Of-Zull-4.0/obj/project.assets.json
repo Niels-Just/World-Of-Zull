@@ -8,11 +8,16 @@
     "net8.0": []
   },
   "packageFolders": {
+<<<<<<< HEAD
     "/Users/niels-just/.nuget/packages/": {}
+=======
+    "/Users/mads/.nuget/packages/": {}
+>>>>>>> refs/remotes/origin/main
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "/Users/niels-just/World-Of-Zull/World Of Zull 4.0/World-Of-Zull-4.0/World-Of-Zull-4.0.csproj",
       "projectName": "World-Of-Zull-4.0",
       "projectPath": "/Users/niels-just/World-Of-Zull/World Of Zull 4.0/World-Of-Zull-4.0/World-Of-Zull-4.0.csproj",
@@ -21,6 +26,16 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/niels-just/.nuget/NuGet/NuGet.Config"
+=======
+      "projectUniqueName": "/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zull 4.0/World-Of-Zull-4.0/World-Of-Zull-4.0.csproj",
+      "projectName": "World-Of-Zull-4.0",
+      "projectPath": "/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zull 4.0/World-Of-Zull-4.0/World-Of-Zull-4.0.csproj",
+      "packagesPath": "/Users/mads/.nuget/packages/",
+      "outputPath": "/Users/mads/Desktop/Gruppearbejde WOZ/World-Of-Zull/World Of Zull 4.0/World-Of-Zull-4.0/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/mads/.nuget/NuGet/NuGet.Config"
+>>>>>>> refs/remotes/origin/main
       ],
       "originalTargetFrameworks": [
         "net8.0"

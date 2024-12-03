@@ -7,14 +7,14 @@ namespace World_Of_Zull_4._0.data
         {
             return new Dictionary<string, Item>
             {
-                { "part1", new Item("part1", "description") },
-                { "part2", new Item("part2", "description") },
-                { "part3", new Item("part3", "description") },
-                { "part4", new Item("part4", "description") },
-                { "part5", new Item("part5", "description") },
-                { "part6", new Item("part6", "description") },
-                { "part7", new Item("part7", "description") },
-                { "part8", new Item("part8", "description") }
+                { "glasmagerGlenn", new Item("Glasplade", "description") },
+                { "elektrikerErik", new Item("Inverter", "description") },
+                { "kunstKaren", new Item("Æstetisk solfilm", "description") },
+                { "bilejerenBent", new Item("Energiomformer", "description") },
+                { "naboBørn", new Item("Energikrystal", "description") },
+                { "gud", new Item("Sollys", "description") },
+                { "gladNabo", new Item("Energioptimeringschip", "description") },
+                { "surNabo", new Item("Energiregulator", "description") }
             };
         }   
     }
