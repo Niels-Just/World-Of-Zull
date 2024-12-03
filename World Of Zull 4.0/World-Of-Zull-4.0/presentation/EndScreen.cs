@@ -1,7 +1,19 @@
+using World_Of_Zull_4._0._presentation;
 namespace World_Of_Zull_4._0.presentation;
 
-public class FnorkelAnimation
+public class EndScreen
 {
+
+    public static void EndText()
+    {
+        Console.ForegroundColor = ConsoleColor.Yellow;
+        TextEffect.TxtEffectNoClear("Fnorkel:\n\n", 25, 500);
+        Console.ResetColor();
+        TextEffect.TxtEffectNpc("Jeg er en taknemmelig rejsende fra en fjern galakse. \n" +
+                                "Det solpanel, du har skabt, er intet mindre end perfekt – en strålende bedrift!\n" +
+                                "Jeg håber, at du nu er blevet oplyst om, hvor fantastiske solpaneler virkelig er. \n" +
+                                "Tiden er inde til at forlade denne planet. Hvis vi skulle krydse veje igen i fremtiden, håber jeg at se dit tag fyldt med solpaneler!\n", 25);
+    }
     
     public static void SlutAnimation()
     {

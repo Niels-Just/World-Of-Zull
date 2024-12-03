@@ -108,11 +108,12 @@ namespace World_Of_Zull_4._0.domain
                 if (player.HasItem("Glasplade", "Inverter", "Æstetisk solfilm", "Energiomformer", "Energikrystal", "Sollys", "Energioptimeringschip", "Energiregulator"))
                 {
                     Console.Clear();
-                    TextEffect.TxtEffectNpc("Tillykke du hjalp fnorkel tilbage ud i rummet!", 40);
                     //animations metode.
-                    FnorkelAnimation.SlutAnimation();
+                    EndScreen.EndText();
+                    EndScreen.SlutAnimation();
                     Console.Clear();
-                    Console.WriteLine("Spillet er nu slut, tak for at spille!");
+                    TextEffect.TxtEffectNoClear("Tillykke du hjalp fnorkel tilbage ud i rummet!\n\n", 40, 500);
+                    TextEffect.TxtEffectNoClear("Spillet er nu slut, tak for at spille!", 40, 3000);
                     Environment.Exit(0);
                 }
                 else
