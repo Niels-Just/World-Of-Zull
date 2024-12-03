@@ -1,4 +1,3 @@
-using World_Of_Zull_4._0._presentation;
 namespace World_Of_Zull_4._0.presentation;
 
 public class EndScreen
@@ -12,10 +11,12 @@ public class EndScreen
         TextEffect.TxtEffectNpc("Jeg er en taknemmelig rejsende fra en fjern galakse. \n" +
                                 "Det solpanel, du har skabt, er intet mindre end perfekt – en strålende bedrift!\n" +
                                 "Jeg håber, at du nu er blevet oplyst om, hvor fantastiske solpaneler virkelig er. \n" +
-                                "Tiden er inde til at forlade denne planet. Hvis vi skulle krydse veje igen i fremtiden, håber jeg at se dit tag fyldt med solpaneler!\n", 25);
+                                "Tiden er inde til at forlade denne planet. \n" +
+                                "Hvis vi skulle krydse veje igen i fremtiden, håber jeg at se solpaneler dække alle tage!\n" +
+                                "Spred budskabet Solvej så dennde drøm kan blive sandhed.\n", 25);
     }
     
-    public static void SlutAnimation()
+    public static void EndAnimation()
     {
         // Mere detaljeret rumskib, der vender mod højre
         string[] spaceship =
@@ -37,15 +38,19 @@ public class EndScreen
             "        |_|   |_|     ",
         };
 
-        int screenWidth = 50; // Dynamisk konsolbredde
-        int delay = 40; // Millisekunder mellem frames
-        for (int i = 0; i < screenWidth; i++)
+        int screenHeight = Console.WindowHeight;
+        int delay = 100; // Delay mellem hvornår "rumskibet" bevæger sig.
+        for (int i = screenHeight; i >= 0; i--)
         {
-            Console.Clear(); // Ryd skærmen
-            // Tegn rumskibet
-            foreach (string line in spaceship)
+            Console.Clear(); 
+            for (int j = 0; j < spaceship.Length; j++)
             {
-                Console.WriteLine(new string(' ', i) + line);
+                int position = i + j; 
+                if (position >= 0 && position < screenHeight) 
+                {
+                    Console.SetCursorPosition(0, position); 
+                    Console.WriteLine(spaceship[j]);
+                }
             }
             Thread.Sleep(delay);
         }
