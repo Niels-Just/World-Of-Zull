@@ -100,6 +100,35 @@ namespace World_Of_Zull_4._0.domain
         }
 
 
+        public static void Map()
+        {
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Red;
+            
+            TextEffect.TxtEffectNoClear("Kort:", 100, 200);
+            
+            string[] kort =
+            {
+                "[glasMagerGlenn]---[elektrikerErik]---[kunstHaven]",
+                "|                     |                  |",
+                "[vejVest]---------[vejMidt]---------[vejØst]",
+                "|                     |                  |",
+                "[gladNabo]--------[baghaven]--------[surNabo]"
+            };
+            
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            
+            foreach (string line in kort)
+            {
+                TextEffect.TxtEffectNoClear("\n" + line,0 , 0);
+            }
+            
+            Console.ResetColor();
+            TextEffect.TxtEffectNpc("", 0);
+        }
+        
+        
+        
         public void Assemble(Player player)
         {
             int intitemsleft = 8 - player.ItemCount();

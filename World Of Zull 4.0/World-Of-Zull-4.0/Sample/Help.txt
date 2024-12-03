@@ -6,3 +6,4 @@ svar [nummer] - Brug denne kommando for at svare på spørgsmål.
 inventar - Giver en liste og genstande i dit inventar.
 byg - Samle solpanelet når du har fået alle delene.
 hjem - Tag tilabage til baghaven hvor Fnorkel venter på din hjælp.
+Kort - Se et kort over nabolaget.

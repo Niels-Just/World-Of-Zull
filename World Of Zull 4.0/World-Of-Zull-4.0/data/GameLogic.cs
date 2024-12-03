@@ -108,6 +108,19 @@ public class GameLogic
                     }                                                                                            
                     break;
 
+                case "kort":
+                    if (parts.Length > 1)
+                    {
+                        TextEffect.TxtEffect("Dette kan ikke lade sig gøre!", 20, 2000);
+                        currentRoom.EnterRoomMsg();
+                    }
+                    else
+                    {
+                            Commands.Map();
+                            currentRoom.EnterRoomMsg();
+                    }
+                    break;
+                
                 case "devtp":
                     if (parts.Length > 1 && isDev)
                     {
