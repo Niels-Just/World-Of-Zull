@@ -39,5 +39,17 @@ namespace World_Of_Zull_4._0._presentation
             }
             Console.ResetColor();
         }
+        
+        public static void TxtEffectNoClear(string message, int pauseBetweenC, int pauseAfter)
+        {
+            foreach (char c in message)
+            {
+                Console.Write(c);
+                Thread.Sleep(pauseBetweenC);
+            }
+
+            Thread.Sleep(pauseAfter);
+        }
     }
+    
 }

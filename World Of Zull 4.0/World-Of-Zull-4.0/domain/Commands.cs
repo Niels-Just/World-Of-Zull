@@ -116,14 +116,14 @@ namespace World_Of_Zull_4._0.domain
                 else
                 {
                     Console.Clear();
-                    TextEffect.TxtEffect("Du har ikke alle delene!" + "\n\nDu mangler at finde " + intitemsleft + " dele før du kan lave et solpanel", 40, 4000);
+                    TextEffect.TxtEffect("Du har ikke alle delene!" + "\n\nDu mangler at finde " + intitemsleft + " dele før du kan lave et solpanel", 40, 2000);
                     currentRoom.EnterRoomMsg();
                 }
             }
             else
             {
                 Console.Clear();
-                TextEffect.TxtEffect("Du skal befinde dig i baghaven og have alle delene for at kunne bygge solcellen!" + "\n\nDu mangler at finde " + intitemsleft + " dele før du kan lave et solpanel", 40, 4000);
+                TextEffect.TxtEffect("Du skal befinde dig i baghaven og have alle delene for at kunne bygge solcellen!" + "\n\nDu mangler at finde " + intitemsleft + " dele før du kan lave et solpanel", 40, 2000);
                 currentRoom.EnterRoomMsg();
             }
         }
