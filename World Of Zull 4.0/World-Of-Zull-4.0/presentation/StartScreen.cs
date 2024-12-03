@@ -71,7 +71,7 @@ namespace World_Of_Zull_4._0.presentation
                                                "Uden at tøve skifter den over i rigsdansk!\n", 25);
 
              Console.ForegroundColor = ConsoleColor.Yellow;
-             TextEffect.TxtEffectNoClear("Fnorkel:\n\n", 25, 500);
+             TextEffect.TxtEffectNoClear("Fnorkel:\n", 25, 500);
              Console.ResetColor();
              TextEffect.TxtEffectNpc("Hilsner, rejsende! Jeg er Fnorkel, en udforsker fra en fjern galakse.\n" +
                                      "Mit rumskib styrtede ned her, og jeg har brug for solpaneler for at reparere det og vende hjem.\n" +
