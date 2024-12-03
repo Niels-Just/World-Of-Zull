@@ -28,7 +28,7 @@ namespace World_Of_Zull_4._0.domain
 
             if (HasPart)
             {
-                TextEffect.TxtEffectNpc($"{Description}\n", 2);
+                TextEffect.TxtEffectNpc($"{Description}\n", 20);
                 foreach (var question in Questions)
                 {
                     bool correctAnswer = false;

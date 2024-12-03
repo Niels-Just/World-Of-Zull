@@ -9,9 +9,9 @@ namespace World_Of_Zull_4._0.data
             {
                 { "glasmagerGlenn", new Item("Glasplade", "description") },
                 { "elektrikerErik", new Item("Inverter", "description") },
-                { "kunstKaren", new Item("Æstetisk solfilm", "description") },
+                { "kunstKaren", new Item("Tyndfilm", "description") },
                 { "bilejerenBent", new Item("Energiomformer", "description") },
-                { "naboBørn", new Item("Energikrystal", "description") },
+                { "naboBørn", new Item("Silicium", "description") },
                 { "gud", new Item("Sollys", "description") },
                 { "gladNabo", new Item("Energioptimeringschip", "description") },
                 { "surNabo", new Item("Energiregulator", "description") }

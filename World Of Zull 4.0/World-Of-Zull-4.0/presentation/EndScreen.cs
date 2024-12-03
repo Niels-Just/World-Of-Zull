@@ -13,7 +13,7 @@ public class EndScreen
                                 "Jeg håber, at du nu er blevet oplyst om, hvor fantastiske solpaneler virkelig er. \n" +
                                 "Tiden er inde til at forlade denne planet. \n" +
                                 "Hvis vi skulle krydse veje igen i fremtiden, håber jeg at se solpaneler dække alle tage!\n" +
-                                "Spred budskabet Solvej så dennde drøm kan blive sandhed.\n", 25);
+                                "Spred budskabet Solvej så denne drøm kan blive sandhed.\n", 25);
     }
     
     public static void EndAnimation()

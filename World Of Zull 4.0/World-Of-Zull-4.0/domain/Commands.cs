@@ -105,7 +105,7 @@ namespace World_Of_Zull_4._0.domain
             int intitemsleft = 8 - player.ItemCount();
             if (currentRoom == rooms["baghaven"])
             {
-                if (player.HasItem("Glasplade", "Inverter", "Æstetisk solfilm", "Energiomformer", "Energikrystal", "Sollys", "Energioptimeringschip", "Energiregulator"))
+                if (player.HasItem("Glasplade", "Inverter", "Tyndfilm", "Energiomformer", "Silicium", "Sollys", "Energioptimeringschip", "Energiregulator"))
                 {
                     Console.Clear();
                     //animations metode.
