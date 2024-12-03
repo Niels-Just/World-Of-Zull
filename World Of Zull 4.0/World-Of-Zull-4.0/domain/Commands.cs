@@ -1,5 +1,5 @@
-using System.IO;
 using World_Of_Zull_4._0._presentation;
+using World_Of_Zull_4._0.presentation;
 
 namespace World_Of_Zull_4._0.domain
 {
@@ -32,7 +32,7 @@ namespace World_Of_Zull_4._0.domain
         
         }
 
-        //bruges til at bevæge spilleren til ethvert rum uden behov for at være ved siden af det. (dev command)
+        //Bruges til at bevæge spilleren til ethvert rum uden behov for at være ved siden af det. (dev command)
         public void DevMove(Room nextRoom)
         {
             currentRoom = nextRoom; // Opdater currentRoom
@@ -109,9 +109,11 @@ namespace World_Of_Zull_4._0.domain
                 {
                     Console.Clear();
                     TextEffect.TxtEffectNpc("Tillykke du hjalp fnorkel tilbage ud i rummet!", 40);
-                    Console.WriteLine("Spillet er nu slut!");
-                    System.Environment.Exit(0);
-                    
+                    //animations metode.
+                    FnorkelAnimation.SlutAnimation();
+                    Console.Clear();
+                    Console.WriteLine("Spillet er nu slut, tak for at spille!");
+                    Environment.Exit(0);
                 }
                 else
                 {
