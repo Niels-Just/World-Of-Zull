@@ -1,5 +1,4 @@
 using World_Of_Zull_4._0.domain;
-
 namespace World_Of_Zull_4._0.data;
 
 public class PlayerSetUp

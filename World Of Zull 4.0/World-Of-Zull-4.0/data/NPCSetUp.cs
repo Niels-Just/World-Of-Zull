@@ -1,7 +1,4 @@
 using World_Of_Zull_4._0.domain;
-using System;
-using System.Collections.Generic;
-using System.IO;
 namespace World_Of_Zull_4._0.data
 {
     public class NpcSetUp
